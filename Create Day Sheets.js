@@ -11,23 +11,23 @@ function createDaySheets() {
 
     switch (value[0]) {
       case 1:
-        day1.push(value);
-        Logger.log(day1)
+        // day1.push(value);
+        day1.push([value]);
         break;
       case 2:
-        day2.concat(value[0]);
+        day2.push([value]);
         break;
       case 3:
-        day3.concat(value[0]);
+        day3.push([value]);
         break;
       case 4:
-        day4.concat(value[0]);
+        day4.push([value]);
         break;
       case 5:
-        day5.concat(value[0]);
+        day5.push([value]);
         break;
       case 6:
-        day6.concat(value[0]);
+        day6.push([value]);
         break;
       default:
         break;

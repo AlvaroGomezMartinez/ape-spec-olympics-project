@@ -22,15 +22,15 @@ const sheetNames = [
   '100 M Run'
 ];
 
-let filteredData = {};
+var filteredData = {};
 
 events.forEach(event => {
   filteredData[event.name] = pushEventDataToDaySheet(event.event[0], event.event[1], event.event[2]);
 });
 
 function pushEventDataToDaySheet(tAndFEventDay, athGender, trackEvent) {
-  let filteredData = [];
-  for (let i = 1; i < data.length; i++) {
+  filteredData = [];
+  for (let i = 1; i < dataLength; i++) {
     let row = data[i];
     if (row[0] === tAndFEventDay && row[3] === athGender && row[8] === true && row[11] === trackEvent) {
       filteredData.push(row);

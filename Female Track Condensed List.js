@@ -270,19 +270,4 @@ function runAllFemalesTrackCondensedLists() {
    * to open the doc.
    * @todo change the docId with the ID from the actual doc once this project goes live.
    */
-  function openTrackCondensedListGoogleDoc() {
-    let doc = DocumentApp.openById(femaleTrackCondensedListTemplateFile.getId());
-    let url = doc.getUrl();
-    
-    let htmlContent = '<p>🏆 Thanks for your patience! 😅<br><br> The Female Track Condensed List has been updated.</p>';
-    htmlContent += '<p>Click <a href="' + url + '" target="_blank">here</a> to open it up.</p>';
-
-    let htmlOutput = HtmlService.createHtmlOutput(htmlContent)
-      .setWidth(400)
-      .setHeight(150);
-    
-    /** Displays the custom dialog box */
-    SpreadsheetApp.getUi().showModalDialog(htmlOutput, 'Google Doc Updated');
-  }
-  runAllFemaleDay1TrackCondensedFunctions()
-}
+  function openTrackCondensedListGoog

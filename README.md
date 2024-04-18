@@ -22,16 +22,4 @@ A Collaboration between the departments of Special Education and Academic Techno
     (8) Track Heat Sheets - Males
 - [ ] 4. After the eight GoogleDoc templates are created, get the document IDs from each one and copy them over to their corresponding variable in the Global Variables file in this project.
 - [ ] 5. Set a trigger to run the function onOpen(), found inside the Menus.gs file of this project, when the spreadsheet is opened.
-- [ ] 6. Set a trigger to run the function insertFormula(), found inside the Age.gs file of this project, when the spreadsheet is edited.
-
-**Project's Progress - Updates:**
-On 4/1/24, continued updating the project files.
-
-**Pending tasks:**
-
-- [ ] See if it's possible to add a page break by campus
-- [ ] T&F Alphabetical - list by campus- have the report cut off by campus
-- [ ] For the labels:
-    * Day 1 Alphabetical by Campus
-    * Day 2 "             "   "
-    * ...
+- 

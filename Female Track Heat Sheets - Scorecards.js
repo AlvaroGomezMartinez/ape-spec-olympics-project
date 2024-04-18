@@ -28,6 +28,7 @@ function runAllFemalesTrackHeatSheets() {
     const day1F25MAstWalk = [1,'F','25 M Assisted Walk']
     const day1F25MAstDevice = [1,'F','25 M Assisted Device']
     const day1F25MAstWC = [1,'F','25 M Assisted WC']
+    const day1F25MManWC = [1,'F','25 M Manual WC'] 
     const day1F30MSlalom = [1,'F','30 M Slalom']
     const day1F50MRun = [1,'F','50 M Run']
     const day1F50MManualWC = [1,'F','50 M Manual WC']
@@ -39,6 +40,7 @@ function runAllFemalesTrackHeatSheets() {
       await createTrackHeatSheetTables(...day1F50MManualWC);
       await createTrackHeatSheetTables(...day1F50MRun);
       await createTrackHeatSheetTables(...day1F30MSlalom);
+      await createTrackHeatSheetTables(...day1F25MManWC);
       await createTrackHeatSheetTables(...day1F25MAstWC);
       await createTrackHeatSheetTables(...day1F25MAstDevice);
       await createTrackHeatSheetTables(...day1F25MAstWalk);
@@ -49,6 +51,7 @@ function runAllFemalesTrackHeatSheets() {
     const day2F25MAstWalk = [2,'F','25 M Assisted Walk']
     const day2F25MAstDevice = [2,'F','25 M Assisted Device']
     const day2F25MAstWC = [2,'F','25 M Assisted WC']
+    const day2F25MManWC = [2,'F','25 M Manual WC']
     const day2F30MSlalom = [2,'F','30 M Slalom']
     const day2F50MRun = [2,'F','50 M Run']
     const day2F50MManualWC = [2,'F','50 M Manual WC']
@@ -61,6 +64,7 @@ function runAllFemalesTrackHeatSheets() {
       await createTrackHeatSheetTables(...day2F50MRun);
       await createTrackHeatSheetTables(...day2F30MSlalom);
       await createTrackHeatSheetTables(...day2F25MAstWC);
+      await createTrackHeatSheetTables(...day2F25MManWC);
       await createTrackHeatSheetTables(...day2F25MAstDevice);
       await createTrackHeatSheetTables(...day2F25MAstWalk);
       await runAllFemaleTrackHeatSheetsDay3Functions();
@@ -70,6 +74,7 @@ function runAllFemalesTrackHeatSheets() {
     const day3F25MAstWalk = [3,'F','25 M Assisted Walk']
     const day3F25MAstDevice = [3,'F','25 M Assisted Device']
     const day3F25MAstWC = [3,'F','25 M Assisted WC']
+    const day3F25MManWC = [3,'F','25 M Manual WC']
     const day3F30MSlalom = [3,'F','30 M Slalom']
     const day3F50MRun = [3,'F','50 M Run']
     const day3F50MManualWC = [3,'F','50 M Manual WC']
@@ -81,6 +86,7 @@ function runAllFemalesTrackHeatSheets() {
       await createTrackHeatSheetTables(...day3F50MManualWC);
       await createTrackHeatSheetTables(...day3F50MRun);
       await createTrackHeatSheetTables(...day3F30MSlalom);
+      await createTrackHeatSheetTables(...day3F25MManWC);
       await createTrackHeatSheetTables(...day3F25MAstWC);
       await createTrackHeatSheetTables(...day3F25MAstDevice);
       await createTrackHeatSheetTables(...day3F25MAstWalk);
@@ -91,6 +97,7 @@ function runAllFemalesTrackHeatSheets() {
     const day4F25MAstWalk = [4,'F','25 M Assisted Walk']
     const day4F25MAstDevice = [4,'F','25 M Assisted Device']
     const day4F25MAstWC = [4,'F','25 M Assisted WC']
+    const day4F25MManWC = [4,'F','25 M Manual WC']
     const day4F30MSlalom = [4,'F','30 M Slalom']
     const day4F50MRun = [4,'F','50 M Run']
     const day4F50MManualWC = [4,'F','50 M Manual WC']
@@ -102,6 +109,7 @@ function runAllFemalesTrackHeatSheets() {
       await createTrackHeatSheetTables(...day4F50MManualWC);
       await createTrackHeatSheetTables(...day4F50MRun);
       await createTrackHeatSheetTables(...day4F30MSlalom);
+      await createTrackHeatSheetTables(...day4F25MManWC);
       await createTrackHeatSheetTables(...day4F25MAstWC);
       await createTrackHeatSheetTables(...day4F25MAstDevice);
       await createTrackHeatSheetTables(...day4F25MAstWalk);
@@ -112,6 +120,7 @@ function runAllFemalesTrackHeatSheets() {
     const day5F25MAstWalk = [5,'F','25 M Assisted Walk']
     const day5F25MAstDevice = [5,'F','25 M Assisted Device']
     const day5F25MAstWC = [5,'F','25 M Assisted WC']
+    const day5F25MManWC = [5,'F','25 M Manual WC']
     const day5F30MSlalom = [5,'F','30 M Slalom']
     const day5F50MRun = [5,'F','50 M Run']
     const day5F50MManualWC = [5,'F','50 M Manual WC']
@@ -123,6 +132,7 @@ function runAllFemalesTrackHeatSheets() {
       await createTrackHeatSheetTables(...day5F50MManualWC);
       await createTrackHeatSheetTables(...day5F50MRun);
       await createTrackHeatSheetTables(...day5F30MSlalom);
+      await createTrackHeatSheetTables(...day5F25MManWC);
       await createTrackHeatSheetTables(...day5F25MAstWC);
       await createTrackHeatSheetTables(...day5F25MAstDevice);
       await createTrackHeatSheetTables(...day5F25MAstWalk);
@@ -133,6 +143,7 @@ function runAllFemalesTrackHeatSheets() {
     const day6F25MAstWalk = [6,'F','25 M Assisted Walk']
     const day6F25MAstDevice = [6,'F','25 M Assisted Device']
     const day6F25MAstWC = [6,'F','25 M Assisted WC']
+    const day6F25MManWC = [6,'F','25 M Manual WC']
     const day6F30MSlalom = [6,'F','30 M Slalom']
     const day6F50MRun = [6,'F','50 M Run']
     const day6F50MManualWC = [6,'F','50 M Manual WC']
@@ -144,6 +155,7 @@ function runAllFemalesTrackHeatSheets() {
       await createTrackHeatSheetTables(...day6F50MManualWC);
       await createTrackHeatSheetTables(...day6F50MRun);
       await createTrackHeatSheetTables(...day6F30MSlalom);
+      await createTrackHeatSheetTables(...day6F25MManWC);
       await createTrackHeatSheetTables(...day6F25MAstWC);
       await createTrackHeatSheetTables(...day6F25MAstDevice);
       await createTrackHeatSheetTables(...day6F25MAstWalk);

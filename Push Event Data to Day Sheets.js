@@ -1,14 +1,54 @@
 // This function gets the data from 'Student Database' and filters it by event.
 
 const events = [
-  { name: 'day1F25MAstWalk', event: [1,'F','25 M Assisted Walk'] },
-  { name: 'day1F25MAstDevice', event: [1,'F','25 M Assisted Device'] },
-  { name: 'day1F25MAstWC', event: [1,'F','25 M Assisted WC'] },
-  { name: 'day1F25MManWC', event: [1,'F','25 M Manual WC'] },
-  { name: 'day1F30MSlalom', event: [1,'F','30 M Slalom'] },
-  { name: 'day1F50MRun', event: [1,'F','50 M Run'] },
-  { name: 'day1F50MManualWC', event: [1,'F','50 M Manual WC'] },
-  { name: 'day1F100MRun', event: [1,'F','100 M Run'] }
+  { name: 'day1F25MAstWalk', event: [1,'F','25 M Assisted Walk'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'},
+  { name: 'day1F25MAstDevice', event: [1,'F','25 M Assisted Device'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1F25MAstWC', event: [1,'F','25 M Assisted WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1F25MManWC', event: [1,'F','25 M Manual WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1F30MSlalom', event: [1,'F','30 M Slalom'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1F50MRun', event: [1,'F','50 M Run'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1F50MManualWC', event: [1,'F','50 M Manual WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1F100MRun', event: [1,'F','100 M Run'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day2F25MAstWalk', event: [2,'F','25 M Assisted Walk'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'},
+  { name: 'day2F25MAstDevice', event: [2,'F','25 M Assisted Device'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2F25MAstWC', event: [2,'F','25 M Assisted WC'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2F25MManWC', event: [2,'F','25 M Manual WC'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2F30MSlalom', event: [2,'F','30 M Slalom'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2F50MRun', event: [2,'F','50 M Run'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2F50MManualWC', event: [2,'F','50 M Manual WC'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2F100MRun', event: [2,'F','100 M Run'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day3F25MAstWalk', event: [3,'F','25 M Assisted Walk'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'},
+  { name: 'day3F25MAstDevice', event: [3,'F','25 M Assisted Device'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3F25MAstWC', event: [3,'F','25 M Assisted WC'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3F25MManWC', event: [3,'F','25 M Manual WC'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3F30MSlalom', event: [3,'F','30 M Slalom'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3F50MRun', event: [3,'F','50 M Run'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3F50MManualWC', event: [3,'F','50 M Manual WC'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3F100MRun', event: [3,'F','100 M Run'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day4F25MAstWalk', event: [4,'F','25 M Assisted Walk'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'},
+  { name: 'day4F25MAstDevice', event: [4,'F','25 M Assisted Device'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4F25MAstWC', event: [4,'F','25 M Assisted WC'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4F25MManWC', event: [4,'F','25 M Manual WC'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4F30MSlalom', event: [4,'F','30 M Slalom'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4F50MRun', event: [4,'F','50 M Run'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4F50MManualWC', event: [4,'F','50 M Manual WC'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4F100MRun', event: [4,'F','100 M Run'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day5F25MAstWalk', event: [5,'F','25 M Assisted Walk'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'},
+  { name: 'day5F25MAstDevice', event: [5,'F','25 M Assisted Device'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5F25MAstWC', event: [5,'F','25 M Assisted WC'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5F25MManWC', event: [5,'F','25 M Manual WC'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5F30MSlalom', event: [5,'F','30 M Slalom'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5F50MRun', event: [5,'F','50 M Run'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5F50MManualWC', event: [5,'F','50 M Manual WC'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5F100MRun', event: [5,'F','100 M Run'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day6F25MAstWalk', event: [6,'F','25 M Assisted Walk'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'},
+  { name: 'day6F25MAstDevice', event: [6,'F','25 M Assisted Device'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6F25MAstWC', event: [6,'F','25 M Assisted WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6F25MManWC', event: [6,'F','25 M Manual WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6F30MSlalom', event: [6,'F','30 M Slalom'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6F50MRun', event: [6,'F','50 M Run'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6F50MManualWC', event: [6,'F','50 M Manual WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6F100MRun', event: [6,'F','100 M Run'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  }
 ];
 
 const sheetNames = [
@@ -24,38 +64,34 @@ const sheetNames = [
 
 let filteredData = {};
 
-events.forEach(event => {
-  filteredData[event.name] = pushEventDataToDaySheet(event.event[0], event.event[1], event.event[2]);
-});
+function pushEventDataToSheets() {
+  // Loop over the events array
+  for (var i = 0; i < events.length; i++) {
+    var event = events[i];
 
-function pushEventDataToDaySheet(tAndFEventDay, athGender, trackEvent) {
-  let filteredData = [];
-  for (let i = 1; i < data.length; i++) {
-    let row = data[i];
-    if (row[0] === tAndFEventDay && row[3] === athGender && row[8] === true && row[11] === trackEvent) {
-      filteredData.push(row);
-    }
-  }
-  return filteredData;
-}
+    // Get the spreadsheet for this event
+    var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
 
-function appendDataToSheets() {
-  // Get the spreadsheet
-  var spreadsheet = SpreadsheetApp.openById('1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA');
+    // Filter the data based on the event criteria
+    var filteredData = data.filter(function(row) {
+      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
+    });
 
-  // Loop over the filteredData object
-  for (var key in filteredData) {
     // Find the corresponding sheet name
-    var sheetName = sheetNames.find(function(name) { return key.includes(name); });
+    var sheetName = sheetNames.find(function(name) { return name === event.event[2]; });
     if (!sheetName) continue;
 
-    // Get the sheet and append the data
+    // Get the sheet and append the filtered data
     var sheet = spreadsheet.getSheetByName(sheetName);
-    var data = filteredData[key];
-    for (var i = 0; i < data.length; i++) {
-      sheet.appendRow(data[i]);
+    if (!sheet) continue;
+
+    // Clear the sheet
+    sheet.clearContents();
+
+    for (var j = 0; j < filteredData.length; j++) {
+      sheet.appendRow(filteredData[j]);
     }
   }
 }
 
-appendDataToSheets();
+pushEventDataToSheets();

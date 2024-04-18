@@ -67,4 +67,6 @@ function createDaySheets() {
   day3Sheet1.getRange(1, 1, day3.length, 21).setValues(day3);
   day4Sheet1.getRange(1, 1, day4.length, 21).setValues(day4);
   day5Sheet1.getRange(1, 1, day5.length, 21).setValues(day5);
-  day
+  day6Sheet1.getRange(1, 1, day6.length, 21).setValues(day6);
+
+}

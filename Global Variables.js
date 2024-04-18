@@ -24,4 +24,4 @@ style[DocumentApp.Attribute.BOLD] = true;
 
 let style2 = {};
 style2[DocumentApp.Attribute.FONT_SIZE] = 10;
-style2[Docume
+style2[DocumentApp.Attribute.BOLD] = false;

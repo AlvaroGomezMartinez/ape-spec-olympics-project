@@ -84,12 +84,12 @@ function pushEventDataToSheets() {
     // Get the sheet and append the filtered data
     var sheet = spreadsheet.getSheetByName(sheetName);
     if (!sheet) continue;
-
     // Clear the sheet
     sheet.clearContents();
 
-    for (var j = 0; j < filteredData.length; j++) {
-      sheet.appendRow(filteredData[j]);
+    var filteredDataLength = filteredData.length;
+    for (var j = 0; j < filteredDataLength; j++) {
+        sheet.appendRow(filteredData[j]);
     }
   }
 }

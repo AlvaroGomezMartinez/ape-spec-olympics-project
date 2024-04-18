@@ -29,15 +29,19 @@ events.forEach(event => {
 });
 
 function pushEventDataToDaySheet(tAndFEventDay, athGender, trackEvent) {
-  filteredData = [];
+  filteredData = {}; // Reset filteredData each time this function is called
+  let data = []; // Assuming data is defined somewhere
+  let dataLength = data.length;
   for (let i = 1; i < dataLength; i++) {
     let row = data[i];
     if (row[0] === tAndFEventDay && row[3] === athGender && row[8] === true && row[11] === trackEvent) {
-      filteredData.push(row);
+      if (!filteredData[trackEvent]) {
+        filteredData[trackEvent] = [];
+      }
+      filteredData[trackEvent].push(row);
     }
   }
-  Logger.log(filteredData)
-  return filteredData;
+  Logger.log(filteredData);
 }
 
 function appendDataToSheets() {

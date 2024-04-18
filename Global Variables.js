@@ -6,6 +6,8 @@ const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Student Data
 
 let data = sheet.getDataRange().getValues();
 
+let dataLength = data.length;
+
 const femaleFieldCondensedListTemplateFile = DriveApp.getFileById('1wFKXTaaHXyb7ykrItuDdsatmwVtUhA9mqsliDVOeYQs');
 const maleFieldCondensedListTemplateFile = DriveApp.getFileById('1XWTGzRH5Khpmlay40PJ63yOO4QJWGPZn8KZ2fmPP0J0');
 const femaleFieldHeatSheetsTemplateFile = DriveApp.getFileById('1IiFH5ZWBmF6Q7q1EZTRF1CW6Nt78h9FTEFEgp95W_WE');

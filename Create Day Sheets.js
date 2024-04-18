@@ -12,9 +12,6 @@ function createDaySheets() {
     switch (value[0]) {
       case 1:
         day1.push(value);
-
-          // insert function to push events to day1 array
-
         break;
       case 2:
         day2.push(value);

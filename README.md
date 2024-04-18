@@ -25,7 +25,11 @@ A Collaboration between the departments of Special Education and Academic Techno
 - [ ] 6. Set a trigger to run the function insertFormula(), found inside the Age.gs file of this project, when the spreadsheet is edited.
 
 **Project's Progress - Updates:**
-On 4/1/24, continued updating the project files.
+On 4/18/24, continued updating the project files.
+I created the functions to push the event data to the day sheets.
+I still need to add the headings row to each event.
+Then find out if it's putting the events by order. Fastest to slowest for running events and longest to shortest for field events.
+Then create a function to push the heat and lane data back into the main database.
 
 **Pending tasks:**
 

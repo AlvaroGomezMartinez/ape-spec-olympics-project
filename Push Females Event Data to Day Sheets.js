@@ -1,8 +1,7 @@
-// This function gets the data from 'Student Database' and filters it by event.
+// This function gets the data from 'Student Database', filters it by day & event, and pushes the chunks of data to separate day sheets.
 
-const runningEvents = [
+const femaleRunningEvents = [
   { name: 'day1F25MAstWalk', event: [1,'F','25 M Assisted Walk'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'},
-  //{ name: 'day1M25MAstWalk', event: [1,'M','25 M Assisted Walk'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'},
   { name: 'day1F25MAstDevice', event: [1,'F','25 M Assisted Device'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
   { name: 'day1F25MAstWC', event: [1,'F','25 M Assisted WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
   { name: 'day1F25MManWC', event: [1,'F','25 M Manual WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
@@ -129,8 +128,8 @@ let filteredData = {};
 
 function pushRunningEventDataToSheets() {
   // Loop over the events object
-  for (var i = 0; i < runningEvents.length; i++) {
-    var event = runningEvents[i];
+  for (var i = 0; i < femaleRunningEvents.length; i++) {
+    var event = femaleRunningEvents[i];
     var event2 = maleRunningEvents[i];
 
     // Get the spreadsheet for this event

@@ -68,7 +68,7 @@ const sheetNames = [
   '100 M Run'
 ];
 
-let filteredData = {};
+let maleFilteredData = {};
 
 function pushMalesRunningEventDataToSheets() {
   // Loop over the events object
@@ -83,10 +83,10 @@ function pushMalesRunningEventDataToSheets() {
     if (!sheetName) continue;
 
     // Get the sheet and clear its contents
-    var sheet = maleSpreadsheet.getSheetByName(sheetName);
-    if (sheet) {
-      sheet.clearContents();
-    }
+    // var sheet = maleSpreadsheet.getSheetByName(sheetName);
+    // if (sheet) {
+    //   sheet.clearContents();
+    // }
 
     // Filter the data based on the event criteria
     var maleFilteredData = data.filter(function(row) {

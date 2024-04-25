@@ -137,54 +137,6 @@ const maleSheetNames = [
 
 let filteredData = {};
 
-// function pushRunningEventDataToSheets() {
-//   // Loop over the events object
-//   for (var i = 0; i < femaleRunningEvents.length; i++) {
-//     var event = femaleRunningEvents[i];
-//     var event2 = maleRunningEvents[i];
-
-//     // Get the spreadsheet for this event
-//     var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
-
-//     // Find the corresponding sheet name
-//     var sheetName = femaleSheetNames.find(function(name) { return name === event.event[2]; });
-//     if (!sheetName) continue;
-    
-//     // Get the sheet and clear its contents
-//     var sheet = spreadsheet.getSheetByName(sheetName);
-//     if (sheet) {
-//       sheet.clearContents();
-//     }
-
-//     // Filter the data based on the first event criteria
-//     var filteredData1 = data.filter(function(row) {
-//       return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
-//     });
-
-//     // Filter the data based on the second event criteria
-//     // Replace 'event2' with your second event
-//     var filteredData2 = data.filter(function(row) {
-//       return row[0] === event2.event[0] && row[3] === event2.event[1] && row[11] === event2.event[2];
-//     });
-
-//     // Get the sheet and append the first filtered data
-//     var sheet = spreadsheet.getSheetByName(sheetName);
-//     if (!sheet) continue;
-
-//     var filteredDataLength1 = filteredData1.length;
-//     for (var j = 0; j < filteredDataLength1; j++) {
-//         sheet.appendRow(filteredData1[j]);
-//     }
-
-//     // Append the second filtered data
-//     var filteredDataLength2 = filteredData2.length;
-//     for (var j = 0; j < filteredDataLength2; j++) {
-//         sheet.appendRow(filteredData2[j]);
-//     }
-//   }
-// }
-
-
 function pushRunningEventDataToSheets() {
   // Loop over the femaleRunningEvents object
   for (var i = 0; i < femaleRunningEvents.length; i++) {
@@ -194,19 +146,27 @@ function pushRunningEventDataToSheets() {
     var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
 
     // Find the corresponding sheet name
-    var sheetName = femaleSheetNames.find(function(name) { return name === event.event[2]; });
+    var sheetName = femaleSheetNames.find(function(name) { return name.includes(event.event[2]); });
     if (!sheetName) continue;
     
     // Get the sheet and clear its contents
     var sheet = spreadsheet.getSheetByName(sheetName);
     if (sheet) {
       sheet.clearContents();
+    } else {
+    console.log('Sheet not found: ' + sheetName);
+    continue;
     }
 
     // Filter the data based on the first event criteria
     var filteredData1 = data.filter(function(row) {
-      // your filter criteria here
+      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
     });
+
+    // Push the filtered data to the sheet
+    if (filteredData1.length > 0) {
+      sheet.getRange(1, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
+    }
   }
 
   // Loop over the maleRunningEvents object
@@ -217,19 +177,27 @@ function pushRunningEventDataToSheets() {
     var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
 
     // Find the corresponding sheet name
-    var sheetName = maleSheetNames.find(function(name) { return name === event.event[2]; });
+    var sheetName = maleSheetNames.find(function(name) { return name.includes(event.event[2]); });
     if (!sheetName) continue;
     
     // Get the sheet and clear its contents
     var sheet = spreadsheet.getSheetByName(sheetName);
     if (sheet) {
       sheet.clearContents();
+    } else {
+    console.log('Sheet not found: ' + sheetName);
+    continue;
     }
 
     // Filter the data based on the first event criteria
     var filteredData1 = data.filter(function(row) {
-      // your filter criteria here
+      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
     });
+
+    // Push the filtered data to the sheet
+    if (filteredData1.length > 0) {
+      sheet.getRange(1, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
+    }
   }
 }
 

@@ -131,6 +131,7 @@ const sheetNames = [
 
 let filteredData = {};
 
+
 function pushRunningEventDataToSheets() {
   // Loop over the events object
   for (var i = 0; i < runningEvents.length; i++) {
@@ -143,27 +144,12 @@ function pushRunningEventDataToSheets() {
     // Find the corresponding sheet name
     var sheetName = sheetNames.find(function(name) { return name === event.event[2]; });
     if (!sheetName) continue;
-
+    
     // Get the sheet and clear its contents
     var sheet = spreadsheet.getSheetByName(sheetName);
     if (sheet) {
       sheet.clearContents();
     }
-
-    // // Filter the data based on the event criteria
-    // var filteredData = data.filter(function(row) {
-    //   return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
-    // });
-
-    // // Get the sheet and append the filtered data
-    // var sheet = spreadsheet.getSheetByName(sheetName);
-    // if (!sheet) continue;
-
-    // var filteredDataLength = filteredData.length;
-    // for (var j = 0; j < filteredDataLength; j++) {
-    //     sheet.appendRow(filteredData[j]);
-    // }
-
 
     // Filter the data based on the first event criteria
     var filteredData1 = data.filter(function(row) {

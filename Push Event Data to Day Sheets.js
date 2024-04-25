@@ -223,10 +223,16 @@ function pushRunningEventDataToSheets() {
     // Get the sheet and clear its contents
     var sheet = spreadsheet.getSheetByName(sheetName);
     if (sheet) {
-      sheet.clearContents();
+      sheet.clearContents()
+    
+      // Define your header row
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position'];
+      
+      // Set the header row
+      sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
     } else {
-    console.log('Sheet not found: ' + sheetName);
-    continue;
+      console.log('Sheet not found: ' + sheetName);
+      continue;
     }
 
     // Filter the data based on the first event criteria
@@ -256,7 +262,19 @@ function pushRunningEventDataToSheets() {
     // Get the sheet and clear its contents
     var sheet = spreadsheet.getSheetByName(sheetName);
     if (sheet) {
-      sheet.clearContents();
+      sheet.clearContents()
+
+      // Define your header row
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position'];
+      
+Logger.log('Sheet:' + sheet);
+Logger.log('Header row:' + headerRow);
+
+      // Set the header row
+      sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
+
+      Logger.log('Header row set');
+
     } else {
     console.log('Sheet not found: ' + sheetName);
     continue;

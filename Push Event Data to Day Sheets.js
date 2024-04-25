@@ -133,11 +133,6 @@ function pushRunningEventDataToSheets() {
     // Get the spreadsheet for this event
     var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
 
-    // Filter the data based on the event criteria
-    var filteredData = data.filter(function(row) {
-      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
-    });
-
     // Find the corresponding sheet name
     var sheetName = sheetNames.find(function(name) { return name === event.event[2]; });
     if (!sheetName) continue;
@@ -147,6 +142,11 @@ function pushRunningEventDataToSheets() {
     if (sheet) {
       sheet.clearContents();
     }
+
+    // Filter the data based on the event criteria
+    var filteredData = data.filter(function(row) {
+      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
+    });
 
     // Get the sheet and append the filtered data
     var sheet = spreadsheet.getSheetByName(sheetName);

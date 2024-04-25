@@ -142,11 +142,15 @@ function pushRunningEventDataToSheets() {
     var sheetName = sheetNames.find(function(name) { return name === event.event[2]; });
     if (!sheetName) continue;
 
+    // Get the sheet and clear its contents
+    var sheet = spreadsheet.getSheetByName(sheetName);
+    if (sheet) {
+      sheet.clearContents();
+    }
+
     // Get the sheet and append the filtered data
     var sheet = spreadsheet.getSheetByName(sheetName);
     if (!sheet) continue;
-    // Clear the sheet
-    sheet.clearContents();
 
     var filteredDataLength = filteredData.length;
     for (var j = 0; j < filteredDataLength; j++) {

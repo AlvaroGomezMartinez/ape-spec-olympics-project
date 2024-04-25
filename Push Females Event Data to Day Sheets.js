@@ -113,30 +113,88 @@ const maleRunningEvents = [
   { name: 'day6M100MRun', event: [6,'M','100 M Run'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  }
 ];
 
-const sheetNames = [
-  '25 M Assisted Walk',
-  '25 M Assisted Device',
-  '25 M Assisted WC',
-  '25 M Manual WC',
-  '30 M Slalom',
-  '50 M Run',
-  '50 M Manual WC',
-  '100 M Run'
+const femaleSheetNames = [
+  'Females-25 M Assisted Walk',
+  'Females-25 M Assisted Device',
+  'Females-25 M Assisted WC',
+  'Females-25 M Manual WC',
+  'Females-30 M Slalom',
+  'Females-50 M Run',
+  'Females-50 M Manual WC',
+  'Females-100 M Run'
+];
+
+const maleSheetNames = [
+  'Males-25 M Assisted Walk',
+  'Males-25 M Assisted Device',
+  'Males-25 M Assisted WC',
+  'Males-25 M Manual WC',
+  'Males-30 M Slalom',
+  'Males-50 M Run',
+  'Males-50 M Manual WC',
+  'Males-100 M Run'
 ];
 
 let filteredData = {};
 
+// function pushRunningEventDataToSheets() {
+//   // Loop over the events object
+//   for (var i = 0; i < femaleRunningEvents.length; i++) {
+//     var event = femaleRunningEvents[i];
+//     var event2 = maleRunningEvents[i];
+
+//     // Get the spreadsheet for this event
+//     var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
+
+//     // Find the corresponding sheet name
+//     var sheetName = femaleSheetNames.find(function(name) { return name === event.event[2]; });
+//     if (!sheetName) continue;
+    
+//     // Get the sheet and clear its contents
+//     var sheet = spreadsheet.getSheetByName(sheetName);
+//     if (sheet) {
+//       sheet.clearContents();
+//     }
+
+//     // Filter the data based on the first event criteria
+//     var filteredData1 = data.filter(function(row) {
+//       return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
+//     });
+
+//     // Filter the data based on the second event criteria
+//     // Replace 'event2' with your second event
+//     var filteredData2 = data.filter(function(row) {
+//       return row[0] === event2.event[0] && row[3] === event2.event[1] && row[11] === event2.event[2];
+//     });
+
+//     // Get the sheet and append the first filtered data
+//     var sheet = spreadsheet.getSheetByName(sheetName);
+//     if (!sheet) continue;
+
+//     var filteredDataLength1 = filteredData1.length;
+//     for (var j = 0; j < filteredDataLength1; j++) {
+//         sheet.appendRow(filteredData1[j]);
+//     }
+
+//     // Append the second filtered data
+//     var filteredDataLength2 = filteredData2.length;
+//     for (var j = 0; j < filteredDataLength2; j++) {
+//         sheet.appendRow(filteredData2[j]);
+//     }
+//   }
+// }
+
+
 function pushRunningEventDataToSheets() {
-  // Loop over the events object
+  // Loop over the femaleRunningEvents object
   for (var i = 0; i < femaleRunningEvents.length; i++) {
     var event = femaleRunningEvents[i];
-    var event2 = maleRunningEvents[i];
 
     // Get the spreadsheet for this event
     var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
 
     // Find the corresponding sheet name
-    var sheetName = sheetNames.find(function(name) { return name === event.event[2]; });
+    var sheetName = femaleSheetNames.find(function(name) { return name === event.event[2]; });
     if (!sheetName) continue;
     
     // Get the sheet and clear its contents
@@ -147,29 +205,31 @@ function pushRunningEventDataToSheets() {
 
     // Filter the data based on the first event criteria
     var filteredData1 = data.filter(function(row) {
-      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
+      // your filter criteria here
     });
+  }
 
-    // Filter the data based on the second event criteria
-    // Replace 'event2' with your second event
-    var filteredData2 = data.filter(function(row) {
-      return row[0] === event2.event[0] && row[3] === event2.event[1] && row[11] === event2.event[2];
-    });
+  // Loop over the maleRunningEvents object
+  for (var i = 0; i < maleRunningEvents.length; i++) {
+    var event = maleRunningEvents[i];
 
-    // Get the sheet and append the first filtered data
+    // Get the spreadsheet for this event
+    var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
+
+    // Find the corresponding sheet name
+    var sheetName = maleSheetNames.find(function(name) { return name === event.event[2]; });
+    if (!sheetName) continue;
+    
+    // Get the sheet and clear its contents
     var sheet = spreadsheet.getSheetByName(sheetName);
-    if (!sheet) continue;
-
-    var filteredDataLength1 = filteredData1.length;
-    for (var j = 0; j < filteredDataLength1; j++) {
-        sheet.appendRow(filteredData1[j]);
+    if (sheet) {
+      sheet.clearContents();
     }
 
-    // Append the second filtered data
-    var filteredDataLength2 = filteredData2.length;
-    for (var j = 0; j < filteredDataLength2; j++) {
-        sheet.appendRow(filteredData2[j]);
-    }
+    // Filter the data based on the first event criteria
+    var filteredData1 = data.filter(function(row) {
+      // your filter criteria here
+    });
   }
 }
 

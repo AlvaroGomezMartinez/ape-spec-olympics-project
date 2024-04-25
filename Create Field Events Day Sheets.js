@@ -1,3 +1,7 @@
+// This script was used to create the sheets in the Field Events Day workbooks.
+// It is not necessary to run this script again, as the sheets have already been created.
+// This script is provided for reference only.
+
 function createSheetsInWorkbooks() {
   // Array of Google Sheets IDs
   var workbookIds = ['1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls', '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg', '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ', '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg', '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'];

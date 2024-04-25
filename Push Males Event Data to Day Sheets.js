@@ -89,7 +89,7 @@ function pushMalesRunningEventDataToSheets() {
     }
 
     // Filter the data based on the event criteria
-    var filteredData = data.filter(function(row) {
+    var maleFilteredData = data.filter(function(row) {
       return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
     });
 
@@ -97,9 +97,9 @@ function pushMalesRunningEventDataToSheets() {
     var sheet = maleSpreadsheet.getSheetByName(sheetName);
     if (!sheet) continue;
 
-    var filteredDataLength = filteredData.length;
-    for (var j = 0; j < filteredDataLength; j++) {
-        sheet.appendRow(filteredData[j]);
+    var maleFilteredDataLength = maleFilteredData.length;
+    for (var j = 0; j < maleFilteredDataLength; j++) {
+        sheet.appendRow(maleFilteredData[j]);
     }
   }
 }

@@ -31,6 +31,13 @@ I still need to add the headings row to each event.
 Then find out if it's putting the events by order. Fastest to slowest for running events and longest to shortest for field events.
 Then create a function to push the heat and lane data back into the main database.
 
+On 4/24/24, continued updating the project files.
+I added field event sheets to the Day worksheets.
+I created a function that will push the females and males to the running event sheets. I need to continue debugging. I get the following error when I run the function, "TypeError: Cannot read properties of undefined (reading 'event')
+(anonymous)	@ Push Females Event Data to Day Sheets.gs:162
+pushRunningEventDataToSheets	@ Push Females Event Data to Day Sheets.gs:161
+(anonymous)	@ Push Females Event Data to Day Sheets.gs:182".
+
 **Pending tasks:**
 
 - [ ] See if it's possible to add a page break by campus

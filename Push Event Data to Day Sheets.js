@@ -1,5 +1,6 @@
 // This function gets the data from 'Student Database', filters it by day & event, and pushes the chunks of data to separate day sheets.
 
+// Array that is used to filter the female's data by day & event along with the spreadsheetId.
 const femaleRunningEvents = [
   { name: 'day1FTurboJav', event: [1,'F','TURBO JAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
   { name: 'day1FTnnsBllThrw', event: [1,'F','TENNIS BALL THROW'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
@@ -92,6 +93,7 @@ const femaleRunningEvents = [
   { name: 'day6F100MRun', event: [6,'F','100 M Run'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  }
 ];
 
+// Array that is used to filter the male's data by day & event along with the spreadsheetId.
 const maleRunningEvents = [
   { name: 'day1MTurboJav', event: [1,'M','TURBO JAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
   { name: 'day1MTnnsBllThrw', event: [1,'M','TENNIS BALL THROW'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
@@ -184,6 +186,7 @@ const maleRunningEvents = [
   { name: 'day6M100MRun', event: [6,'M','100 M Run'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  }
 ];
 
+// Array that contains the names of the female sheets found within each Day worksheet.
 const femaleSheetNames = [
   'Females-25 M Assisted Walk',
   'Females-25 M Assisted Device',
@@ -195,6 +198,7 @@ const femaleSheetNames = [
   'Females-100 M Run'
 ];
 
+// Array that contains the names of the male sheets found within each Day worksheet.
 const maleSheetNames = [
   'Males-25 M Assisted Walk',
   'Males-25 M Assisted Device',
@@ -244,7 +248,7 @@ function pushRunningEventDataToSheets() {
 
     // Push the filtered data to the sheet
     if (filteredData1.length > 0) {
-      sheet.getRange(1, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
+      sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
     }
   }
 
@@ -266,14 +270,9 @@ function pushRunningEventDataToSheets() {
 
       // Define your header row
       var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position'];
-      
-Logger.log('Sheet:' + sheet);
-Logger.log('Header row:' + headerRow);
 
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
-
-      Logger.log('Header row set');
 
     } else {
     console.log('Sheet not found: ' + sheetName);
@@ -289,7 +288,7 @@ Logger.log('Header row:' + headerRow);
 
     // Push the filtered data to the sheet
     if (filteredData1.length > 0) {
-      sheet.getRange(1, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
+      sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
     }
   }
 }

@@ -38,7 +38,7 @@ I created a function that will push the females and males to the running event s
 pushRunningEventDataToSheets	@ Push Females Event Data to Day Sheets.gs:161
 (anonymous)	@ Push Females Event Data to Day Sheets.gs:182".
 
-On 4/29/24, updated the function that adds the data to the individual event sheets to each Day worksheet. The next items that I need to accomplish is to add the field events in addition too the track events. Have the data push only the necessary columns (running events only columns L:P and field events only Q:U)
+On 4/29/24, updated the function that adds the data to the individual event sheets to each Day worksheet. The next items that I need to accomplish is to add the field events in addition too the track events. Have the data push only the necessary columns (running events only columns L:P and field events only Q:U). I need to order the data from slowest to fastest for the running events and longest to shortest for field events.
 
 **Pending tasks:**
 

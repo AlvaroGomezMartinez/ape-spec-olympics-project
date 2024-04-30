@@ -188,6 +188,12 @@ const maleRunningEvents = [
 
 // Array that contains the names of the female sheets found within each Day worksheet.
 const femaleSheetNames = [
+  'Females-Turbo Jav',
+  'Females-Tennis Ball Throw',
+  'Females-Softball Throw',
+  'Females-Running Long Jump',
+  'Femles-Foam Turbo Jav',
+  'Females-Bean Bag Throw',
   'Females-25 M Assisted Walk',
   'Females-25 M Assisted Device',
   'Females-25 M Assisted WC',
@@ -200,6 +206,12 @@ const femaleSheetNames = [
 
 // Array that contains the names of the male sheets found within each Day worksheet.
 const maleSheetNames = [
+  'Males-Turbo Jav',
+  'Males-Tennis Ball Throw',
+  'Males-Softball Throw',
+  'Male-Running Long Jump',
+  'Males-Foam Turbo Jav',
+  'Males-Bean Bag Throw',
   'Males-25 M Assisted Walk',
   'Males-25 M Assisted Device',
   'Males-25 M Assisted WC',
@@ -213,6 +225,94 @@ const maleSheetNames = [
 let filteredData = {};
 
 function pushRunningEventDataToSheets() {
+  // Loop over the femaleRunningEvents object
+  for (var i = 6; i < femaleRunningEvents.length; i++) { // I start at index six because the first six events don't apply here since I'm only wanting the running events.
+    var event = femaleRunningEvents[i];
+
+    // Get the spreadsheet for this event
+    var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
+
+    // Find the corresponding sheet name
+    var sheetName = femaleSheetNames.find(function(name) { return name.includes(event.event[2]); });
+    if (!sheetName) continue;
+    
+    // Get the sheet and clear its contents
+    var sheet = spreadsheet.getSheetByName(sheetName);
+    if (sheet) {
+      sheet.clearContents()
+    
+      // Define your header row
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position'];
+      
+      // Set the header row
+      sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
+    } else {
+      console.log('Sheet not found: ' + sheetName);
+      continue;
+    }
+
+    // Filter the data based on the first event criteria
+    var filteredData1 = data.filter(function(row) {
+      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
+    }).map(function(row) {
+      return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15]];
+    });
+
+    // Push the filtered data to the sheet
+    if (filteredData1.length > 0) {
+      sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
+    }
+  }
+
+  // Loop over the maleRunningEvents object
+  for (var i = 6; i < maleRunningEvents.length; i++) { // I start at index six because the first six events don't apply here since I'm only wanting the running events.
+    var event = maleRunningEvents[i];
+
+    // Get the spreadsheet for this event
+    var spreadsheet = SpreadsheetApp.openById(event.spreadsheetId);
+
+    // Find the corresponding sheet name
+    var sheetName = maleSheetNames.find(function(name) { return name.includes(event.event[2]); });
+    if (!sheetName) continue;
+    
+    // Get the sheet and clear its contents
+    var sheet = spreadsheet.getSheetByName(sheetName);
+    if (sheet) {
+      sheet.clearContents()
+
+      // Define your header row
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position'];
+
+      // Set the header row
+      sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
+
+    } else {
+    console.log('Sheet not found: ' + sheetName);
+    continue;
+    }
+
+    // Filter the data based on the first event criteria
+    var filteredData1 = data.filter(function(row) {
+      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
+    }).map(function(row) {
+      return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15]];
+    });
+
+    // Push the filtered data to the sheet
+    if (filteredData1.length > 0) {
+      sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
+    }
+  }
+pushFieldEventDataToSheets();
+}
+
+
+// Create femaleFieldEvents object
+// Create maleFieldEvents object
+// Tweak the references to the field event objects in the statements below
+
+// Create a function to push the field events. Copy & paste the one above and tweak it.
+function pushFieldEventDataToSheets() {
   // Loop over the femaleRunningEvents object
   for (var i = 0; i < femaleRunningEvents.length; i++) {
     var event = femaleRunningEvents[i];
@@ -230,7 +330,7 @@ function pushRunningEventDataToSheets() {
       sheet.clearContents()
     
       // Define your header row
-      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position'];
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position'];
       
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
@@ -241,9 +341,9 @@ function pushRunningEventDataToSheets() {
 
     // Filter the data based on the first event criteria
     var filteredData1 = data.filter(function(row) {
-      return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
+      return row[0] === event.event[0] && row[3] === event.event[1] && row[16] === event.event[2];
     }).map(function(row) {
-      return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], row[16], row[17], row[18], row[19], row[20]];
+      return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[16], row[17], row[18], row[19], row[20]];
     });
 
     // Push the filtered data to the sheet
@@ -269,7 +369,7 @@ function pushRunningEventDataToSheets() {
       sheet.clearContents()
 
       // Define your header row
-      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position'];
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position'];
 
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
@@ -283,7 +383,7 @@ function pushRunningEventDataToSheets() {
     var filteredData1 = data.filter(function(row) {
       return row[0] === event.event[0] && row[3] === event.event[1] && row[11] === event.event[2];
     }).map(function(row) {
-      return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], row[16], row[17], row[18], row[19], row[20]];
+      return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[16], row[17], row[18], row[19], row[20]];
     });
 
     // Push the filtered data to the sheet
@@ -292,5 +392,7 @@ function pushRunningEventDataToSheets() {
     }
   }
 }
+
+
 
 pushRunningEventDataToSheets();

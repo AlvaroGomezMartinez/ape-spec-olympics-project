@@ -15,6 +15,8 @@ pushRunningEventDataToSheets	@ Push Females Event Data to Day Sheets.gs:161
 On 4/29/24, updated the function that adds the data to the individual event sheets to each Day worksheet. The next items that I need to accomplish is to add the field events in addition too the track events. Have the data push only the necessary columns (running events only columns L:P and field events only Q:U). I need to order the data from slowest to fastest for the running events and longest to shortest for field events.
 
 On 5/2/24, completed tasks from 4/29. Field events are now pushed to their own Day worksheets. Only the necessary data is pushed (i.e. running events on get the running event data and field events only get the field event data). The data is also sorted from slowest to fastest for running events and longest to shortest for field events.
+I started working on getting the individual sheets to push back to the main sheet. I need to work out a bug.
+I created a library to keep from having to copy and paste scripts into the six day sheets. This is what I need to troubleshoot.
 
 **Pending tasks:**
 

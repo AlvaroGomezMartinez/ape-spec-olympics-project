@@ -1,31 +1,39 @@
 {
   "timeZone": "America/Chicago",
   "dependencies": {
-    "enabledAdvancedServices": [{
-      "userSymbol": "Drive",
-      "serviceId": "drive",
-      "version": "v2"
-    }, {
-      "userSymbol": "Docs",
-      "serviceId": "docs",
-      "version": "v1"
-    }]
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Drive",
+        "serviceId": "drive",
+        "version": "v2"
+      },
+      {
+        "userSymbol": "Docs",
+        "serviceId": "docs",
+        "version": "v1"
+      }
+    ]
   },
   "exceptionLogging": "STACKDRIVER",
   "runtimeVersion": "V8",
   "sheets": {
-    "macros": [{
-      "menuName": "filter1",
-      "functionName": "filter1"
-    }, {
-      "menuName": "Sort Day1, F, Turbo Jav",
-      "functionName": "myFunction"
-    }, {
-      "menuName": "nextMacro",
-      "functionName": "nextMacro"
-    }, {
-      "menuName": "Sort-all-data",
-      "functionName": "myFunction"
-    }]
+    "macros": [
+      {
+        "menuName": "filter1",
+        "functionName": "filter1"
+      },
+      {
+        "menuName": "Sort Day1, F, Turbo Jav",
+        "functionName": "myFunction"
+      },
+      {
+        "menuName": "nextMacro",
+        "functionName": "nextMacro"
+      },
+      {
+        "menuName": "Sort-all-data",
+        "functionName": "myFunction"
+      }
+    ]
   }
 }

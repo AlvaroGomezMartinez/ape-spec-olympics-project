@@ -174,8 +174,15 @@ function pushRunningEventDataToSheets() {
       return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15]];
     });
 
-    // Push the filtered data to the sheet
+    // Push the filtered data to each sheet, sorted from slowest to fastest time
     if (filteredData1.length > 0) {
+      filteredData1.sort(function(a, b) {
+      if (a[8] === b[8]) {
+        return b[9] - a[9];
+      } else {
+        return b[8] - a[8];
+      }
+      });
       sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
     }
   }
@@ -214,8 +221,15 @@ function pushRunningEventDataToSheets() {
       return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15]];
     });
 
-    // Push the filtered data to the sheet
+    // Push the filtered data to each sheet, sorted from slowest to fastest time
     if (filteredData1.length > 0) {
+      filteredData1.sort(function(a, b) {
+      if (a[8] === b[8]) {
+        return b[9] - a[9];
+      } else {
+        return b[8] - a[8];
+      }
+      });
       sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
     }
   }
@@ -365,8 +379,15 @@ function pushFieldEventDataToSheets() {
       return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[16], row[17], row[18], row[19], row[20]];
     });
 
-    // Push the filtered data to the sheet
+    // Push the filtered data to each sheet, sorted from longest to shortest distance
     if (filteredData1.length > 0) {
+      filteredData1.sort(function(a, b) {
+      if (a[8] === b[8]) {
+        return b[9] - a[9];
+      } else {
+        return b[8] - a[8];
+      }
+      });
       sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
     }
   }
@@ -405,8 +426,15 @@ function pushFieldEventDataToSheets() {
       return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[16], row[17], row[18], row[19], row[20]];
     });
 
-    // Push the filtered data to the sheet
+    // Push the filtered data to each sheet, sorted from longest to shortest distance
     if (filteredData1.length > 0) {
+      filteredData1.sort(function(a, b) {
+      if (a[8] === b[8]) {
+        return b[9] - a[9];
+      } else {
+        return b[8] - a[8];
+      }
+      });
       sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
     }
   }

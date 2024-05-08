@@ -1,6 +1,6 @@
 // This function gets the data from 'Student Database', filters it by day & event, and pushes the chunks of data to separate day sheets.
 
-// Array that is used to filter the female's data by day & event along with the spreadsheetId.
+// Array that is used to filter the female's running events data by day & event along with the spreadsheetId.
 const femaleRunningEvents = [
   { name: 'day1F25MAstWalk', event: [1,'F','25 M Assisted Walk'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'},
   { name: 'day1F25MAstDevice', event: [1,'F','25 M Assisted Device'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
@@ -57,7 +57,7 @@ const femaleRunningEvents = [
   { name: 'day6F100MRun', event: [6,'F','100 M Run'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  }
 ];
 
-// Array that is used to filter the male's data by day & event along with the spreadsheetId.
+// Array that is used to filter the male's running events data by day & event along with the spreadsheetId.
 const maleRunningEvents = [
   { name: 'day1M25MAstWalk', event: [1,'M','25 M Assisted Walk'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'},
   { name: 'day1M25MAstDevice', event: [1,'M','25 M Assisted Device'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
@@ -380,13 +380,13 @@ function pushFieldEventDataToSheets() {
       return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[16], row[17], row[18], row[19], row[20], row[21]];
     });
 
-    // Push the filtered data to each sheet, sorted from longest to shortest distance
+    // Push the filtered data to each sheet, sorted from shortest to longest distance
     if (filteredData1.length > 0) {
       filteredData1.sort(function(a, b) {
       if (a[8] === b[8]) {
-        return b[9] - a[9];
+        return a[9] - b[9];
       } else {
-        return b[8] - a[8];
+        return a[8] - b[8];
       }
       });
       sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);
@@ -427,7 +427,7 @@ function pushFieldEventDataToSheets() {
       return [row[0], row[1], row[2], row[3], row[8], row[9], row[10], row[16], row[17], row[18], row[19], row[20], row[21]];
     });
 
-    // Push the filtered data to each sheet, sorted from longest to shortest distance
+    // Push the filtered data to each sheet, sorted from shortest to longest distance
     if (filteredData1.length > 0) {
       filteredData1.sort(function(a, b) {
       if (a[8] === b[8]) {

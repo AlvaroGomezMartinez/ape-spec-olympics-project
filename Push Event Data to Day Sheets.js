@@ -431,9 +431,9 @@ function pushFieldEventDataToSheets() {
     if (filteredData1.length > 0) {
       filteredData1.sort(function(a, b) {
       if (a[8] === b[8]) {
-        return b[9] - a[9];
+        return a[9] - b[9];
       } else {
-        return b[8] - a[8];
+        return a[8] - b[8];
       }
       });
       sheet.getRange(2, 1, filteredData1.length, filteredData1[0].length).setValues(filteredData1);

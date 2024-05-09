@@ -1,4 +1,5 @@
 // This function gets the data from 'Student Database', filters it by day & event, and pushes the chunks of data to separate
+// day sheets.
 
 // Array that is used to filter the female's running events data by day & event along with the spreadsheetId.
 const femaleRunningEvents = [
@@ -236,7 +237,6 @@ function pushRunningEventDataToSheets() {
   }
 pushFieldEventDataToSheets();
 }
-
 
 const femaleFieldEvents = [
   { name: 'day1FTurboJav', event: [1,'F','TURBO JAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },

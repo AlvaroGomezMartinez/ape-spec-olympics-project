@@ -23,10 +23,17 @@ function onOpen() {
       )
     .addToUi();
 
-  var menu2 = ui.createMenu('⚑ Create Heats')
-    .addItem('Field Events', 'runCreateFieldEventHeatsAndLanes')
-    .addItem('Running Events', 'runCreateTrackEventHeatsAndLanes')
-    .addToUi();
+  var menu2 = ui.createMenu('⚑ Assign Heats & Lanes')
+    .addSubMenu(ui.createMenu('Manually Create Heats and Lanes')
+      .addItem('Push data to the six day sheets', 'createDaySheets')
+      )
+      .addSeparator()
+    .addSubMenu(ui.createMenu('Automatically Create Heats and Lanes')
+      .addItem('Field Events', 'runCreateFieldEventHeatsAndLanes')
+      .addItem('Running Events', 'runCreateTrackEventHeatsAndLanes')
+      )
+      .addToUi();
+
 }
 
 /** Since the ten scripts above--in the menus--are on separate .gs files in this project,

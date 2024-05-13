@@ -164,6 +164,10 @@ function pushRunningEventDataToSheets() {
       
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
+      const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
+      const formattedDate = new Date().toLocaleString('en-US', options);
+      var comment = 'Data was received on: ' + formattedDate;
+      sheet.getRange(1,1).setComment(comment);
     } else {
       Logger.log('Sheet not found: ' + sheetName);
       continue;
@@ -210,6 +214,10 @@ function pushRunningEventDataToSheets() {
 
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
+      const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
+      const formattedDate = new Date().toLocaleString('en-US', options);
+      var comment = 'Data was received on: ' + formattedDate;
+      sheet.getRange(1,1).setComment(comment);
 
     } else {
     Logger.log('Sheet not found: ' + sheetName);
@@ -368,6 +376,10 @@ function pushFieldEventDataToSheets() {
       
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
+      const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
+      const formattedDate = new Date().toLocaleString('en-US', options);
+      var comment = 'Data was received on: ' + formattedDate;
+      sheet.getRange(1,1).setComment(comment);
     } else {
       Logger.log('Sheet not found: ' + sheetName);
       continue;
@@ -414,6 +426,10 @@ function pushFieldEventDataToSheets() {
 
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
+      const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
+      const formattedDate = new Date().toLocaleString('en-US', options);
+      var comment = 'Data was received on: ' + formattedDate;
+      sheet.getRange(1,1).setComment(comment);
 
     } else {
     Logger.log('Sheet not found: ' + sheetName);

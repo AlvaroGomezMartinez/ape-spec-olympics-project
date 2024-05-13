@@ -4,6 +4,11 @@
 
 function createDaySheets() {
   try {
+
+    const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
+    const formattedDate = new Date().toLocaleString('en-US', options);
+    var comment = 'Data was received on: ' + formattedDate;
+
     var day1 = [];
     var day2 = [];
     var day3 = [];
@@ -38,7 +43,6 @@ function createDaySheets() {
       }
     }
 
-
     const daySheetIds = ['1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA', '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls', '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg', '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ', '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg', '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk']
 
     const headings = data.shift();
@@ -65,11 +69,17 @@ function createDaySheets() {
     day6.unshift(headings);
 
     day1Sheet1.getRange(1, 1, day1.length, 22).setValues(day1);
+    day1Sheet1.getRange(1,1).setComment(comment);
     day2Sheet1.getRange(1, 1, day2.length, 22).setValues(day2);
+    day2Sheet1.getRange(1,1).setComment(comment);
     day3Sheet1.getRange(1, 1, day3.length, 22).setValues(day3);
+    day3Sheet1.getRange(1,1).setComment(comment);
     day4Sheet1.getRange(1, 1, day4.length, 22).setValues(day4);
+    day4Sheet1.getRange(1,1).setComment(comment);
     day5Sheet1.getRange(1, 1, day5.length, 22).setValues(day5);
+    day5Sheet1.getRange(1,1).setComment(comment);
     day6Sheet1.getRange(1, 1, day6.length, 22).setValues(day6);
+    day6Sheet1.getRange(1,1).setComment(comment);
 
     pushRunningEventDataToSheets();
   } catch (error) {

@@ -1,3 +1,4 @@
+// This function gets called in the pushRunningEventsDataToSheets()
 function addIndexNumbers() {
     var addNumbers = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Student Database');
     var data = addNumbers.getDataRange().getValues();

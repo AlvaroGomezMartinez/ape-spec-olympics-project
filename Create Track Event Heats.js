@@ -1,6 +1,4 @@
-/** 
- * Last Update: April 4, 2024
-*/
+// The function below creates Google Docs with the heats and lane information.
 
 function createAllTrackEventHeatsAndLanes() {
   showProgressDialog();

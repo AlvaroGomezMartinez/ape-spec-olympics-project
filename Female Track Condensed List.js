@@ -1,21 +1,16 @@
-/**
- * Last Update: April 4, 2024
-*/
+// The function below creates the heat and lanes for female track events.
 
 function runAllFemalesTrackCondensedLists() {
 
   let isDocumentCleared = false;
 
-  /**
-   * @function This is a helper function to open or reopen the template GDoc for each
-   * of the functions that follow. This was a fix for saving the lists while the functions
-   * run so an error isn't created regarding too much being generated to create the file.
-   */
+  // This is a helper function to open or reopen the template GDoc for each of the functions that follow. This was a fix for saving the lists while the functions run so an error isn't created regarding too much being generated to create the file.
+
   function openTrackCondensedListsTemplateDoc() {
     const templateDoc = DocumentApp.openById(femaleTrackCondensedListTemplateFile.getId());
     const body = templateDoc.getBody();
 
-    /** Check if the document has been cleared, and clear it only once */
+    // Check if the document has been cleared, and clear it only once
     if (!isDocumentCleared) {
       body.clear();
       isDocumentCleared = true;
@@ -24,7 +19,7 @@ function runAllFemalesTrackCondensedLists() {
     return { templateDoc, body };
   }
 
-  /** Day 1 Lists */
+  // Day 1 Lists
   const day1F25MAstWalk = [1,'F','25 M Assisted Walk']
   const day1F25MAstDevice = [1,'F','25 M Assisted Device']
   const day1F25MAstWC = [1,'F','25 M Assisted WC']
@@ -47,7 +42,7 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay2TrackCondensedFunctions();
   }
 
-  /** Day 2 Lists */
+  // Day 2 Lists
   const day2F25MAstWalk = [2,'F','25 M Assisted Walk']
   const day2F25MAstDevice = [2,'F','25 M Assisted Device']
   const day2F25MAstWC = [2,'F','25 M Assisted WC']
@@ -70,7 +65,7 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay3TrackCondensedFunctions();
   }
 
-  /** Day 3 Lists */
+  // Day 3 Lists
   const day3F25MAstWalk = [3,'F','25 M Assisted Walk']
   const day3F25MAstDevice = [3,'F','25 M Assisted Device']
   const day3F25MAstWC = [3,'F','25 M Assisted WC']
@@ -93,7 +88,7 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay4TrackCondensedFunctions();
   }
 
-  /** Day 4 Lists */
+  // Day 4 Lists
   const day4F25MAstWalk = [4,'F','25 M Assisted Walk']
   const day4F25MAstDevice = [4,'F','25 M Assisted Device']
   const day4F25MAstWC = [4,'F','25 M Assisted WC']
@@ -116,7 +111,7 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay5TrackCondensedFunctions();
   }
 
-  /** Day 5 Lists */
+  // Day 5 Lists
   const day5F25MAstWalk = [5,'F','25 M Assisted Walk']
   const day5F25MAstDevice = [5,'F','25 M Assisted Device']
   const day5F25MAstWC = [5,'F','25 M Assisted WC']
@@ -139,7 +134,7 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay6TrackCondensedFunctions();
   }
 
-  /** Day 6 Lists */
+  // Day 6 Lists
   const day6F25MAstWalk = [6,'F','25 M Assisted Walk']
   const day6F25MAstDevice = [6,'F','25 M Assisted Device']
   const day6F25MAstWC = [6,'F','25 M Assisted WC']
@@ -163,7 +158,7 @@ function runAllFemalesTrackCondensedLists() {
   }
 
 
-  /** @function that creates the tables for the lists */
+  // The function below creates the tables for the lists
   function createTrackCondensedTables(tAndFEventDay, athGender, trackEvent) {
     const { templateDoc, body } = openTrackCondensedListsTemplateDoc();
     let filteredData = [];
@@ -175,26 +170,20 @@ function runAllFemalesTrackCondensedLists() {
       }
     }
 
-    /** Check if filteredData is empty, jump to next list if empty */
+    // Checks if filteredData is empty, jump to next list if empty
     if (filteredData.length === 0) {
       templateDoc.saveAndClose();
     } else {
-      /** 
-       * Sorts the filteredData array based on two criteria in ascending order.
-       * 
-       * @param {array} filteredData - The array of data to be sorted.
-       * @returns {array} - The sorted array.
-       */
+      // Sorts the filteredData array based on two criteria in ascending order.
+      // @param {array} filteredData - The array of data to be sorted.
+      // @returns {array} - The sorted array.
       filteredData.sort((a, b) => {
-        /**
-         * Comparison function to be used with filteredData.sort().
-         *
-         * @param {Array} a - The first element to compare.
-         * @param {Array} b - The second element to compare.
-         * @returns {number} - Returns a negative value if a should be sorted before b,
-         *                     a positive value if a should be sorted after b,
-         *                     and 0 if a and b are equal.
-         */
+        //Comparison function to be used with filteredData.sort().
+        // @param {Array} a - The first element to compare.
+        // @param {Array} b - The second element to compare.
+        // @returns {number} - Returns a negative value if a should be sorted before b,
+        //                     a positive value if a should be sorted after b,
+        //                     and 0 if a and b are equal.
         if (a[14] === b[14]) {
           // a[14] corresponds to the Running Heat column
           // b[14] corresponds to the Running Position
@@ -212,23 +201,23 @@ function runAllFemalesTrackCondensedLists() {
 
       let headerText5 = `Track Condensed List                      Day: ${tAndFEventDay}`;
       body.insertParagraph(body.getNumChildren(), headerText5).setAttributes(style);
-      /** Create an object to store tables for each value in row[14] */
+      // Create an object to store tables for each value in row[14]
       const tables = {};
 
-      /** Adds the filtered data to the respective tables */
+      // Adds the filtered data to the respective tables
       for (let i = 0; i < filteredData.length; i++) {
         let row = filteredData[i];
         let value = String(row[14]).padStart(2, '0'); // Assuming row[14] contains the value for table separation
 
-        /** Check if a table already exists for the value */
+        // Check if a table already exists for the value
         if (!tables[value]) {
-          /** Create a new table if it doesn't exist */
+          // Create a new table if it doesn't exist
           tables[value] = {
             table: body.appendTable(),
             headerText: `${trackEvent}                      Heat: ${value}`
           };
 
-          /** Adds table headers for each table */
+          // Adds table headers for each table
           let headersRow = tables[value].table.appendTableRow();
           headersRow.appendTableCell('Pos.').setWidth(39).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('First Name').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
@@ -242,7 +231,7 @@ function runAllFemalesTrackCondensedLists() {
           headersRow.appendTableCell('Place').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
         }
 
-        /** Create a new row in the respective table */
+        // Create a new row in the respective table
         let tableRow = tables[value].table.appendTableRow();
         tableRow.appendTableCell(typeof row[15] === 'number' ? row[15].toFixed(0) : '');
         tableRow.appendTableCell(row[2]);
@@ -256,7 +245,7 @@ function runAllFemalesTrackCondensedLists() {
         tableRow.appendTableCell('');
       }
 
-      /** Add header text before each table */
+      // Add header text before each table
       Object.keys(tables).forEach((value, index) => {
         body.insertParagraph(body.getChildIndex(tables[value].table), tables[value].headerText).setAttributes(style);
       });
@@ -265,11 +254,10 @@ function runAllFemalesTrackCondensedLists() {
     }
   }
 
-  /** The function below creates a dialog box for the user in the SE Olympics sheet
-   * letting them know that the list is ready to be viwed and gives them the hyperlink
-   * to open the doc.
-   * @todo change the docId with the ID from the actual doc once this project goes live.
-   */
+  // The function below creates a dialog box for the user in the SE Olympics sheet
+  // letting them know that the list is ready to be viwed and gives them the hyperlink
+  // to open the doc.
+  // @todo change the docId with the ID from the actual doc once this project goes live.
   function openTrackCondensedListGoogleDoc() {
     let doc = DocumentApp.openById(femaleTrackCondensedListTemplateFile.getId());
     let url = doc.getUrl();
@@ -281,7 +269,7 @@ function runAllFemalesTrackCondensedLists() {
       .setWidth(400)
       .setHeight(150);
     
-    /** Displays the custom dialog box */
+    // Displays the custom dialog box
     SpreadsheetApp.getUi().showModalDialog(htmlOutput, 'Google Doc Updated');
   }
   runAllFemaleDay1TrackCondensedFunctions()

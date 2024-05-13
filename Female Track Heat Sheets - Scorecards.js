@@ -1,6 +1,4 @@
-/** 
- * Last Update: April 4, 2024
-*/
+// The function below creates the female track heat sheets.
 
 function runAllFemalesTrackHeatSheets() {
 

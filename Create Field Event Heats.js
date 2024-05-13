@@ -1,6 +1,4 @@
-/** 
- * Last Update: April 4, 2024
-*/
+// This function below automatically creates field event heats and lane assignments based on the number of athletes in each event.
 
 function createAllFieldEventHeatsAndLanes() {
   showProgressDialog();

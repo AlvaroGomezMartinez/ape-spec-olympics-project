@@ -25,7 +25,8 @@ function onOpen() {
 
   var menu2 = ui.createMenu('⚑ Assign Heats & Lanes')
     .addSubMenu(ui.createMenu('Manually Create Heats and Lanes')
-      .addItem('Push data to the six day sheets', 'createDaySheets')
+      .addItem('Push data to the six day sheets. This will overwrite what is in those sheets.', 'createDaySheets')
+      // .addItem('Go to the individual day Sheets', 'showSidebar')
       )
       .addSeparator()
     .addSubMenu(ui.createMenu('Automatically Create Heats and Lanes')
@@ -128,3 +129,16 @@ function runCreateTrackEventHeatsAndLanes() {
   var script = eval('createAllTrackEventHeatsAndLanes');
   script.apply(null, functionArgs);
 }
+
+// function showSidebar() {
+//   var htmlOutput = HtmlService.createTemplateFromFile('Sidebar').evaluate().setTitle('Day Sheets');
+//   SpreadsheetApp.getUi().showSidebar(htmlOutput);
+// }
+
+// function openUrlInNewTab(url) {
+//   var htmlOutput = HtmlService.createHtmlOutput('<script>window.open("' + url + '");window.close();</script>');
+//   SpreadsheetApp.getUi().showModalDialog(htmlOutput, 'Opening...');
+//   // Utilities.sleep(250); // Wait for 0.25 seconds
+//   var modalDialog = SpreadsheetApp.getUi().getModalDialog();
+//   modalDialog.close();
+// }

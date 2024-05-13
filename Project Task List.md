@@ -18,6 +18,8 @@ On 5/2/24, completed tasks from 4/29. Field events are now pushed to their own D
 I started working on getting the individual sheets to push back to the main sheet. I need to work out a bug.
 I created a library to keep from having to copy and paste scripts into the six day sheets. This is what I need to troubleshoot.
 
+On 5/13/24, added a sidebar that sends the user to each individual day sheet database to assign the heats and lanes.
+
 **Pending tasks:**
 
 - [ ] See if it's possible to add a page break by campus

@@ -20,13 +20,13 @@ function runAllFemalesTrackCondensedLists() {
   }
 
   // Day 1 Lists
-  const day1F25MAstWalk = [1,'F','25 M Assisted Walk']
-  const day1F25MAstDevice = [1,'F','25 M Assisted Device']
-  const day1F25MAstWC = [1,'F','25 M Assisted WC']
-  const day1F25MManWC = [1,'F','25 M Manual WC']
-  const day1F30MSlalom = [1,'F','30 M Slalom']
+  const day1F25MAstWalk = [1,'F','25 M WALK']
+  const day1F25MAstDevice = [1,'F','25 M DEVICE']
+  const day1F25MAstWC = [1,'F','25 M WC-ASSISTED']
+  const day1F25MManWC = [1,'F','25 M MANUAL WC']
+  const day1F30MSlalom = [1,'F','30 M SLALOM']
   const day1F50MRun = [1,'F','50 MD']
-  const day1F50MManualWC = [1,'F','50 M Manual WC']
+  const day1F50MManualWC = [1,'F','50 M WC']
   const day1F100MRun = [1,'F','100 MD']
 
   async function runAllFemaleDay1TrackCondensedFunctions() {
@@ -43,13 +43,13 @@ function runAllFemalesTrackCondensedLists() {
   }
 
   // Day 2 Lists
-  const day2F25MAstWalk = [2,'F','25 M Assisted Walk']
-  const day2F25MAstDevice = [2,'F','25 M Assisted Device']
-  const day2F25MAstWC = [2,'F','25 M Assisted WC']
-  const day2F25MManWC = [2,'F','25 M Manual WC']
-  const day2F30MSlalom = [2,'F','30 M Slalom']
+  const day2F25MAstWalk = [2,'F','25 M WALK']
+  const day2F25MAstDevice = [2,'F','25 M DEVICE']
+  const day2F25MAstWC = [2,'F','25 M WC-ASSISTED']
+  const day2F25MManWC = [2,'F','25 M MANUAL WC']
+  const day2F30MSlalom = [2,'F','30 M SLALOM']
   const day2F50MRun = [2,'F','50 MD']
-  const day2F50MManualWC = [2,'F','50 M Manual WC']
+  const day2F50MManualWC = [2,'F','50 M WC']
   const day2F100MRun = [2,'F','100 MD']
 
   async function runAllFemaleDay2TrackCondensedFunctions() {
@@ -66,13 +66,13 @@ function runAllFemalesTrackCondensedLists() {
   }
 
   // Day 3 Lists
-  const day3F25MAstWalk = [3,'F','25 M Assisted Walk']
-  const day3F25MAstDevice = [3,'F','25 M Assisted Device']
-  const day3F25MAstWC = [3,'F','25 M Assisted WC']
-  const day3F25MManWC = [3,'F','25 M Manual WC']
-  const day3F30MSlalom = [3,'F','30 M Slalom']
+  const day3F25MAstWalk = [3,'F','25 M WALK']
+  const day3F25MAstDevice = [3,'F','25 M DEVICE']
+  const day3F25MAstWC = [3,'F','25 M WC-ASSISTED']
+  const day3F25MManWC = [3,'F','25 M MANUAL WC']
+  const day3F30MSlalom = [3,'F','30 M SLALOM']
   const day3F50MRun = [3,'F','50 MD']
-  const day3F50MManualWC = [3,'F','50 M Manual WC']
+  const day3F50MManualWC = [3,'F','50 M WC']
   const day3F100MRun = [3,'F','100 MD']
 
   async function runAllFemaleDay3TrackCondensedFunctions() {
@@ -89,13 +89,13 @@ function runAllFemalesTrackCondensedLists() {
   }
 
   // Day 4 Lists
-  const day4F25MAstWalk = [4,'F','25 M Assisted Walk']
-  const day4F25MAstDevice = [4,'F','25 M Assisted Device']
-  const day4F25MAstWC = [4,'F','25 M Assisted WC']
-  const day4F25MManWC = [4,'F','25 M Manual WC']
-  const day4F30MSlalom = [4,'F','30 M Slalom']
+  const day4F25MAstWalk = [4,'F','25 M WALK']
+  const day4F25MAstDevice = [4,'F','25 M DEVICE']
+  const day4F25MAstWC = [4,'F','25 M WC-ASSISTED']
+  const day4F25MManWC = [4,'F','25 M MANUAL WC']
+  const day4F30MSlalom = [4,'F','30 M SLALOM']
   const day4F50MRun = [4,'F','50 MD']
-  const day4F50MManualWC = [4,'F','50 M Manual WC']
+  const day4F50MManualWC = [4,'F','50 M WC']
   const day4F100MRun = [4,'F','100 MD']
 
   async function runAllFemaleDay4TrackCondensedFunctions() {
@@ -112,13 +112,13 @@ function runAllFemalesTrackCondensedLists() {
   }
 
   // Day 5 Lists
-  const day5F25MAstWalk = [5,'F','25 M Assisted Walk']
-  const day5F25MAstDevice = [5,'F','25 M Assisted Device']
-  const day5F25MAstWC = [5,'F','25 M Assisted WC']
-  const day5F25MManWC = [5,'F','25 M Manual WC']
-  const day5F30MSlalom = [5,'F','30 M Slalom']
+  const day5F25MAstWalk = [5,'F','25 M WALK']
+  const day5F25MAstDevice = [5,'F','25 M DEVICE']
+  const day5F25MAstWC = [5,'F','25 M WC-ASSISTED']
+  const day5F25MManWC = [5,'F','25 M MANUAL WC']
+  const day5F30MSlalom = [5,'F','30 M SLALOM']
   const day5F50MRun = [5,'F','50 MD']
-  const day5F50MManualWC = [5,'F','50 M Manual WC']
+  const day5F50MManualWC = [5,'F','50 M WC']
   const day5F100MRun = [5,'F','100 MD']
 
   async function runAllFemaleDay5TrackCondensedFunctions() {
@@ -135,13 +135,13 @@ function runAllFemalesTrackCondensedLists() {
   }
 
   // Day 6 Lists
-  const day6F25MAstWalk = [6,'F','25 M Assisted Walk']
-  const day6F25MAstDevice = [6,'F','25 M Assisted Device']
-  const day6F25MAstWC = [6,'F','25 M Assisted WC']
-  const day6F25MManWC = [6,'F','25 M Manual WC']
-  const day6F30MSlalom = [6,'F','30 M Slalom']
+  const day6F25MAstWalk = [6,'F','25 M WALK']
+  const day6F25MAstDevice = [6,'F','25 M DEVICE']
+  const day6F25MAstWC = [6,'F','25 M WC-ASSISTED']
+  const day6F25MManWC = [6,'F','25 M MANUAL WC']
+  const day6F30MSlalom = [6,'F','30 M SLALOM']
   const day6F50MRun = [6,'F','50 MD']
-  const day6F50MManualWC = [6,'F','50 M Manual WC']
+  const day6F50MManualWC = [6,'F','50 M WC']
   const day6F100MRun = [6,'F','100 MD']
 
   async function runAllFemaleDay6TrackCondensedFunctions() {

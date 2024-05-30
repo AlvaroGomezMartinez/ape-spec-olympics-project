@@ -27,9 +27,9 @@ function runAllMalesFieldHeatSheets() {
   /** DAY 1 LISTS */
   const fieldHeatSheetsDay1MBeanbagThrow = [1,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay1MTennisBallThrow = [1,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay1MSoftball = [1,'M','SOFTBALL THROW']
-  const fieldHeatSheetsDay1MRunningLJ = [1,'M','RUNNING LONG JUMP']
-  const fieldHeatSheetsDay1MFoamTurboJav = [1,'M','FOAM TURBO JAV']
+  const fieldHeatSheetsDay1MSoftball = [1,'M','SOFTBALL']
+  const fieldHeatSheetsDay1MRunningLJ = [1,'M','RUNNING LJ']
+  const fieldHeatSheetsDay1MFoamTurboJav = [1,'M','FOAM TURBOJAV']
   const fieldHeatSheetsDay1MTurboJav = [1,'M','TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay1Functions() {
@@ -46,9 +46,9 @@ function runAllMalesFieldHeatSheets() {
   /** DAY 2 LISTS */
   const fieldHeatSheetsDay2MBeanbagThrow = [2,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay2MTennisBallThrow = [2,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay2MSoftball = [2,'M','SOFTBALL THROW']
-  const fieldHeatSheetsDay2MRunningLJ = [2,'M','RUNNING LONG JUMP']
-  const fieldHeatSheetsDay2MFoamTurboJav = [2,'M','FOAM TURBO JAV']
+  const fieldHeatSheetsDay2MSoftball = [2,'M','SOFTBALL']
+  const fieldHeatSheetsDay2MRunningLJ = [2,'M','RUNNING LJ']
+  const fieldHeatSheetsDay2MFoamTurboJav = [2,'M','FOAM TURBOJAV']
   const fieldHeatSheetsDay2MTurboJav = [2,'M','TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay2Functions() {
@@ -65,9 +65,9 @@ function runAllMalesFieldHeatSheets() {
   /** DAY 3 LISTS */
   const fieldHeatSheetsDay3MBeanbagThrow = [3,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay3MTennisBallThrow = [3,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay3MSoftball = [3,'M','SOFTBALL THROW']
-  const fieldHeatSheetsDay3MRunningLJ = [3,'M','RUNNING LONG JUMP']
-  const fieldHeatSheetsDay3MFoamTurboJav = [3,'M','FOAM TURBO JAV']
+  const fieldHeatSheetsDay3MSoftball = [3,'M','SOFTBALL']
+  const fieldHeatSheetsDay3MRunningLJ = [3,'M','RUNNING LJ']
+  const fieldHeatSheetsDay3MFoamTurboJav = [3,'M','FOAM TURBOJAV']
   const fieldHeatSheetsDay3MTurboJav = [3,'M','TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay3Functions() {
@@ -84,9 +84,9 @@ function runAllMalesFieldHeatSheets() {
   /** DAY 4 LISTS */
   const fieldHeatSheetsDay4MBeanbagThrow = [4,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay4MTennisBallThrow = [4,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay4MSoftball = [4,'M','SOFTBALL THROW']
-  const fieldHeatSheetsDay4MRunningLJ = [4,'M','RUNNING LONG JUMP']
-  const fieldHeatSheetsDay4MFoamTurboJav = [4,'M','FOAM TURBO JAV']
+  const fieldHeatSheetsDay4MSoftball = [4,'M','SOFTBALL']
+  const fieldHeatSheetsDay4MRunningLJ = [4,'M','RUNNING LJ']
+  const fieldHeatSheetsDay4MFoamTurboJav = [4,'M','FOAM TURBOJAV']
   const fieldHeatSheetsDay4MTurboJav = [4,'M','TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay4Functions() {
@@ -103,9 +103,9 @@ function runAllMalesFieldHeatSheets() {
   /** DAY 5 LISTS */
   const fieldHeatSheetsDay5MBeanbagThrow = [5,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay5MTennisBallThrow = [5,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay5MSoftball = [5,'M','SOFTBALL THROW']
-  const fieldHeatSheetsDay5MRunningLJ = [5,'M','RUNNING LONG JUMP']
-  const fieldHeatSheetsDay5MFoamTurboJav = [5,'M','FOAM TURBO JAV']
+  const fieldHeatSheetsDay5MSoftball = [5,'M','SOFTBALL']
+  const fieldHeatSheetsDay5MRunningLJ = [5,'M','RUNNING LJ']
+  const fieldHeatSheetsDay5MFoamTurboJav = [5,'M','FOAM TURBOJAV']
   const fieldHeatSheetsDay5MTurboJav = [5,'M','TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay5Functions() {
@@ -122,9 +122,9 @@ function runAllMalesFieldHeatSheets() {
   /** DAY 6 LISTS */
   const fieldHeatSheetsDay6MBeanbagThrow = [6,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay6MTennisBallThrow = [6,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay6MSoftball = [6,'M','SOFTBALL THROW']
-  const fieldHeatSheetsDay6MRunningLJ = [6,'M','RUNNING LONG JUMP']
-  const fieldHeatSheetsDay6MFoamTurboJav = [6,'M','FOAM TURBO JAV']
+  const fieldHeatSheetsDay6MSoftball = [6,'M','SOFTBALL']
+  const fieldHeatSheetsDay6MRunningLJ = [6,'M','RUNNING LJ']
+  const fieldHeatSheetsDay6MFoamTurboJav = [6,'M','FOAM TURBOJAV']
   const fieldHeatSheetsDay6MTurboJav = [6,'M','TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay6Functions() {

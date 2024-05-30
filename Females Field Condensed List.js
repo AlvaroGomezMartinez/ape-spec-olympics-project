@@ -27,9 +27,9 @@ function runAllFemalesFieldCondensedLists () {
   /** DAY 1 LISTS */
   const day1FBeanbagThrow = [1,'F','BEAN BAG THROW']
   const day1FTennisBallThrow = [1,'F','TENNIS BALL THROW']
-  const day1FSoftball = [1,'F','SOFTBALL THROW']
-  const day1FRunningLJ = [1,'F','RUNNING LONG JUMP']
-  const day1FFoamTurboJav = [1,'F','FOAM TURBO JAV']
+  const day1FSoftball = [1,'F','SOFTBALL']
+  const day1FRunningLJ = [1,'F','RUNNING LJ']
+  const day1FFoamTurboJav = [1,'F','FOAM TURBOJAV']
   const day1FTurboJav = [1,'F','TURBO JAV']
 
   async function runAllFemaleDay1Functions() {
@@ -46,9 +46,9 @@ function runAllFemalesFieldCondensedLists () {
   /** DAY 2 LISTS */
   const day2FBeanbagThrow = [2,'F','BEAN BAG THROW']
   const day2FTennisBallThrow = [2,'F','TENNIS BALL THROW']
-  const day2FSoftball = [2,'F','SOFTBALL THROW']
-  const day2FRunningLJ = [2,'F','RUNNING LONG JUMP']
-  const day2FFoamTurboJav = [2,'F','FOAM TURBO JAV']
+  const day2FSoftball = [2,'F','SOFTBALL']
+  const day2FRunningLJ = [2,'F','RUNNING LJ']
+  const day2FFoamTurboJav = [2,'F','FOAM TURBOJAV']
   const day2FTurboJav = [2,'F','TURBO JAV']
 
   async function runAllFemaleDay2Functions() {
@@ -65,9 +65,9 @@ function runAllFemalesFieldCondensedLists () {
   /** DAY 3 LISTS */
   const day3FBeanbagThrow = [3,'F','BEAN BAG THROW']
   const day3FTennisBallThrow = [3,'F','TENNIS BALL THROW']
-  const day3FSoftball = [3,'F','SOFTBALL THROW']
-  const day3FRunningLJ = [3,'F','RUNNING LONG JUMP']
-  const day3FFoamTurboJav = [3,'F','FOAM TURBO JAV']
+  const day3FSoftball = [3,'F','SOFTBALL']
+  const day3FRunningLJ = [3,'F','RUNNING LJ']
+  const day3FFoamTurboJav = [3,'F','FOAM TURBOJAV']
   const day3FTurboJav = [3,'F','TURBO JAV']
 
   async function runAllFemaleDay3Functions() {
@@ -84,9 +84,9 @@ function runAllFemalesFieldCondensedLists () {
   /** DAY 4 LISTS */
   const day4FBeanbagThrow = [4,'F','BEAN BAG THROW']
   const day4FTennisBallThrow = [4,'F','TENNIS BALL THROW']
-  const day4FSoftball = [4,'F','SOFTBALL THROW']
-  const day4FRunningLJ = [4,'F','RUNNING LONG JUMP']
-  const day4FFoamTurboJav = [4,'F','FOAM TURBO JAV']
+  const day4FSoftball = [4,'F','SOFTBALL']
+  const day4FRunningLJ = [4,'F','RUNNING LJ']
+  const day4FFoamTurboJav = [4,'F','FOAM TURBOJAV']
   const day4FTurboJav = [4,'F','TURBO JAV']
 
   async function runAllFemaleDay4Functions() {
@@ -103,9 +103,9 @@ function runAllFemalesFieldCondensedLists () {
   /** DAY 5 LISTS */
   const day5FBeanbagThrow = [5,'F','BEAN BAG THROW']
   const day5FTennisBallThrow = [5,'F','TENNIS BALL THROW']
-  const day5FSoftball = [5,'F','SOFTBALL THROW']
-  const day5FRunningLJ = [5,'F','RUNNING LONG JUMP']
-  const day5FFoamTurboJav = [5,'F','FOAM TURBO JAV']
+  const day5FSoftball = [5,'F','SOFTBALL']
+  const day5FRunningLJ = [5,'F','RUNNING LJ']
+  const day5FFoamTurboJav = [5,'F','FOAM TURBOJAV']
   const day5FTurboJav = [5,'F','TURBO JAV']
 
   async function runAllFemaleDay5Functions() {
@@ -122,9 +122,9 @@ function runAllFemalesFieldCondensedLists () {
   /** DAY 6 LISTS */
   const day6FBeanbagThrow = [6,'F','BEAN BAG THROW']
   const day6FTennisBallThrow = [6,'F','TENNIS BALL THROW']
-  const day6FSoftball = [6,'F','SOFTBALL THROW']
-  const day6FRunningLJ = [6,'F','RUNNING LONG JUMP']
-  const day6FFoamTurboJav = [6,'F','FOAM TURBO JAV']
+  const day6FSoftball = [6,'F','SOFTBALL']
+  const day6FRunningLJ = [6,'F','RUNNING LJ']
+  const day6FFoamTurboJav = [6,'F','FOAM TURBOJAV']
   const day6FTurboJav = [6,'F','TURBO JAV']
 
   async function runAllFemaleDay6Functions() {

@@ -28,9 +28,9 @@ function runAllFemalesTrackHeatSheets() {
     const day1F25MAstWC = [1,'F','25 M Assisted WC']
     const day1F25MManWC = [1,'F','25 M Manual WC'] 
     const day1F30MSlalom = [1,'F','30 M Slalom']
-    const day1F50MRun = [1,'F','50 M Run']
+    const day1F50MRun = [1,'F','50 MD']
     const day1F50MManualWC = [1,'F','50 M Manual WC']
-    const day1F100MRun = [1,'F','100 M Run']
+    const day1F100MRun = [1,'F','100 MD']
 
     async function runAllFemaleTrackHeatSheetsDay1Functions() {
       SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Putting together the Female Track Heat Sheets - Scorecards 🏃🏻‍♀️ Give the script a minute or two to run 🐢");
@@ -51,9 +51,9 @@ function runAllFemalesTrackHeatSheets() {
     const day2F25MAstWC = [2,'F','25 M Assisted WC']
     const day2F25MManWC = [2,'F','25 M Manual WC']
     const day2F30MSlalom = [2,'F','30 M Slalom']
-    const day2F50MRun = [2,'F','50 M Run']
+    const day2F50MRun = [2,'F','50 MD']
     const day2F50MManualWC = [2,'F','50 M Manual WC']
-    const day2F100MRun = [2,'F','100 M Run']
+    const day2F100MRun = [2,'F','100 MD']
 
     async function runAllFemaleTrackHeatSheetsDay2Functions() {
       SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Finished Day 1. Working on Days 2-6 now. 🏃🏻‍♀️ Give the script a minute or two to run 🐢");
@@ -74,9 +74,9 @@ function runAllFemalesTrackHeatSheets() {
     const day3F25MAstWC = [3,'F','25 M Assisted WC']
     const day3F25MManWC = [3,'F','25 M Manual WC']
     const day3F30MSlalom = [3,'F','30 M Slalom']
-    const day3F50MRun = [3,'F','50 M Run']
+    const day3F50MRun = [3,'F','50 MD']
     const day3F50MManualWC = [3,'F','50 M Manual WC']
-    const day3F100MRun = [3,'F','100 M Run']
+    const day3F100MRun = [3,'F','100 MD']
 
     async function runAllFemaleTrackHeatSheetsDay3Functions() {
       SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Finished Days 1 & 2. Working on Days 3-6 now. 🏃🏻‍♀️ Give the script a minute or two to run 🐢");
@@ -97,9 +97,9 @@ function runAllFemalesTrackHeatSheets() {
     const day4F25MAstWC = [4,'F','25 M Assisted WC']
     const day4F25MManWC = [4,'F','25 M Manual WC']
     const day4F30MSlalom = [4,'F','30 M Slalom']
-    const day4F50MRun = [4,'F','50 M Run']
+    const day4F50MRun = [4,'F','50 MD']
     const day4F50MManualWC = [4,'F','50 M Manual WC']
-    const day4F100MRun = [4,'F','100 M Run']
+    const day4F100MRun = [4,'F','100 MD']
 
     async function runAllFemaleTrackHeatSheetsDay4Functions() {
       SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Finished Days 1-3. Working on Days 4-6 now. 🏃🏻‍♀️ Give the script a minute or two to run 🐢");
@@ -120,9 +120,9 @@ function runAllFemalesTrackHeatSheets() {
     const day5F25MAstWC = [5,'F','25 M Assisted WC']
     const day5F25MManWC = [5,'F','25 M Manual WC']
     const day5F30MSlalom = [5,'F','30 M Slalom']
-    const day5F50MRun = [5,'F','50 M Run']
+    const day5F50MRun = [5,'F','50 MD']
     const day5F50MManualWC = [5,'F','50 M Manual WC']
-    const day5F100MRun = [5,'F','100 M Run']
+    const day5F100MRun = [5,'F','100 MD']
 
     async function runAllFemaleTrackHeatSheetsDay5Functions() {
       SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Finished Days 1-4. Working on Days 5 & 6 now. 🏃🏻‍♀️ Give the script a minute or two to run 🐢");
@@ -143,9 +143,9 @@ function runAllFemalesTrackHeatSheets() {
     const day6F25MAstWC = [6,'F','25 M Assisted WC']
     const day6F25MManWC = [6,'F','25 M Manual WC']
     const day6F30MSlalom = [6,'F','30 M Slalom']
-    const day6F50MRun = [6,'F','50 M Run']
+    const day6F50MRun = [6,'F','50 MD']
     const day6F50MManualWC = [6,'F','50 M Manual WC']
-    const day6F100MRun = [6,'F','100 M Run']
+    const day6F100MRun = [6,'F','100 MD']
 
     async function runAllFemaleTrackHeatSheetsDay6Functions() {
       SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Finished Days 1-5. Working on Day 6 now. 🏃🏻‍♀️ Give the script a minute or two to run 🐢");

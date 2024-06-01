@@ -5,7 +5,6 @@
 function createDaySheets() {
   try {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Adding the Index numbers 🏃🏻‍♀️");
-    addIndexNumbers();
 
     const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
     const formattedDate = new Date().toLocaleString('en-US', options);
@@ -83,6 +82,7 @@ function createDaySheets() {
     day6Sheet1.getRange(1, 1, day6.length, 22).setValues(day6);
     day6Sheet1.getRange(1,1).setComment(comment);
 
+    //addIndexNumbers();
     pushRunningEventDataToSheets();
   } catch (error) {
     Logger.log(error);

@@ -60,83 +60,83 @@ const femaleRunningEvents = [
 
 // Array that is used to filter the male's running events data by day & event along with the spreadsheetId.
 const maleRunningEvents = [
-  { name: 'day1M25MAstWalk', event: [1,'M','25 M Assisted Walk'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'},
-  { name: 'day1M25MAstDevice', event: [1,'M','25 M Assisted Device'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
-  { name: 'day1M25MAstWC', event: [1,'M','25 M Assisted WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
-  { name: 'day1M25MManWC', event: [1,'M','25 M Manual WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
-  { name: 'day1M30MSlalom', event: [1,'M','30 M Slalom'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
-  { name: 'day1M50MRun', event: [1,'M','50 M Run'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
-  { name: 'day1M50MManualWC', event: [1,'M','50 M Manual WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
-  { name: 'day1M100MRun', event: [1,'M','100 M Run'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1M25MAstWalk', event: [1,'M','25 M WALK'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'},
+  { name: 'day1M25MAstDevice', event: [1,'M','25 M DEVICE'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1M25MAstWC', event: [1,'M','25 M WC-ASSISTED'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1M25MManWC', event: [1,'M','25 M MANUAL WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1M30MSlalom', event: [1,'M','30 M SLALOM'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1M50MRun', event: [1,'M','50 MD'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1M50MManualWC', event: [1,'M','50 M WC'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
+  { name: 'day1M100MRun', event: [1,'M','100 MD'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA'  },
 
-  { name: 'day2M25MAstWalk', event: [2,'M','25 M Assisted Walk'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'},
-  { name: 'day2M25MAstDevice', event: [2,'M','25 M Assisted Device'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
-  { name: 'day2M25MAstWC', event: [2,'M','25 M Assisted WC'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
-  { name: 'day2M25MManWC', event: [2,'M','25 M Manual WC'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
-  { name: 'day2M30MSlalom', event: [2,'M','30 M Slalom'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
-  { name: 'day2M50MRun', event: [2,'M','50 M Run'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
-  { name: 'day2M50MManualWC', event: [2,'M','50 M Manual WC'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
-  { name: 'day2M100MRun', event: [2,'M','100 M Run'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2M25MAstWalk', event: [2,'M','25 M WALK'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'},
+  { name: 'day2M25MAstDevice', event: [2,'M','25 M DEVICE'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2M25MAstWC', event: [2,'M','25 M WC-ASSISTED'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2M25MManWC', event: [2,'M','25 M MANUAL WC'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2M30MSlalom', event: [2,'M','30 M SLALOM'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2M50MRun', event: [2,'M','50 MD'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2M50MManualWC', event: [2,'M','50 M WC'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
+  { name: 'day2M100MRun', event: [2,'M','100 MD'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls'  },
 
-  { name: 'day3M25MAstWalk', event: [3,'M','25 M Assisted Walk'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'},
-  { name: 'day3M25MAstDevice', event: [3,'M','25 M Assisted Device'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
-  { name: 'day3M25MAstWC', event: [3,'M','25 M Assisted WC'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
-  { name: 'day3M25MManWC', event: [3,'M','25 M Manual WC'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
-  { name: 'day3M30MSlalom', event: [3,'M','30 M Slalom'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
-  { name: 'day3M50MRun', event: [3,'M','50 M Run'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
-  { name: 'day3M50MManualWC', event: [3,'M','50 M Manual WC'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
-  { name: 'day3M100MRun', event: [3,'M','100 M Run'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3M25MAstWalk', event: [3,'M','25 M WALK'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'},
+  { name: 'day3M25MAstDevice', event: [3,'M','25 M DEVICE'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3M25MAstWC', event: [3,'M','25 M WC-ASSISTED'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3M25MManWC', event: [3,'M','25 M MANUAL WC'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3M30MSlalom', event: [3,'M','30 M SLALOM'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3M50MRun', event: [3,'M','50 MD'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3M50MManualWC', event: [3,'M','50 M WC'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
+  { name: 'day3M100MRun', event: [3,'M','100 MD'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg'  },
 
-  { name: 'day4M25MAstWalk', event: [4,'M','25 M Assisted Walk'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'},
-  { name: 'day4M25MAstDevice', event: [4,'M','25 M Assisted Device'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
-  { name: 'day4M25MAstWC', event: [4,'M','25 M Assisted WC'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
-  { name: 'day4M25MManWC', event: [4,'M','25 M Manual WC'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
-  { name: 'day4M30MSlalom', event: [4,'M','30 M Slalom'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
-  { name: 'day4M50MRun', event: [4,'M','50 M Run'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
-  { name: 'day4M50MManualWC', event: [4,'M','50 M Manual WC'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
-  { name: 'day4M100MRun', event: [4,'M','100 M Run'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4M25MAstWalk', event: [4,'M','25 M WALK'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'},
+  { name: 'day4M25MAstDevice', event: [4,'M','25 M DEVICE'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4M25MAstWC', event: [4,'M','25 M WC-ASSISTED'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4M25MManWC', event: [4,'M','25 M MANUAL WC'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4M30MSlalom', event: [4,'M','30 M SLALOM'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4M50MRun', event: [4,'M','50 MD'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4M50MManualWC', event: [4,'M','50 M MANUAL WC'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
+  { name: 'day4M100MRun', event: [4,'M','100 MD'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ'  },
 
-  { name: 'day5M25MAstWalk', event: [5,'M','25 M Assisted Walk'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'},
-  { name: 'day5M25MAstDevice', event: [5,'M','25 M Assisted Device'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
-  { name: 'day5M25MAstWC', event: [5,'M','25 M Assisted WC'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
-  { name: 'day5M25MManWC', event: [5,'M','25 M Manual WC'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
-  { name: 'day5M30MSlalom', event: [5,'M','30 M Slalom'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
-  { name: 'day5M50MRun', event: [5,'M','50 M Run'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
-  { name: 'day5M50MManualWC', event: [5,'M','50 M Manual WC'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
-  { name: 'day5M100MRun', event: [5,'M','100 M Run'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5M25MAstWalk', event: [5,'M','25 M WALK'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'},
+  { name: 'day5M25MAstDevice', event: [5,'M','25 M DEVICE'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5M25MAstWC', event: [5,'M','25 M WC-ASSISTED'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5M25MManWC', event: [5,'M','25 M MANUAL WC'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5M30MSlalom', event: [5,'M','30 M SLALOM'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5M50MRun', event: [5,'M','50 MD'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5M50MManualWC', event: [5,'M','50 M WC'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
+  { name: 'day5M100MRun', event: [5,'M','100 MD'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg'  },
 
-  { name: 'day6M25MAstWalk', event: [6,'M','25 M Assisted Walk'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'},
-  { name: 'day6M25MAstDevice', event: [6,'M','25 M Assisted Device'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
-  { name: 'day6M25MAstWC', event: [6,'M','25 M Assisted WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
-  { name: 'day6M25MManWC', event: [6,'M','25 M Manual WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
-  { name: 'day6M30MSlalom', event: [6,'M','30 M Slalom'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
-  { name: 'day6M50MRun', event: [6,'M','50 M Run'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
-  { name: 'day6M50MManualWC', event: [6,'M','50 M Manual WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
-  { name: 'day6M100MRun', event: [6,'M','100 M Run'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  }
+  { name: 'day6M25MAstWalk', event: [6,'M','25 M WALK'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'},
+  { name: 'day6M25MAstDevice', event: [6,'M','25 M Device'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6M25MAstWC', event: [6,'M','25 M WC-ASSISTED'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6M25MManWC', event: [6,'M','25 M MANUAL WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6M30MSlalom', event: [6,'M','30 M SLALOM'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6M50MRun', event: [6,'M','50 MD'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6M50MManualWC', event: [6,'M','50 M WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  },
+  { name: 'day6M100MRun', event: [6,'M','100 MD'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk'  }
 ];
 
 // Array that contains the names of the female sheets found within each Day worksheet.
 const femaleRunningEventSheetNames = [
-  'Females-25 M Assisted Walk',
-  'Females-25 M Assisted Device',
-  'Females-25 M Assisted WC',
-  'Females-25 M Manual WC',
-  'Females-30 M Slalom',
-  'Females-50 M Run',
-  'Females-50 M Manual WC',
-  'Females-100 M Run'
+  'Females-25 M WALK',
+  'Females-25 M Device',
+  'Females-25 M WC-ASSISTED',
+  'Females-25 M MANUAL WC',
+  'Females-30 M SLALOM',
+  'Females-50 MD',
+  'Females-50 M WC',
+  'Females-100 MD'
 ];
 
 // Array that contains the names of the male sheets found within each Day worksheet.
 const maleRunningEventSheetNames = [
-  'Males-25 M Assisted Walk',
-  'Males-25 M Assisted Device',
-  'Males-25 M Assisted WC',
-  'Males-25 M Manual WC',
-  'Males-30 M Slalom',
-  'Males-50 M Run',
-  'Males-50 M Manual WC',
-  'Males-100 M Run'
+  'Males-25 M WALK',
+  'Males-25 M DEVICE',
+  'Males-25 M WC-ASSISTED',
+  'Males-25 M MANUAL WC',
+  'Males-30 M SLALOM',
+  'Males-50 MD',
+  'Males-50 M WC',
+  'Males-100 MD'
 ];
 
 let filteredData = {};
@@ -161,7 +161,7 @@ function pushRunningEventDataToSheets() {
       sheet.clearContents()
     
       // Define your header row
-      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Index Number'];
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus', 'Campus Level', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Index Number'];
       
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
@@ -211,7 +211,7 @@ function pushRunningEventDataToSheets() {
       sheet.clearContents()
 
       // Define your header row
-      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Index Number'];
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus', 'Campus Level', 'Running Event', 'Running Event Score Min', 'Running Event Score Sec', 'Running Heat', 'Running Position', 'Index Number'];
 
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);
@@ -337,22 +337,22 @@ const maleFieldEvents = [
 
 // Array that contains the names of the female sheets found within each Day worksheet.
 const femaleFieldEventSheetNames = [
-  'Females-Turbo Jav',
-  'Females-Foam Turbo Jav',
-  'Females-Running Long Jump',
-  'Females-Softball Throw',
-  'Females-Tennis Ball Throw',
-  'Females-Bean Bag Throw'
+  'Females-TURBO JAV',
+  'Females-FOAM TURBOJAV',
+  'Females-RUNNING LJ',
+  'Females-SOFTBALL',
+  'Females-TENNIS BALL THROW',
+  'Females-BEAN BAG THROW'
 ];
 
 // Array that contains the names of the male sheets found within each Day worksheet.
 const maleFieldEventSheetNames = [
-  'Males-Turbo Jav',
-  'Males-Tennis Ball Throw',
-  'Males-Softball Throw',
-  'Males-Running Long Jump',
-  'Males-Foam Turbo Jav',
-  'Males-Bean Bag Throw'
+  'Males-TURBO JAV',
+  'Males-TENNIS BALL THROW',
+  'Males-SOFTBALL',
+  'Males-RUNNING LJ',
+  'Males-FOAM TURBOJAV',
+  'Males-BEAN BAG THROW'
 ];
 
 function pushFieldEventDataToSheets() {
@@ -424,7 +424,7 @@ function pushFieldEventDataToSheets() {
       sheet.clearContents()
 
       // Define your header row
-      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus Level', 'Campus', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position', 'Index Number'];
+      var headerRow = ['T&F Event Day', 'Last Name', 'First Name', 'Gender', 'Active', 'Campus', 'Campus Level', 'Field Event', 'Field Event Score Meters', 'Field Event Score CMs', 'Field Heat', 'Field Position', 'Index Number'];
 
       // Set the header row
       sheet.getRange(1, 1, 1, headerRow.length).setValues([headerRow]);

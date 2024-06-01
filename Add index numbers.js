@@ -11,4 +11,5 @@ function addIndexNumbers() {
         indexNumbers.push([i]);
     }
     addNumbers.getRange(2, lastColumnIndex, indexNumbers.length, 1).setValues(indexNumbers);
+    createDaySheets()
 }

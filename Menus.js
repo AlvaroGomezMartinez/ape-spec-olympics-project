@@ -25,7 +25,7 @@ function onOpen() {
 
   var menu2 = ui.createMenu('⚑ Assign Heats & Lanes')
     .addSubMenu(ui.createMenu('Manually Create Heats and Lanes')
-      .addItem('Push data to the six day sheets. This will overwrite what is in those sheets.', 'createDaySheets')
+      .addItem('Push data to the six day sheets. This will overwrite what is in those sheets.', 'runAddIndexNumbers')
       // .addItem('Go to the individual day Sheets', 'showSidebar')
       )
       .addSeparator()
@@ -110,6 +110,16 @@ function runMaleTrackHeatSheetsLists() {
   // Execute the function from the separate .gs file
   var script = eval('runAllMalesTrackHeatSheets');
   script.apply(null, functionArgs);
+}
+
+function runAddIndexNumbers() {
+  var functionName = 'addIndexNumbers';
+  var functionArgs = [];
+
+  // Execute the function from the separate .gs file
+  var script = eval('addIndexNumbers');
+  script.apply(null, functionArgs);
+
 }
 
 function runCreateFieldEventHeatsAndLanes() {

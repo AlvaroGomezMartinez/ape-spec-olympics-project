@@ -24,12 +24,8 @@ function onOpen() {
     .addToUi();
 
   var menu2 = ui.createMenu('⚑ Assign Heats & Lanes')
-    .addSubMenu(ui.createMenu('Manually Create Heats and Lanes')
-      .addItem('Push data to the six day sheets. This will overwrite what is in those sheets.', 'runAddIndexNumbers')
-      // .addItem('Go to the individual day Sheets', 'showSidebar')
-      )
-      .addToUi();
-
+    .addItem('Push data to the six day sheets. This will overwrite what is in those sheets.', 'runAddIndexNumbers')
+    .addToUi();
 }
 
 // Since the nine scripts above--in the menus--are on separate .gs files in this project,

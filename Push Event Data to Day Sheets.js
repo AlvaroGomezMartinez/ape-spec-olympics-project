@@ -356,7 +356,8 @@ const maleFieldEventSheetNames = [
 ];
 
 function pushFieldEventDataToSheets() {
-  SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Pushing the Field Event Data 🏃🏻‍♀️ Give the script a minute or two to run 🐢");
+  SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Pushing the Field Event Data");
+  
   // Loop over the femaleFieldEvents object
   for (var i = 0; i < femaleFieldEvents.length; i++) {
     var event = femaleFieldEvents[i];

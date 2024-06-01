@@ -1,5 +1,7 @@
 // This function gets called in the pushRunningEventsDataToSheets()
 function addIndexNumbers() {
+    SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Adding the Index numbers");
+    
     var addNumbers = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Student Database');
     var data = addNumbers.getDataRange().getValues();
     var lastColumnIndex = data[0].length;
@@ -11,5 +13,4 @@ function addIndexNumbers() {
         indexNumbers.push([i]);
     }
     addNumbers.getRange(2, lastColumnIndex, indexNumbers.length, 1).setValues(indexNumbers);
-    createDaySheets()
 }

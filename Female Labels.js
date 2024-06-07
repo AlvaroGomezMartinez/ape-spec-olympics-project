@@ -2,7 +2,7 @@ const femalesTemplate = {
   docId: '1edhqawRwUSIIe7RnRPpRrUErU1P6Yb5tys6R3inX2TI',
 };
 
-function init_() {
+function initFemale_() {
   femalesTemplate.doc = DocumentApp.openById(femalesTemplate.docId)
   femalesTemplate.body = femalesTemplate.doc.getBody()
   femalesTemplate.ss = SpreadsheetApp.getActive();
@@ -11,9 +11,9 @@ function init_() {
 // This function creates label templates. You can add the label size and dimensions on a hidden sheet
 // in the Special Olympics Database sheet. Put an 'x' in column A to select the dimensions and have
 // the labels get created.
-function makeTemplate() {
-  init_()
-  let { rowHeight, colWidth, vMargin, hMargin } = getSelectedLabel_();
+function makeFemaleTemplate() {
+  initFemale_()
+  let { rowHeight, colWidth, vMargin, hMargin } = getSelectedFemaleLabel_();
   rowHeight = inchToPoint_(rowHeight);
   colWidth = inchToPoint_(colWidth);
   vMargin = inchToPoint_(vMargin);
@@ -42,7 +42,7 @@ function makeTemplate() {
 }
 
 // This is the helper function that gets the label dimensions.
-function getSelectedLabel_() {
+function getSelectedFemaleLabel_() {
   const sh = femalesTemplate.ss.getSheetByName('Labels');
   const [headers, ...data] = sh.getDataRange().getValues();
   const labelRow = data.find((row) => row[0]);
@@ -68,7 +68,7 @@ function inchToPoint_(m) {
 
 // This is the function that merges the data and makes the labels.
 function femaleMailMerge() {
-  init_();
+  initFemale_();
   const sh = femalesTemplate.ss.getSheetByName('Female-Labels');
   [femalesTemplate.recipientHeaders, ...femalesTemplate.recipientsData] = sh.getDataRange().getValues();
   const templateTable = femalesTemplate.body.getTables()[0];
@@ -110,7 +110,7 @@ function femaleMailMerge() {
     const newCell = table.getCell(iRow, iCol);
     newCell.clear();
     templateTexts.forEach((templateText, i) => {
-      const newLine = merge_(templateText, recipient);
+      const newLine = mergeFemale_(templateText, recipient);
       const par = newCell.insertParagraph(i, newLine);
       par.editAsText().setAttributes(templateAttributes[i]);
       par.setForegroundColor(templateAttributes[i].FOREGROUND_COLOR);
@@ -120,7 +120,7 @@ function femaleMailMerge() {
   femalesTemplate.doc.saveAndClose();
 }
 
-function merge_(text, recipient) {
+function mergeFemale_(text, recipient) {
   femalesTemplate.recipientHeaders.forEach((header, i) => {
     text = text.replace(`%${header}%`, recipient[i]);
   });

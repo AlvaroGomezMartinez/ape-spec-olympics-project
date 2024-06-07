@@ -2,7 +2,7 @@ const malesTemplate = {
   docId: '12gLHfBTevUlfq_OCWahMDE8WebQnGHWDLx4MZYPP6MQ',
 };
 
-function init_() {
+function initMale_() {
   malesTemplate.doc = DocumentApp.openById(malesTemplate.docId)
   malesTemplate.body = malesTemplate.doc.getBody()
   malesTemplate.ss = SpreadsheetApp.getActive();
@@ -11,9 +11,9 @@ function init_() {
 // This function creates label templates. You can add the label size and dimensions on a hidden sheet
 // in the Special Olympics Database sheet. Put an 'x' in column A to select the dimensions and have
 // the labels get created.
-function makeTemplate() {
-  init_()
-  let { rowHeight, colWidth, vMargin, hMargin } = getSelectedLabel_();
+function makeMaleTemplate() {
+  initMale_()
+  let { rowHeight, colWidth, vMargin, hMargin } = getSelectedMaleLabel_();
   rowHeight = inchToPoint_(rowHeight);
   colWidth = inchToPoint_(colWidth);
   vMargin = inchToPoint_(vMargin);
@@ -42,7 +42,7 @@ function makeTemplate() {
 }
 
 // This is the helper function that gets the label dimensions.
-function getSelectedLabel_() {
+function getSelectedMaleLabel_() {
   const sh = malesTemplate.ss.getSheetByName('Labels');
   const [headers, ...data] = sh.getDataRange().getValues();
   const labelRow = data.find((row) => row[0]);
@@ -68,7 +68,7 @@ function inchToPoint_(m) {
 
 // This is the function that merges the data and makes the labels.
 function maleMailMerge() {
-  init_();
+  initMale_();
   const sh = malesTemplate.ss.getSheetByName('Male-Labels');
   [malesTemplate.recipientHeaders, ...malesTemplate.recipientsData] = sh.getDataRange().getValues();
   const templateTable = malesTemplate.body.getTables()[0];
@@ -113,7 +113,7 @@ function maleMailMerge() {
     const newCell = table.getCell(iRow, iCol);
     newCell.clear();
     templateTexts.forEach((templateText, i) => {
-      const newLine = merge_(templateText, recipient);
+      const newLine = mergeMale_(templateText, recipient);
       const par = newCell.insertParagraph(i, newLine);
       par.editAsText().setAttributes(templateAttributes[i]);
       par.setForegroundColor(templateAttributes[i].FOREGROUND_COLOR);
@@ -133,7 +133,7 @@ function maleMailMerge() {
   malesTemplate.doc.saveAndClose();
 }
 
-function merge_(text, recipient) {
+function mergeMale_(text, recipient) {
   malesTemplate.recipientHeaders.forEach((header, i) => {
     text = text.replace(`%${header}%`, recipient[i]);
   });

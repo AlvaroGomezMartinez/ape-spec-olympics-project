@@ -26,6 +26,11 @@ function onOpen() {
   var menu2 = ui.createMenu('⚑ Assign Heats & Lanes')
     .addItem('Push data to the six day sheets. This will overwrite what is in those sheets.', 'runCreateDaySheets')
     .addToUi();
+
+  var menu3 = ui.createMenu('⚑ Create Labels')
+    .addItem('Females', 'runFemaleLabels')
+    .addItem('Males', 'runMaleLabels')
+    .addToUi();
 }
 
 // Since the nine scripts above--in the menus--are on separate .gs files in this project,
@@ -99,6 +104,24 @@ function runCreateDaySheets() {
   var functionArgs = [];
   // Execute the function from the separate .gs file
   var script = eval('createDaySheets');
+  script.apply(null, functionArgs);
+
+}
+
+function runFemaleLabels() {
+  var functionName = 'femaleMailMerge';
+  var functionArgs = [];
+  // Execute the function from the separate .gs file
+  var script = eval('femaleMailMerge');
+  script.apply(null, functionArgs);
+
+}
+
+function runMaleLabels() {
+  var functionName = 'maleMailMerge';
+  var functionArgs = [];
+  // Execute the function from the separate .gs file
+  var script = eval('maleMailMerge');
   script.apply(null, functionArgs);
 
 }

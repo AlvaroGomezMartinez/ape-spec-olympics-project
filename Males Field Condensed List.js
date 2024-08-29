@@ -24,7 +24,9 @@ function runAllMalesFieldCondensedLists () {
     return { templateDoc, body };
   }
 
-  /** DAY 1 LISTS */
+  /*************************************************************************
+   *                       Day 1 Lists                                     *
+  *************************************************************************/
   const day1MBeanbagThrow = [1,'M','BEAN BAG THROW']
   const day1MTennisBallThrow = [1,'M','TENNIS BALL THROW']  
   const day1MSoftball = [1,'M','SOFTBALL']
@@ -43,7 +45,9 @@ function runAllMalesFieldCondensedLists () {
     await runAllMaleDay2Functions();
   }
 
-  /** DAY 2 LISTS */
+  /*************************************************************************
+   *                       Day 2 Lists                                     *
+  *************************************************************************/
   const day2MBeanbagThrow = [2,'M','BEAN BAG THROW']
   const day2MTennisBallThrow = [2,'M','TENNIS BALL THROW']
   const day2MSoftball = [2,'M','SOFTBALL']
@@ -62,7 +66,9 @@ function runAllMalesFieldCondensedLists () {
     await runAllMaleDay3Functions();
   }
 
-  /** DAY 3 LISTS */
+  /*************************************************************************
+   *                       Day 3 Lists                                     *
+  *************************************************************************/
   const day3MBeanbagThrow = [3,'M','BEAN BAG THROW']
   const day3MTennisBallThrow = [3,'M','TENNIS BALL THROW']
   const day3MSoftball = [3,'M','SOFTBALL']
@@ -81,7 +87,9 @@ function runAllMalesFieldCondensedLists () {
     await runAllMaleDay4Functions();
   }
 
-  /** DAY 4 LISTS */
+  /*************************************************************************
+   *                       Day 4 Lists                                     *
+  *************************************************************************/
   const day4MBeanbagThrow = [4,'M','BEAN BAG THROW']
   const day4MTennisBallThrow = [4,'M','TENNIS BALL THROW']
   const day4MSoftball = [4,'M','SOFTBALL']
@@ -100,7 +108,9 @@ function runAllMalesFieldCondensedLists () {
     await runAllMaleDay5Functions();
   }
 
-  /** DAY 5 LISTS */
+  /*************************************************************************
+   *                       Day 5 Lists                                     *
+  *************************************************************************/
   const day5MBeanbagThrow = [5,'M','BEAN BAG THROW']
   const day5MTennisBallThrow = [5,'M','TENNIS BALL THROW']
   const day5MSoftball = [5,'M','SOFTBALL']
@@ -119,7 +129,9 @@ function runAllMalesFieldCondensedLists () {
     await runAllMaleDay6Functions();
   }
 
-  /** DAY 6 LISTS */
+  /*************************************************************************
+   *                       Day 6 Lists                                     *
+  *************************************************************************/
   const day6MBeanbagThrow = [6,'M','BEAN BAG THROW']
   const day6MTennisBallThrow = [6,'M','TENNIS BALL THROW']
   const day6MSoftball = [6,'M','SOFTBALL']

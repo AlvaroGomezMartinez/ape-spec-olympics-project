@@ -1,5 +1,11 @@
-// The function below creates two menus called '⚑ Reports' and '⚑ Create Heats' in the 'Special Olympics Student Database'
-// A trigger is set to run the function when the spreadsheet is opened.
+/****************************************************************************************
+ * The onOpen() function below creates three menus called '⚑ Reports',                  *
+ * '⚑ Assign Heats & Lanes', and '⚑ Create Labels' in the 'Special Olympics Student     *
+ * Database' spreadsheet.                                                               *
+ *                                                                                      *
+ * A trigger is set to run the function when the spreadsheet is opened.                 *
+****************************************************************************************/
+
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
 
@@ -33,12 +39,15 @@ function onOpen() {
     .addToUi();
 }
 
-// Since the nine scripts above--in the menus--are on separate .gs files in this project,
-// the nine functions below are needed to call the functions in those files.
+/******************************************************************************************
+ * Since the eleven functions above (in the menu items) are found in modules within this  *
+ * project, the eleven functions below are needed in order to be able to call the         *
+ * functions from those modules.                                                          *
+******************************************************************************************/
 function runFemalesFieldCondensedList() {
   var functionName = 'runAllFemalesFieldCondensedLists';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Females Field Condensed List.gs' file
   var script = eval('runAllFemalesFieldCondensedLists');
   script.apply(null, functionArgs);
 }
@@ -46,7 +55,7 @@ function runFemalesFieldCondensedList() {
 function runMalesFieldCondensedLists() {
   var functionName = 'runAllMalesFieldCondensedLists';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Males Field Condensed List.gs' file
   var script = eval('runAllMalesFieldCondensedLists');
   script.apply(null, functionArgs);
 }
@@ -54,7 +63,7 @@ function runMalesFieldCondensedLists() {
 function runFemaleFieldHeatSheets() {
   var functionName = 'runAllFemalesFieldHeatSheets';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Females Field Heat Sheets.gs' file
   var script = eval('runAllFemalesFieldHeatSheets');
   script.apply(null, functionArgs);
 }
@@ -62,7 +71,7 @@ function runFemaleFieldHeatSheets() {
 function runMaleFieldHeatSheets() {
   var functionName = 'runAllMalesFieldHeatSheets';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Males Field Heat Sheets.gs' file
   var script = eval('runAllMalesFieldHeatSheets');
   script.apply(null, functionArgs);
 }
@@ -70,7 +79,7 @@ function runMaleFieldHeatSheets() {
 function runFemaleTrackCondensedLists() {
   var functionName = 'runAllFemalesTrackCondensedLists';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Female Track Condensed List.gs' file
   var script = eval('runAllFemalesTrackCondensedLists');
   script.apply(null, functionArgs);
 }
@@ -78,7 +87,7 @@ function runFemaleTrackCondensedLists() {
 function runMaleTrackCondensedLists() {
   var functionName = 'runAllMalesTrackCondensedLists';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Male Track Condensed List.gs' file
   var script = eval('runAllMalesTrackCondensedLists');
   script.apply(null, functionArgs);
 }
@@ -86,7 +95,7 @@ function runMaleTrackCondensedLists() {
 function runFemaleTrackHeatSheetsLists() {
   var functionName = 'runAllFemalesTrackHeatSheets';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Female Track Heat Sheets.gs' file
   var script = eval('runAllFemalesTrackHeatSheets');
   script.apply(null, functionArgs);
 }
@@ -94,7 +103,7 @@ function runFemaleTrackHeatSheetsLists() {
 function runMaleTrackHeatSheetsLists() {
   var functionName = 'runAllMalesTrackHeatSheets';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Male Track Heat Sheets.gs' file
   var script = eval('runAllMalesTrackHeatSheets');
   script.apply(null, functionArgs);
 }
@@ -102,7 +111,7 @@ function runMaleTrackHeatSheetsLists() {
 function runCreateDaySheets() {
   var functionName = 'createDaySheets';
   var functionArgs = [];
-  // Execute the function from the separate .gs file
+  // Execute the function from the 'Create Day Sheets.gs' file
   var script = eval('createDaySheets');
   script.apply(null, functionArgs);
 

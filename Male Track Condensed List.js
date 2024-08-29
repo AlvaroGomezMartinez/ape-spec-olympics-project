@@ -24,7 +24,9 @@ function runAllMalesTrackCondensedLists() {
     return { templateDoc, body };
   }
 
-  /** Day 1 Lists */
+  /*************************************************************************
+   *                       Day 1 Lists                                     *
+  *************************************************************************/
   const day1M25MAstWalk = [1,'M','25 M WALK']
   const day1M25MAstDevice = [1,'M','25 M DEVICE']
   const day1M25MAstWC = [1,'M','25 M WC-ASSISTED']
@@ -45,7 +47,9 @@ function runAllMalesTrackCondensedLists() {
     await runAllMaleDay2TrackCondensedFunctions();
   }
 
-  /** Day 2 Lists */
+  /*************************************************************************
+   *                       Day 2 Lists                                     *
+  *************************************************************************/
   const day2M25MAstWalk = [2,'M','25 M WALK']
   const day2M25MAstDevice = [2,'M','25 M DEVICE']
   const day2M25MAstWC = [2,'M','25 M WC-ASSISTED']
@@ -66,7 +70,9 @@ function runAllMalesTrackCondensedLists() {
     await runAllMaleDay3TrackCondensedFunctions();
   }
 
-  /** Day 3 Lists */
+  /*************************************************************************
+   *                       Day 3 Lists                                     *
+  *************************************************************************/
   const day3M25MAstWalk = [3,'M','25 M WALK']
   const day3M25MAstDevice = [3,'M','25 M DEVICE']
   const day3M25MAstWC = [3,'M','25 M WC-ASSISTED']
@@ -87,7 +93,9 @@ function runAllMalesTrackCondensedLists() {
     await runAllMaleDay4TrackCondensedFunctions();
   }
 
-  /** Day 4 Lists */
+  /*************************************************************************
+   *                       Day 4 Lists                                     *
+  *************************************************************************/
   const day4M25MAstWalk = [4,'M','25 M WALK']
   const day4M25MAstDevice = [4,'M','25 M DEVICE']
   const day4M25MAstWC = [4,'M','25 M WC-ASSISTED']
@@ -108,7 +116,9 @@ function runAllMalesTrackCondensedLists() {
     await runAllMaleDay5TrackCondensedFunctions();
   }
 
-  /** Day 5 Lists */
+  /*************************************************************************
+   *                       Day 5 Lists                                     *
+  *************************************************************************/
   const day5M25MAstWalk = [5,'M','25 M WALK']
   const day5M25MAstDevice = [5,'M','25 M DEVICE']
   const day5M25MAstWC = [5,'M','25 M WC-ASSISTED']
@@ -129,7 +139,9 @@ function runAllMalesTrackCondensedLists() {
     await runAllMaleDay6TrackCondensedFunctions();
   }
 
-  /** Day 6 Lists */
+  /*************************************************************************
+   *                       Day 6 Lists                                     *
+  *************************************************************************/
   const day6M25MAstWalk = [6,'M','25 M WALK']
   const day6M25MAstDevice = [6,'M','25 M DEVICE']
   const day6M25MAstWC = [6,'M','25 M WC-ASSISTED']

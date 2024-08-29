@@ -1,4 +1,8 @@
-// The function below creates Google Docs with the heats and lane information.
+/*******************************************************************************
+ * The createAllTrackEventHeatsAndLanes() function below updates a Google Doc  *
+ * with the track event heats and lane information from the data in 'Student   *
+ * Database'.                                                                  *
+*******************************************************************************/
 
 function createAllTrackEventHeatsAndLanes() {
   showProgressDialog();

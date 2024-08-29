@@ -24,7 +24,9 @@ function runAllMalesFieldHeatSheets() {
     return { maleTemplateDoc, maleBody };
   }
 
-  /** DAY 1 LISTS */
+  /*************************************************************************
+   *                       Day 1 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay1MBeanbagThrow = [1,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay1MTennisBallThrow = [1,'M','TENNIS BALL THROW']
   const fieldHeatSheetsDay1MSoftball = [1,'M','SOFTBALL']
@@ -43,7 +45,9 @@ function runAllMalesFieldHeatSheets() {
     await runAllMaleFieldHeatSheetsDay2Functions();
   }
 
-  /** DAY 2 LISTS */
+  /*************************************************************************
+   *                       Day 2 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay2MBeanbagThrow = [2,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay2MTennisBallThrow = [2,'M','TENNIS BALL THROW']
   const fieldHeatSheetsDay2MSoftball = [2,'M','SOFTBALL']
@@ -62,7 +66,9 @@ function runAllMalesFieldHeatSheets() {
     await runAllMaleFieldHeatSheetsDay3Functions();
   }
 
-  /** DAY 3 LISTS */
+  /*************************************************************************
+   *                       Day 3 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay3MBeanbagThrow = [3,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay3MTennisBallThrow = [3,'M','TENNIS BALL THROW']
   const fieldHeatSheetsDay3MSoftball = [3,'M','SOFTBALL']
@@ -81,7 +87,9 @@ function runAllMalesFieldHeatSheets() {
     await runAllMaleFieldHeatSheetsDay4Functions();
   }
 
-  /** DAY 4 LISTS */
+  /*************************************************************************
+   *                       Day 4 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay4MBeanbagThrow = [4,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay4MTennisBallThrow = [4,'M','TENNIS BALL THROW']
   const fieldHeatSheetsDay4MSoftball = [4,'M','SOFTBALL']
@@ -100,7 +108,9 @@ function runAllMalesFieldHeatSheets() {
     await runAllMaleFieldHeatSheetsDay5Functions();
   }
 
-  /** DAY 5 LISTS */
+  /*************************************************************************
+   *                       Day 5 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay5MBeanbagThrow = [5,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay5MTennisBallThrow = [5,'M','TENNIS BALL THROW']
   const fieldHeatSheetsDay5MSoftball = [5,'M','SOFTBALL']
@@ -119,7 +129,9 @@ function runAllMalesFieldHeatSheets() {
     await runAllMaleFieldHeatSheetsDay6Functions();
   }
 
-  /** DAY 6 LISTS */
+  /*************************************************************************
+   *                       Day 6 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay6MBeanbagThrow = [6,'M','BEAN BAG THROW']
   const fieldHeatSheetsDay6MTennisBallThrow = [6,'M','TENNIS BALL THROW']
   const fieldHeatSheetsDay6MSoftball = [6,'M','SOFTBALL']

@@ -1,5 +1,8 @@
-// This function gets the data from 'Student Database', filters it by day & event, and pushes the chunks of data to separate
-// day sheets.
+/*********************************************************************************************
+ * The pushRunningEventDataToSheets() function below, gets the data from "Student Database", *
+ * filters it by day & event, and pushes the chunks of data to the six separate day          *
+ * databases (DAY 1 Database through DAY 6 Database).                                        *
+*********************************************************************************************/
 
 // Array that is used to filter the female's running events data by day & event along with the spreadsheetId.
 const femaleRunningEvents = [

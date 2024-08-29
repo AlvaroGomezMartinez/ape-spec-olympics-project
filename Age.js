@@ -1,4 +1,11 @@
-// The purpose of the function below is to set a formula in column F's cells to calculate the student's age from the date of birth in column E. A trigger is set to run this function on edit.
+/***************************************************************************************
+ * The function below sets an arrayformula in F2 of 'Student Database' that fills down *
+ * column F.                                                                           *
+ *                                                                                     *
+ * The formula calculates the student's age based on the date of birth in column E.    *
+ *                                                                                     *
+ * A trigger is set to run this function on edit.                                      *
+***************************************************************************************/
 
 function insertFormula() {
   let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Student Database");

@@ -1,4 +1,11 @@
-// This function below automatically creates field event heats and lane assignments based on the number of athletes in each event.
+/*****************************************************************************************
+ * The createAllFieldEventHeatsAndLanes() function below automatically creates field     *
+ * event heats and lane assignments based on the number of athletes in each event.       *
+ *                                                                                       *
+ * This function is currently not called by any function or user interface. The APE      *
+ * coach in charge of this project's database prefers to create the heats and lanes      *
+ * manually. This function was left here for reference or for future functionality.      *
+*****************************************************************************************/
 
 function createAllFieldEventHeatsAndLanes() {
   showProgressDialog();

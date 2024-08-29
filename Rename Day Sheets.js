@@ -1,4 +1,9 @@
-// The purpose of this script is to rename the sheets inside each Day worksheet.
+/***********************************************************************************************
+ * The purpose of renameSheets() is to rename the sheets inside each Day database worksheet.   *
+ *                                                                                             *
+ * It is not necessary to run this script again, because the sheets have already been renamed. *
+ * This script is provided for reference only.                                                 *
+***********************************************************************************************/
 
 function renameSheets() {
 
@@ -49,7 +54,6 @@ function renameSheets() {
         'Females-50 M WC',
         'Females-100 MD',
 
-        // PICK UP HERE
         'Females-TURBO JAV',
         'Females-FOAM TURBOJAV',
         'Females-RUNNING LJ',
@@ -66,7 +70,6 @@ function renameSheets() {
         'Males-50 M WC',
         'Males-100 MD',
 
-        // PICK UP HERE
         'Males-TURBO JAV',
         'Males-TENNIS BALL THROW',
         'Males-SOFTBALL',

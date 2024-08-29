@@ -1,6 +1,10 @@
-// This script was used to create the sheets in the Field Events Day workbooks.
-// It is not necessary to run this script again, as the sheets have already been created.
-// This script is provided for reference only.
+/***********************************************************************************************
+ * The createSheetsInWorkbooks() function was used to create the sheets in the Field Events.   *
+ * Day spreadsheets.                                                                           *
+ *                                                                                             *
+ * It is not necessary to run this script again, because the sheets have already been created. *
+ * This module is provided for reference only.                                                 *
+***********************************************************************************************/
 
 function createSheetsInWorkbooks() {
   // Array of Google Sheets IDs

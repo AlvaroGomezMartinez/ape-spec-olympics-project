@@ -1,8 +1,10 @@
-/**
- * Last updated: April 4, 2024
-*/
+/**************************************************************************
+ * The runAllFemalesFieldCondensedLists() function below updates the heat *
+ * and lanes for the 'Field Condensed List - Females' Google Doc using    *
+ * the data from the "Student Database" sheet.                            *
+**************************************************************************/
 
-function runAllFemalesFieldCondensedLists () {
+function runAllFemalesFieldCondensedLists() {
   
   let isFemaleCondensedListDocumentCleared = false;
 
@@ -24,7 +26,9 @@ function runAllFemalesFieldCondensedLists () {
     return { templateDoc, body };
   }
 
-  /** DAY 1 LISTS */
+  /*************************************************************************
+   *                       Day 1 Lists                                     *
+  *************************************************************************/
   const day1FBeanbagThrow = [1,'F','BEAN BAG THROW']
   const day1FTennisBallThrow = [1,'F','TENNIS BALL THROW']
   const day1FSoftball = [1,'F','SOFTBALL']
@@ -43,7 +47,9 @@ function runAllFemalesFieldCondensedLists () {
     await runAllFemaleDay2Functions();
   }
 
-  /** DAY 2 LISTS */
+  /*************************************************************************
+   *                       Day 2 Lists                                     *
+  *************************************************************************/
   const day2FBeanbagThrow = [2,'F','BEAN BAG THROW']
   const day2FTennisBallThrow = [2,'F','TENNIS BALL THROW']
   const day2FSoftball = [2,'F','SOFTBALL']
@@ -62,7 +68,9 @@ function runAllFemalesFieldCondensedLists () {
     await runAllFemaleDay3Functions();
   }
 
-  /** DAY 3 LISTS */
+  /*************************************************************************
+   *                       Day 3 Lists                                     *
+  *************************************************************************/
   const day3FBeanbagThrow = [3,'F','BEAN BAG THROW']
   const day3FTennisBallThrow = [3,'F','TENNIS BALL THROW']
   const day3FSoftball = [3,'F','SOFTBALL']
@@ -81,7 +89,9 @@ function runAllFemalesFieldCondensedLists () {
     await runAllFemaleDay4Functions();
   }
 
-  /** DAY 4 LISTS */
+  /*************************************************************************
+   *                       Day 4 Lists                                     *
+  *************************************************************************/
   const day4FBeanbagThrow = [4,'F','BEAN BAG THROW']
   const day4FTennisBallThrow = [4,'F','TENNIS BALL THROW']
   const day4FSoftball = [4,'F','SOFTBALL']
@@ -100,7 +110,9 @@ function runAllFemalesFieldCondensedLists () {
     await runAllFemaleDay5Functions();
   }
 
-  /** DAY 5 LISTS */
+  /*************************************************************************
+   *                       Day 5 Lists                                     *
+  *************************************************************************/
   const day5FBeanbagThrow = [5,'F','BEAN BAG THROW']
   const day5FTennisBallThrow = [5,'F','TENNIS BALL THROW']
   const day5FSoftball = [5,'F','SOFTBALL']
@@ -119,7 +131,9 @@ function runAllFemalesFieldCondensedLists () {
     await runAllFemaleDay6Functions();
   }
 
-  /** DAY 6 LISTS */
+  /*************************************************************************
+   *                       Day 6 Lists                                     *
+  *************************************************************************/
   const day6FBeanbagThrow = [6,'F','BEAN BAG THROW']
   const day6FTennisBallThrow = [6,'F','TENNIS BALL THROW']
   const day6FSoftball = [6,'F','SOFTBALL']

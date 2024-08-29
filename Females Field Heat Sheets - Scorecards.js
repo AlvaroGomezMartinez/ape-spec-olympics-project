@@ -1,6 +1,8 @@
-/** 
- * Last update: April 4, 2024
-*/
+/**************************************************************************
+ * The runAllFemalesFieldHeatSheets() function below updates the 'Field   *
+ * Heat Sheets - Scorecards' data using the data from the 'Student        *
+ * Database' sheet.                                                       *
+**************************************************************************/
 
 function runAllFemalesFieldHeatSheets() {
 
@@ -24,7 +26,9 @@ function runAllFemalesFieldHeatSheets() {
     return { femaleTemplateDoc, femaleBody };
   }
 
-  /** DAY 1 LISTS */
+  /*************************************************************************
+   *                       Day 1 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay1FBeanbagThrow = [1,'F','BEAN BAG THROW']
   const fieldHeatSheetsDay1FTennisBallThrow = [1,'F','TENNIS BALL THROW']
   const fieldHeatSheetsDay1FSoftball = [1,'F','SOFTBALL']
@@ -43,7 +47,9 @@ function runAllFemalesFieldHeatSheets() {
     await runAllFemaleFieldHeatSheetsDay2Functions();
   }
 
-  /** DAY 2 LISTS */
+  /*************************************************************************
+   *                       Day 2 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay2FBeanbagThrow = [2,'F','BEAN BAG THROW']
   const fieldHeatSheetsDay2FTennisBallThrow = [2,'F','TENNIS BALL THROW']
   const fieldHeatSheetsDay2FSoftball = [2,'F','SOFTBALL']
@@ -62,7 +68,9 @@ function runAllFemalesFieldHeatSheets() {
     await runAllFemaleFieldHeatSheetsDay3Functions();
   }
 
-  /** DAY 3 LISTS */
+  /*************************************************************************
+   *                       Day 3 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay3FBeanbagThrow = [3,'F','BEAN BAG THROW']
   const fieldHeatSheetsDay3FTennisBallThrow = [3,'F','TENNIS BALL THROW']
   const fieldHeatSheetsDay3FSoftball = [3,'F','SOFTBALL']
@@ -81,7 +89,9 @@ function runAllFemalesFieldHeatSheets() {
     await runAllFemaleFieldHeatSheetsDay4Functions();
   }
 
-  /** DAY 4 LISTS */
+  /*************************************************************************
+   *                       Day 4 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay4FBeanbagThrow = [4,'F','BEAN BAG THROW']
   const fieldHeatSheetsDay4FTennisBallThrow = [4,'F','TENNIS BALL THROW']
   const fieldHeatSheetsDay4FSoftball = [4,'F','SOFTBALL']
@@ -100,7 +110,9 @@ function runAllFemalesFieldHeatSheets() {
     await runAllFemaleFieldHeatSheetsDay5Functions();
   }
 
-  /** DAY 5 LISTS */
+  /*************************************************************************
+   *                       Day 5 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay5FBeanbagThrow = [5,'F','BEAN BAG THROW']
   const fieldHeatSheetsDay5FTennisBallThrow = [5,'F','TENNIS BALL THROW']
   const fieldHeatSheetsDay5FSoftball = [5,'F','SOFTBALL']
@@ -119,7 +131,9 @@ function runAllFemalesFieldHeatSheets() {
     await runAllFemaleFieldHeatSheetsDay6Functions();
   }
 
-  /** DAY 6 LISTS */
+  /*************************************************************************
+   *                       Day 6 Lists                                     *
+  *************************************************************************/
   const fieldHeatSheetsDay6FBeanbagThrow = [6,'F','BEAN BAG THROW']
   const fieldHeatSheetsDay6FTennisBallThrow = [6,'F','TENNIS BALL THROW']
   const fieldHeatSheetsDay6FSoftball = [6,'F','SOFTBALL']

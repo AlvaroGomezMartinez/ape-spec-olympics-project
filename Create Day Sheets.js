@@ -1,6 +1,11 @@
-// The purpose of the function below is to push the data from the main sheet to each day sheet.
-// After pushing the data, it calls the pushRunningEventDataToSheets function to push the running event data to each event sheet.
-// A user interface menu item in the "Special Olympics Student Database" called "Push data to the six day sheets" runs this function.
+/************************************************************************************************
+ * The purpose of the function below is to push the data from 'Student Database' to each        *
+ * day sheet. After pushing the data, it calls the pushRunningEventDataToSheets() function to   *
+ * push the running event data to each event sheet.                                             *
+ *                                                                                              *
+ * A user interface menu item in the 'Special Olympics Student Database called 'Push data to.  *
+ * the six day sheets' runs this function.                                                      *
+************************************************************************************************/
 
 function createDaySheets() {
   try {

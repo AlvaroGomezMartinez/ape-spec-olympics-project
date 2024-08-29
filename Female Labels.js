@@ -8,9 +8,12 @@ function initFemale_() {
   femalesTemplate.ss = SpreadsheetApp.getActive();
 }
 
-// This function creates label templates. You can add the label size and dimensions on a hidden sheet
-// in the Special Olympics Database sheet. Put an 'x' in column A to select the dimensions and have
-// the labels get created.
+/********************************************************************************************************
+ * This function creates label templates for female events.                                             *
+ * You can add the label size and dimensions on a hidden sheet named "Labels" in the Special Olympics   *
+ * Database sheet.                                                                                      *
+ * Put an 'x' in column A to select the dimensions and have the labels get created.                     *
+********************************************************************************************************/
 function makeFemaleTemplate() {
   initFemale_()
   let { rowHeight, colWidth, vMargin, hMargin } = getSelectedFemaleLabel_();
@@ -66,7 +69,14 @@ function inchToPoint_(m) {
   return (parseInt(m[0]) + parseInt(n) / parseInt(d)) * 72;
 }
 
-// This is the function that merges the data and makes the labels.
+/*****************************************************************************
+ * The femaleMailMerge() function below gets called by the 'Menus.gs' file,  *
+ * specifically the runFemaleLabels() function that gets triggers from the   *
+ * '⚑ Create Labels' menu item.                                              *
+ *                                                                           *
+ * The function merges the data from 'Student Database into label templates. *
+ * to make the labels.                                                       *
+*****************************************************************************/
 function femaleMailMerge() {
   initFemale_();
   const sh = femalesTemplate.ss.getSheetByName('Female-Labels');

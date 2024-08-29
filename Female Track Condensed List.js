@@ -1,4 +1,8 @@
-// The function below creates the heat and lanes for female track events.
+/**************************************************************************
+ * The runAllFemalesTrackCondensedLists() function below updates the heat *
+ * and lanes for the 'Track Condensed List - Females' Google Doc using    *
+ * the data from the "Student Database" sheet.                            *
+**************************************************************************/
 
 function runAllFemalesTrackCondensedLists() {
 
@@ -19,7 +23,9 @@ function runAllFemalesTrackCondensedLists() {
     return { templateDoc, body };
   }
 
-  // Day 1 Lists
+  /*************************************************************************
+   *                       Day 1 Lists                                     *
+  *************************************************************************/
   const day1F25MAstWalk = [1,'F','25 M WALK']
   const day1F25MAstDevice = [1,'F','25 M DEVICE']
   const day1F25MAstWC = [1,'F','25 M WC-ASSISTED']
@@ -42,7 +48,9 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay2TrackCondensedFunctions();
   }
 
-  // Day 2 Lists
+  /*************************************************************************
+   *                       Day 2 Lists                                     *
+  *************************************************************************/
   const day2F25MAstWalk = [2,'F','25 M WALK']
   const day2F25MAstDevice = [2,'F','25 M DEVICE']
   const day2F25MAstWC = [2,'F','25 M WC-ASSISTED']
@@ -65,7 +73,9 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay3TrackCondensedFunctions();
   }
 
-  // Day 3 Lists
+  /*************************************************************************
+   *                       Day 3 Lists                                     *
+  *************************************************************************/
   const day3F25MAstWalk = [3,'F','25 M WALK']
   const day3F25MAstDevice = [3,'F','25 M DEVICE']
   const day3F25MAstWC = [3,'F','25 M WC-ASSISTED']
@@ -88,7 +98,9 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay4TrackCondensedFunctions();
   }
 
-  // Day 4 Lists
+  /*************************************************************************
+   *                       Day 4 Lists                                     *
+  *************************************************************************/
   const day4F25MAstWalk = [4,'F','25 M WALK']
   const day4F25MAstDevice = [4,'F','25 M DEVICE']
   const day4F25MAstWC = [4,'F','25 M WC-ASSISTED']
@@ -111,7 +123,9 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay5TrackCondensedFunctions();
   }
 
-  // Day 5 Lists
+  /*************************************************************************
+   *                       Day 5 Lists                                     *
+  *************************************************************************/
   const day5F25MAstWalk = [5,'F','25 M WALK']
   const day5F25MAstDevice = [5,'F','25 M DEVICE']
   const day5F25MAstWC = [5,'F','25 M WC-ASSISTED']
@@ -134,7 +148,9 @@ function runAllFemalesTrackCondensedLists() {
     await runAllFemaleDay6TrackCondensedFunctions();
   }
 
-  // Day 6 Lists
+  /*************************************************************************
+   *                       Day 6 Lists                                     *
+  *************************************************************************/
   const day6F25MAstWalk = [6,'F','25 M WALK']
   const day6F25MAstDevice = [6,'F','25 M DEVICE']
   const day6F25MAstWC = [6,'F','25 M WC-ASSISTED']

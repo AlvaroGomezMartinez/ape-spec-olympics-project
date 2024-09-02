@@ -27,140 +27,140 @@ function runAllMalesTrackHeatSheets() {
   /*************************************************************************
    *                       Day 1 Lists                                     *
   *************************************************************************/
-    const day1M25MAstWalk = [1,'M','25 M WALK']
-    const day1M25MAstDevice = [1,'M','25 M DEVICE']
-    const day1M25MAstWC = [1,'M','25 M WC-ASSISTED']
-    const day1M30MSlalom = [1,'M','30 M SLALOM']
-    const day1M50MRun = [1,'M','50 MD']
-    const day1M50MManualWC = [1,'M','50 M WC']
-    const day1M100MRun = [1,'M','100 MD']
+  const day1M25MAstWalk = [1, 'M', '25 M WALK']
+  const day1M25MAstDevice = [1, 'M', '25 M DEVICE']
+  const day1M25MAstWC = [1, 'M', '25 M WC-ASSISTED']
+  const day1M30MSlalom = [1, 'M', '30 M SLALOM']
+  const day1M50MRun = [1, 'M', '50 MD']
+  const day1M50MManualWC = [1, 'M', '50 M WC']
+  const day1M100MRun = [1, 'M', '100 MD']
 
-    async function runAllMaleTrackHeatSheetsDay1Functions() {
-      SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Putting together the Male Track Heat Sheets - Scorecards 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
-      await createTrackHeatSheetTables(...day1M100MRun);
-      await createTrackHeatSheetTables(...day1M50MManualWC);
-      await createTrackHeatSheetTables(...day1M50MRun);
-      await createTrackHeatSheetTables(...day1M30MSlalom);
-      await createTrackHeatSheetTables(...day1M25MAstWC);
-      await createTrackHeatSheetTables(...day1M25MAstDevice);
-      await createTrackHeatSheetTables(...day1M25MAstWalk);
-      await runAllMaleTrackHeatSheetsDay2Functions();
-    }
+  async function runAllMaleTrackHeatSheetsDay1Functions() {
+    SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Putting together the Male Track Heat Sheets - Scorecards 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
+    await createTrackHeatSheetTables(...day1M100MRun);
+    await createTrackHeatSheetTables(...day1M50MManualWC);
+    await createTrackHeatSheetTables(...day1M50MRun);
+    await createTrackHeatSheetTables(...day1M30MSlalom);
+    await createTrackHeatSheetTables(...day1M25MAstWC);
+    await createTrackHeatSheetTables(...day1M25MAstDevice);
+    await createTrackHeatSheetTables(...day1M25MAstWalk);
+    await runAllMaleTrackHeatSheetsDay2Functions();
+  }
 
   /*************************************************************************
    *                       Day 2 Lists                                     *
   *************************************************************************/
-    const day2M25MAstWalk = [2,'M','25 M WALK']
-    const day2M25MAstDevice = [2,'M','25 M DEVICE']
-    const day2M25MAstWC = [2,'M','25 M WC-ASSISTED']
-    const day2M30MSlalom = [2,'M','30 M SLALOM']
-    const day2M50MRun = [2,'M','50 MD']
-    const day2M50MManualWC = [2,'M','50 M WC']
-    const day2M100MRun = [2,'M','100 MD']
+  const day2M25MAstWalk = [2, 'M', '25 M WALK']
+  const day2M25MAstDevice = [2, 'M', '25 M DEVICE']
+  const day2M25MAstWC = [2, 'M', '25 M WC-ASSISTED']
+  const day2M30MSlalom = [2, 'M', '30 M SLALOM']
+  const day2M50MRun = [2, 'M', '50 MD']
+  const day2M50MManualWC = [2, 'M', '50 M WC']
+  const day2M100MRun = [2, 'M', '100 MD']
 
-    async function runAllMaleTrackHeatSheetsDay2Functions() {
-      SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Day 1. Working on Days 2-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
-      await createTrackHeatSheetTables(...day2M100MRun);
-      await createTrackHeatSheetTables(...day2M50MManualWC);
-      await createTrackHeatSheetTables(...day2M50MRun);
-      await createTrackHeatSheetTables(...day2M30MSlalom);
-      await createTrackHeatSheetTables(...day2M25MAstWC);
-      await createTrackHeatSheetTables(...day2M25MAstDevice);
-      await createTrackHeatSheetTables(...day2M25MAstWalk);
-      await runAllMaleTrackHeatSheetsDay3Functions();
-    }
+  async function runAllMaleTrackHeatSheetsDay2Functions() {
+    SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Day 1. Working on Days 2-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
+    await createTrackHeatSheetTables(...day2M100MRun);
+    await createTrackHeatSheetTables(...day2M50MManualWC);
+    await createTrackHeatSheetTables(...day2M50MRun);
+    await createTrackHeatSheetTables(...day2M30MSlalom);
+    await createTrackHeatSheetTables(...day2M25MAstWC);
+    await createTrackHeatSheetTables(...day2M25MAstDevice);
+    await createTrackHeatSheetTables(...day2M25MAstWalk);
+    await runAllMaleTrackHeatSheetsDay3Functions();
+  }
 
   /*************************************************************************
    *                       Day 3 Lists                                     *
   *************************************************************************/
-    const day3M25MAstWalk = [3,'M','25 M WALK']
-    const day3M25MAstDevice = [3,'M','25 M DEVICE']
-    const day3M25MAstWC = [3,'M','25 M WC-ASSISTED']
-    const day3M30MSlalom = [3,'M','30 M SLALOM']
-    const day3M50MRun = [3,'M','50 MD']
-    const day3M50MManualWC = [3,'M','50 M WC']
-    const day3M100MRun = [3,'M','100 MD']
+  const day3M25MAstWalk = [3, 'M', '25 M WALK']
+  const day3M25MAstDevice = [3, 'M', '25 M DEVICE']
+  const day3M25MAstWC = [3, 'M', '25 M WC-ASSISTED']
+  const day3M30MSlalom = [3, 'M', '30 M SLALOM']
+  const day3M50MRun = [3, 'M', '50 MD']
+  const day3M50MManualWC = [3, 'M', '50 M WC']
+  const day3M100MRun = [3, 'M', '100 MD']
 
-    async function runAllMaleTrackHeatSheetsDay3Functions() {
-      SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1 & 2. Working on Days 3-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
-      await createTrackHeatSheetTables(...day3M100MRun);
-      await createTrackHeatSheetTables(...day3M50MManualWC);
-      await createTrackHeatSheetTables(...day3M50MRun);
-      await createTrackHeatSheetTables(...day3M30MSlalom);
-      await createTrackHeatSheetTables(...day3M25MAstWC);
-      await createTrackHeatSheetTables(...day3M25MAstDevice);
-      await createTrackHeatSheetTables(...day3M25MAstWalk);
-      await runAllMaleTrackHeatSheetsDay4Functions();
-    }
+  async function runAllMaleTrackHeatSheetsDay3Functions() {
+    SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1 & 2. Working on Days 3-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
+    await createTrackHeatSheetTables(...day3M100MRun);
+    await createTrackHeatSheetTables(...day3M50MManualWC);
+    await createTrackHeatSheetTables(...day3M50MRun);
+    await createTrackHeatSheetTables(...day3M30MSlalom);
+    await createTrackHeatSheetTables(...day3M25MAstWC);
+    await createTrackHeatSheetTables(...day3M25MAstDevice);
+    await createTrackHeatSheetTables(...day3M25MAstWalk);
+    await runAllMaleTrackHeatSheetsDay4Functions();
+  }
 
   /*************************************************************************
    *                       Day 4 Lists                                     *
   *************************************************************************/
-    const day4M25MAstWalk = [4,'M','25 M WALK']
-    const day4M25MAstDevice = [4,'M','25 M DEVICE']
-    const day4M25MAstWC = [4,'M','25 M WC-ASSISTED']
-    const day4M30MSlalom = [4,'M','30 M SLALOM']
-    const day4M50MRun = [4,'M','50 MD']
-    const day4M50MManualWC = [4,'M','50 M WC']
-    const day4M100MRun = [4,'M','100 MD']
+  const day4M25MAstWalk = [4, 'M', '25 M WALK']
+  const day4M25MAstDevice = [4, 'M', '25 M DEVICE']
+  const day4M25MAstWC = [4, 'M', '25 M WC-ASSISTED']
+  const day4M30MSlalom = [4, 'M', '30 M SLALOM']
+  const day4M50MRun = [4, 'M', '50 MD']
+  const day4M50MManualWC = [4, 'M', '50 M WC']
+  const day4M100MRun = [4, 'M', '100 MD']
 
-    async function runAllMaleTrackHeatSheetsDay4Functions() {
-      SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-3. Working on Days 4-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
-      await createTrackHeatSheetTables(...day4M100MRun);
-      await createTrackHeatSheetTables(...day4M50MManualWC);
-      await createTrackHeatSheetTables(...day4M50MRun);
-      await createTrackHeatSheetTables(...day4M30MSlalom);
-      await createTrackHeatSheetTables(...day4M25MAstWC);
-      await createTrackHeatSheetTables(...day4M25MAstDevice);
-      await createTrackHeatSheetTables(...day4M25MAstWalk);
-      await runAllMaleTrackHeatSheetsDay5Functions();
-    }
+  async function runAllMaleTrackHeatSheetsDay4Functions() {
+    SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-3. Working on Days 4-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
+    await createTrackHeatSheetTables(...day4M100MRun);
+    await createTrackHeatSheetTables(...day4M50MManualWC);
+    await createTrackHeatSheetTables(...day4M50MRun);
+    await createTrackHeatSheetTables(...day4M30MSlalom);
+    await createTrackHeatSheetTables(...day4M25MAstWC);
+    await createTrackHeatSheetTables(...day4M25MAstDevice);
+    await createTrackHeatSheetTables(...day4M25MAstWalk);
+    await runAllMaleTrackHeatSheetsDay5Functions();
+  }
 
   /*************************************************************************
    *                       Day 5 Lists                                     *
   *************************************************************************/
-    const day5M25MAstWalk = [5,'M','25 M WALK']
-    const day5M25MAstDevice = [5,'M','25 M DEVICE']
-    const day5M25MAstWC = [5,'M','25 M WC-ASSISTED']
-    const day5M30MSlalom = [5,'M','30 M SLALOM']
-    const day5M50MRun = [5,'M','50 MD']
-    const day5M50MManualWC = [5,'M','50 M WC']
-    const day5M100MRun = [5,'M','100 MD']
+  const day5M25MAstWalk = [5, 'M', '25 M WALK']
+  const day5M25MAstDevice = [5, 'M', '25 M DEVICE']
+  const day5M25MAstWC = [5, 'M', '25 M WC-ASSISTED']
+  const day5M30MSlalom = [5, 'M', '30 M SLALOM']
+  const day5M50MRun = [5, 'M', '50 MD']
+  const day5M50MManualWC = [5, 'M', '50 M WC']
+  const day5M100MRun = [5, 'M', '100 MD']
 
-    async function runAllMaleTrackHeatSheetsDay5Functions() {
-      SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-4. Working on Days 5 & 6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
-      await createTrackHeatSheetTables(...day5M100MRun);
-      await createTrackHeatSheetTables(...day5M50MManualWC);
-      await createTrackHeatSheetTables(...day5M50MRun);
-      await createTrackHeatSheetTables(...day5M30MSlalom);
-      await createTrackHeatSheetTables(...day5M25MAstWC);
-      await createTrackHeatSheetTables(...day5M25MAstDevice);
-      await createTrackHeatSheetTables(...day5M25MAstWalk);
-      await runAllMaleTrackHeatSheetsDay6Functions();
-    }
+  async function runAllMaleTrackHeatSheetsDay5Functions() {
+    SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-4. Working on Days 5 & 6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
+    await createTrackHeatSheetTables(...day5M100MRun);
+    await createTrackHeatSheetTables(...day5M50MManualWC);
+    await createTrackHeatSheetTables(...day5M50MRun);
+    await createTrackHeatSheetTables(...day5M30MSlalom);
+    await createTrackHeatSheetTables(...day5M25MAstWC);
+    await createTrackHeatSheetTables(...day5M25MAstDevice);
+    await createTrackHeatSheetTables(...day5M25MAstWalk);
+    await runAllMaleTrackHeatSheetsDay6Functions();
+  }
 
   /*************************************************************************
    *                       Day 6 Lists                                     *
   *************************************************************************/
-    const day6M25MAstWalk = [6,'M','25 M WALK']
-    const day6M25MAstDevice = [6,'M','25 M DEVICE']
-    const day6M25MAstWC = [6,'M','25 M WC-ASSISTED']
-    const day6M30MSlalom = [6,'M','30 M SLALOM']
-    const day6M50MRun = [6,'M','50 MD']
-    const day6M50MManualWC = [6,'M','50 M WC']
-    const day6M100MRun = [6,'M','100 MD']
+  const day6M25MAstWalk = [6, 'M', '25 M WALK']
+  const day6M25MAstDevice = [6, 'M', '25 M DEVICE']
+  const day6M25MAstWC = [6, 'M', '25 M WC-ASSISTED']
+  const day6M30MSlalom = [6, 'M', '30 M SLALOM']
+  const day6M50MRun = [6, 'M', '50 MD']
+  const day6M50MManualWC = [6, 'M', '50 M WC']
+  const day6M100MRun = [6, 'M', '100 MD']
 
-    async function runAllMaleTrackHeatSheetsDay6Functions() {
-      SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-5. Working on Day 6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
-      await createTrackHeatSheetTables(...day6M100MRun);
-      await createTrackHeatSheetTables(...day6M50MManualWC);
-      await createTrackHeatSheetTables(...day6M50MRun);
-      await createTrackHeatSheetTables(...day6M30MSlalom);
-      await createTrackHeatSheetTables(...day6M25MAstWC);
-      await createTrackHeatSheetTables(...day6M25MAstDevice);
-      await createTrackHeatSheetTables(...day6M25MAstWalk);
-      await openTrackHeatSheetsGoogleDoc()();
-    }
+  async function runAllMaleTrackHeatSheetsDay6Functions() {
+    SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-5. Working on Day 6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
+    await createTrackHeatSheetTables(...day6M100MRun);
+    await createTrackHeatSheetTables(...day6M50MManualWC);
+    await createTrackHeatSheetTables(...day6M50MRun);
+    await createTrackHeatSheetTables(...day6M30MSlalom);
+    await createTrackHeatSheetTables(...day6M25MAstWC);
+    await createTrackHeatSheetTables(...day6M25MAstDevice);
+    await createTrackHeatSheetTables(...day6M25MAstWalk);
+    await openTrackHeatSheetsGoogleDoc()();
+  }
 
   /** @function that creates the tables for the lists */
   function createTrackHeatSheetTables(tAndFEventDay, athGender, trackEvent) {
@@ -209,7 +209,7 @@ function runAllMalesTrackHeatSheets() {
       for (let i = 0; i < filteredData.length; i++) {
         let row = filteredData[i];
         let value = String(row[14]).padStart(2, '0'); // Assuming row[14] contains the value for table separation
-        
+
         /** Check if a table already exists for the value */
         if (!tables[value]) {
           /** Create a new table if it doesn't exist */
@@ -275,14 +275,14 @@ function runAllMalesTrackHeatSheets() {
   function openTrackHeatSheetsGoogleDoc() {
     let doc = DocumentApp.openById(maleTrackHeatSheetsTemplateFile.getId());
     let url = doc.getUrl();
-    
+
     let htmlContent = '<p>Thanks for being patient! 😅<br><br> The Male Track Heat Sheets - Scorecards have been updated.</p>';
     htmlContent += '<p>Click <a href="' + url + '" target="_blank">here</a> to open it up.</p>';
 
     let htmlOutput = HtmlService.createHtmlOutput(htmlContent)
       .setWidth(400)
       .setHeight(150);
-    
+
     /** Displays the custom dialog box */
     SpreadsheetApp.getUi().showModalDialog(htmlOutput, 'Google Doc Updated');
   }

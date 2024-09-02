@@ -1,9 +1,9 @@
 /************************************************************************************************
  * The purpose of the function below is to push the data from 'Student Database' to each        *
  * day sheet. After pushing the data, it calls the pushRunningEventDataToSheets() function to   *
- * push the running event data to each event sheet.                                             *
+ * push the running event data to each event sheet found inside of each day sheet.              *
  *                                                                                              *
- * A user interface menu item in the 'Special Olympics Student Database called 'Push data to.  *
+ * A user interface menu item in the 'Special Olympics Student Database called 'Push data to.   *
  * the six day sheets' runs this function.                                                      *
 ************************************************************************************************/
 
@@ -74,17 +74,17 @@ function createDaySheets() {
     day6.unshift(headings);
 
     day1Sheet1.getRange(1, 1, day1.length, 22).setValues(day1);
-    day1Sheet1.getRange(1,1).setComment(comment);
+    day1Sheet1.getRange(1, 1).setComment(comment);
     day2Sheet1.getRange(1, 1, day2.length, 22).setValues(day2);
-    day2Sheet1.getRange(1,1).setComment(comment);
+    day2Sheet1.getRange(1, 1).setComment(comment);
     day3Sheet1.getRange(1, 1, day3.length, 22).setValues(day3);
-    day3Sheet1.getRange(1,1).setComment(comment);
+    day3Sheet1.getRange(1, 1).setComment(comment);
     day4Sheet1.getRange(1, 1, day4.length, 22).setValues(day4);
-    day4Sheet1.getRange(1,1).setComment(comment);
+    day4Sheet1.getRange(1, 1).setComment(comment);
     day5Sheet1.getRange(1, 1, day5.length, 22).setValues(day5);
-    day5Sheet1.getRange(1,1).setComment(comment);
+    day5Sheet1.getRange(1, 1).setComment(comment);
     day6Sheet1.getRange(1, 1, day6.length, 22).setValues(day6);
-    day6Sheet1.getRange(1,1).setComment(comment);
+    day6Sheet1.getRange(1, 1).setComment(comment);
 
     pushRunningEventDataToSheets();
 

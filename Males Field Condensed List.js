@@ -2,8 +2,8 @@
  * Last updated: April 4, 2024
 */
 
-function runAllMalesFieldCondensedLists () {
-  
+function runAllMalesFieldCondensedLists() {
+
   let isMaleFieldcondensedListsDocumentCleared = false;
 
   /**
@@ -27,12 +27,12 @@ function runAllMalesFieldCondensedLists () {
   /*************************************************************************
    *                       Day 1 Lists                                     *
   *************************************************************************/
-  const day1MBeanbagThrow = [1,'M','BEAN BAG THROW']
-  const day1MTennisBallThrow = [1,'M','TENNIS BALL THROW']  
-  const day1MSoftball = [1,'M','SOFTBALL']
-  const day1MRunningLJ = [1,'M','RUNNING LJ']
-  const day1MFoamTurboJav = [1,'M','FOAM TURBOJAV']
-  const day1MTurboJav = [1,'M','TURBO JAV']
+  const day1MBeanbagThrow = [1, 'M', 'BEAN BAG THROW']
+  const day1MTennisBallThrow = [1, 'M', 'TENNIS BALL THROW']
+  const day1MSoftball = [1, 'M', 'SOFTBALL']
+  const day1MRunningLJ = [1, 'M', 'RUNNING LJ']
+  const day1MFoamTurboJav = [1, 'M', 'FOAM TURBOJAV']
+  const day1MTurboJav = [1, 'M', 'TURBO JAV']
 
   async function runAllMaleDay1Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Putting together the Males Field Condensed List. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -48,12 +48,12 @@ function runAllMalesFieldCondensedLists () {
   /*************************************************************************
    *                       Day 2 Lists                                     *
   *************************************************************************/
-  const day2MBeanbagThrow = [2,'M','BEAN BAG THROW']
-  const day2MTennisBallThrow = [2,'M','TENNIS BALL THROW']
-  const day2MSoftball = [2,'M','SOFTBALL']
-  const day2MRunningLJ = [2,'M','RUNNING LJ']
-  const day2MFoamTurboJav = [2,'M','FOAM TURBOJAV']
-  const day2MTurboJav = [2,'M','TURBO JAV']
+  const day2MBeanbagThrow = [2, 'M', 'BEAN BAG THROW']
+  const day2MTennisBallThrow = [2, 'M', 'TENNIS BALL THROW']
+  const day2MSoftball = [2, 'M', 'SOFTBALL']
+  const day2MRunningLJ = [2, 'M', 'RUNNING LJ']
+  const day2MFoamTurboJav = [2, 'M', 'FOAM TURBOJAV']
+  const day2MTurboJav = [2, 'M', 'TURBO JAV']
 
   async function runAllMaleDay2Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Day 1 working on Days 2-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -69,12 +69,12 @@ function runAllMalesFieldCondensedLists () {
   /*************************************************************************
    *                       Day 3 Lists                                     *
   *************************************************************************/
-  const day3MBeanbagThrow = [3,'M','BEAN BAG THROW']
-  const day3MTennisBallThrow = [3,'M','TENNIS BALL THROW']
-  const day3MSoftball = [3,'M','SOFTBALL']
-  const day3MRunningLJ = [3,'M','RUNNING LJ']
-  const day3MFoamTurboJav = [3,'M','FOAM TURBOJAV']
-  const day3MTurboJav = [3,'M','TURBO JAV']
+  const day3MBeanbagThrow = [3, 'M', 'BEAN BAG THROW']
+  const day3MTennisBallThrow = [3, 'M', 'TENNIS BALL THROW']
+  const day3MSoftball = [3, 'M', 'SOFTBALL']
+  const day3MRunningLJ = [3, 'M', 'RUNNING LJ']
+  const day3MFoamTurboJav = [3, 'M', 'FOAM TURBOJAV']
+  const day3MTurboJav = [3, 'M', 'TURBO JAV']
 
   async function runAllMaleDay3Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1 & 2 working on Days 3-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -90,12 +90,12 @@ function runAllMalesFieldCondensedLists () {
   /*************************************************************************
    *                       Day 4 Lists                                     *
   *************************************************************************/
-  const day4MBeanbagThrow = [4,'M','BEAN BAG THROW']
-  const day4MTennisBallThrow = [4,'M','TENNIS BALL THROW']
-  const day4MSoftball = [4,'M','SOFTBALL']
-  const day4MRunningLJ = [4,'M','RUNNING LJ']
-  const day4MFoamTurboJav = [4,'M','FOAM TURBOJAV']
-  const day4MTurboJav = [4,'M','TURBO JAV']
+  const day4MBeanbagThrow = [4, 'M', 'BEAN BAG THROW']
+  const day4MTennisBallThrow = [4, 'M', 'TENNIS BALL THROW']
+  const day4MSoftball = [4, 'M', 'SOFTBALL']
+  const day4MRunningLJ = [4, 'M', 'RUNNING LJ']
+  const day4MFoamTurboJav = [4, 'M', 'FOAM TURBOJAV']
+  const day4MTurboJav = [4, 'M', 'TURBO JAV']
 
   async function runAllMaleDay4Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-3 working on Days 4-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -111,16 +111,16 @@ function runAllMalesFieldCondensedLists () {
   /*************************************************************************
    *                       Day 5 Lists                                     *
   *************************************************************************/
-  const day5MBeanbagThrow = [5,'M','BEAN BAG THROW']
-  const day5MTennisBallThrow = [5,'M','TENNIS BALL THROW']
-  const day5MSoftball = [5,'M','SOFTBALL']
-  const day5MRunningLJ = [5,'M','RUNNING LJ']
-  const day5MFoamTurboJav = [5,'M','FOAM TURBOJAV']
-  const day5MTurboJav = [5,'M','TURBO JAV']
+  const day5MBeanbagThrow = [5, 'M', 'BEAN BAG THROW']
+  const day5MTennisBallThrow = [5, 'M', 'TENNIS BALL THROW']
+  const day5MSoftball = [5, 'M', 'SOFTBALL']
+  const day5MRunningLJ = [5, 'M', 'RUNNING LJ']
+  const day5MFoamTurboJav = [5, 'M', 'FOAM TURBOJAV']
+  const day5MTurboJav = [5, 'M', 'TURBO JAV']
 
   async function runAllMaleDay5Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-4 working on Days 5 & 6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
-    await createTables(...day5MTurboJav);    
+    await createTables(...day5MTurboJav);
     await createTables(...day5MFoamTurboJav);
     await createTables(...day5MRunningLJ);
     await createTables(...day5MSoftball);
@@ -132,12 +132,12 @@ function runAllMalesFieldCondensedLists () {
   /*************************************************************************
    *                       Day 6 Lists                                     *
   *************************************************************************/
-  const day6MBeanbagThrow = [6,'M','BEAN BAG THROW']
-  const day6MTennisBallThrow = [6,'M','TENNIS BALL THROW']
-  const day6MSoftball = [6,'M','SOFTBALL']
-  const day6MRunningLJ = [6,'M','RUNNING LJ']
-  const day6MFoamTurboJav = [6,'M','FOAM TURBOJAV']
-  const day6MTurboJav = [6,'M','TURBO JAV']
+  const day6MBeanbagThrow = [6, 'M', 'BEAN BAG THROW']
+  const day6MTennisBallThrow = [6, 'M', 'TENNIS BALL THROW']
+  const day6MSoftball = [6, 'M', 'SOFTBALL']
+  const day6MRunningLJ = [6, 'M', 'RUNNING LJ']
+  const day6MFoamTurboJav = [6, 'M', 'FOAM TURBOJAV']
+  const day6MTurboJav = [6, 'M', 'TURBO JAV']
 
   async function runAllMaleDay6Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-5 working on Day 6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -151,7 +151,7 @@ function runAllMalesFieldCondensedLists () {
   }
 
   /** Function that creates the tables for the lists */
-  function createTables (tAndFEventDay, athGender, fieldEvent) {
+  function createTables(tAndFEventDay, athGender, fieldEvent) {
     const { templateDoc, body } = openMaleTemplateDoc();
 
     let filteredData = [];
@@ -232,7 +232,7 @@ function runAllMalesFieldCondensedLists () {
       Object.keys(tables)
         .forEach((value, index) => {
           body.insertParagraph(body.getChildIndex(tables[value].table), tables[value].headerText).setAttributes(style);
-      });
+        });
 
       templateDoc.saveAndClose();
     }
@@ -246,7 +246,7 @@ function runAllMalesFieldCondensedLists () {
   function openMalesFieldCondensedListGoogleDoc() {
     let doc = DocumentApp.openById(maleFieldCondensedListTemplateFile.getId());
     let url = doc.getUrl();
-    
+
     let htmlContent = '<p>🏆 Thanks for your patience! 😅<br><br>The Males Field Consolidated List has been updated.</p>';
     htmlContent += '<p>Click <a href="' + url + '" target="_blank">here</a> to open it up.</p>';
     let htmlOutput = HtmlService.createHtmlOutput(htmlContent)

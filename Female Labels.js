@@ -11,7 +11,7 @@ function initFemale_() {
 /********************************************************************************************************
  * This function creates label templates for female events.                                             *
  * You can add the label size and dimensions on a hidden sheet named "Labels" in the Special Olympics   *
- * Database sheet.                                                                                      *
+ * Database spreadsheet.                                                                                *
  * Put an 'x' in column A to select the dimensions and have the labels get created.                     *
 ********************************************************************************************************/
 function makeFemaleTemplate() {
@@ -71,7 +71,7 @@ function inchToPoint_(m) {
 
 /*****************************************************************************
  * The femaleMailMerge() function below gets called by the 'Menus.gs' file,  *
- * specifically the runFemaleLabels() function that gets triggers from the   *
+ * specifically the runFemaleLabels() function that gets triggered from the  *
  * '⚑ Create Labels' menu item.                                              *
  *                                                                           *
  * The function merges the data from 'Student Database into label templates. *
@@ -82,7 +82,7 @@ function femaleMailMerge() {
   const sh = femalesTemplate.ss.getSheetByName('Female-Labels');
   [femalesTemplate.recipientHeaders, ...femalesTemplate.recipientsData] = sh.getDataRange().getValues();
   const templateTable = femalesTemplate.body.getTables()[0];
-  const templateCell = templateTable.getCell(0,0).copy();
+  const templateCell = templateTable.getCell(0, 0).copy();
   const numLines = templateCell.getNumChildren();
   const templateTexts = [];
   const templateAttributes = [];
@@ -91,7 +91,7 @@ function femaleMailMerge() {
     templateTexts.push(child.getText())
     const sourceAttributes = child.getAttributes()
     const atts = {}
-    Object.entries(sourceAttributes).forEach(([k,v]) => {
+    Object.entries(sourceAttributes).forEach(([k, v]) => {
       if (!(v instanceof Object)) {
         atts[k] = v;
       }
@@ -115,7 +115,7 @@ function femaleMailMerge() {
     if (iRow >= numRows) {
       iRow = 0
       table = femalesTemplate.body.appendTable(templateTable.copy())
-      table.getCell(0,0).clear();
+      table.getCell(0, 0).clear();
     }
     const newCell = table.getCell(iRow, iCol);
     newCell.clear();

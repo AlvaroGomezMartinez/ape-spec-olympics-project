@@ -27,12 +27,12 @@ function runAllMalesFieldHeatSheets() {
   /*************************************************************************
    *                       Day 1 Lists                                     *
   *************************************************************************/
-  const fieldHeatSheetsDay1MBeanbagThrow = [1,'M','BEAN BAG THROW']
-  const fieldHeatSheetsDay1MTennisBallThrow = [1,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay1MSoftball = [1,'M','SOFTBALL']
-  const fieldHeatSheetsDay1MRunningLJ = [1,'M','RUNNING LJ']
-  const fieldHeatSheetsDay1MFoamTurboJav = [1,'M','FOAM TURBOJAV']
-  const fieldHeatSheetsDay1MTurboJav = [1,'M','TURBO JAV']
+  const fieldHeatSheetsDay1MBeanbagThrow = [1, 'M', 'BEAN BAG THROW']
+  const fieldHeatSheetsDay1MTennisBallThrow = [1, 'M', 'TENNIS BALL THROW']
+  const fieldHeatSheetsDay1MSoftball = [1, 'M', 'SOFTBALL']
+  const fieldHeatSheetsDay1MRunningLJ = [1, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay1MFoamTurboJav = [1, 'M', 'FOAM TURBOJAV']
+  const fieldHeatSheetsDay1MTurboJav = [1, 'M', 'TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay1Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Putting together the Male Field Heat Sheets - Scorecards 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -48,12 +48,12 @@ function runAllMalesFieldHeatSheets() {
   /*************************************************************************
    *                       Day 2 Lists                                     *
   *************************************************************************/
-  const fieldHeatSheetsDay2MBeanbagThrow = [2,'M','BEAN BAG THROW']
-  const fieldHeatSheetsDay2MTennisBallThrow = [2,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay2MSoftball = [2,'M','SOFTBALL']
-  const fieldHeatSheetsDay2MRunningLJ = [2,'M','RUNNING LJ']
-  const fieldHeatSheetsDay2MFoamTurboJav = [2,'M','FOAM TURBOJAV']
-  const fieldHeatSheetsDay2MTurboJav = [2,'M','TURBO JAV']
+  const fieldHeatSheetsDay2MBeanbagThrow = [2, 'M', 'BEAN BAG THROW']
+  const fieldHeatSheetsDay2MTennisBallThrow = [2, 'M', 'TENNIS BALL THROW']
+  const fieldHeatSheetsDay2MSoftball = [2, 'M', 'SOFTBALL']
+  const fieldHeatSheetsDay2MRunningLJ = [2, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay2MFoamTurboJav = [2, 'M', 'FOAM TURBOJAV']
+  const fieldHeatSheetsDay2MTurboJav = [2, 'M', 'TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay2Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Day 1 working on Days 2-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -69,12 +69,12 @@ function runAllMalesFieldHeatSheets() {
   /*************************************************************************
    *                       Day 3 Lists                                     *
   *************************************************************************/
-  const fieldHeatSheetsDay3MBeanbagThrow = [3,'M','BEAN BAG THROW']
-  const fieldHeatSheetsDay3MTennisBallThrow = [3,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay3MSoftball = [3,'M','SOFTBALL']
-  const fieldHeatSheetsDay3MRunningLJ = [3,'M','RUNNING LJ']
-  const fieldHeatSheetsDay3MFoamTurboJav = [3,'M','FOAM TURBOJAV']
-  const fieldHeatSheetsDay3MTurboJav = [3,'M','TURBO JAV']
+  const fieldHeatSheetsDay3MBeanbagThrow = [3, 'M', 'BEAN BAG THROW']
+  const fieldHeatSheetsDay3MTennisBallThrow = [3, 'M', 'TENNIS BALL THROW']
+  const fieldHeatSheetsDay3MSoftball = [3, 'M', 'SOFTBALL']
+  const fieldHeatSheetsDay3MRunningLJ = [3, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay3MFoamTurboJav = [3, 'M', 'FOAM TURBOJAV']
+  const fieldHeatSheetsDay3MTurboJav = [3, 'M', 'TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay3Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1 & 2 working on Days 3-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -90,12 +90,12 @@ function runAllMalesFieldHeatSheets() {
   /*************************************************************************
    *                       Day 4 Lists                                     *
   *************************************************************************/
-  const fieldHeatSheetsDay4MBeanbagThrow = [4,'M','BEAN BAG THROW']
-  const fieldHeatSheetsDay4MTennisBallThrow = [4,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay4MSoftball = [4,'M','SOFTBALL']
-  const fieldHeatSheetsDay4MRunningLJ = [4,'M','RUNNING LJ']
-  const fieldHeatSheetsDay4MFoamTurboJav = [4,'M','FOAM TURBOJAV']
-  const fieldHeatSheetsDay4MTurboJav = [4,'M','TURBO JAV']
+  const fieldHeatSheetsDay4MBeanbagThrow = [4, 'M', 'BEAN BAG THROW']
+  const fieldHeatSheetsDay4MTennisBallThrow = [4, 'M', 'TENNIS BALL THROW']
+  const fieldHeatSheetsDay4MSoftball = [4, 'M', 'SOFTBALL']
+  const fieldHeatSheetsDay4MRunningLJ = [4, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay4MFoamTurboJav = [4, 'M', 'FOAM TURBOJAV']
+  const fieldHeatSheetsDay4MTurboJav = [4, 'M', 'TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay4Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-3 working on Days 4-6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -111,12 +111,12 @@ function runAllMalesFieldHeatSheets() {
   /*************************************************************************
    *                       Day 5 Lists                                     *
   *************************************************************************/
-  const fieldHeatSheetsDay5MBeanbagThrow = [5,'M','BEAN BAG THROW']
-  const fieldHeatSheetsDay5MTennisBallThrow = [5,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay5MSoftball = [5,'M','SOFTBALL']
-  const fieldHeatSheetsDay5MRunningLJ = [5,'M','RUNNING LJ']
-  const fieldHeatSheetsDay5MFoamTurboJav = [5,'M','FOAM TURBOJAV']
-  const fieldHeatSheetsDay5MTurboJav = [5,'M','TURBO JAV']
+  const fieldHeatSheetsDay5MBeanbagThrow = [5, 'M', 'BEAN BAG THROW']
+  const fieldHeatSheetsDay5MTennisBallThrow = [5, 'M', 'TENNIS BALL THROW']
+  const fieldHeatSheetsDay5MSoftball = [5, 'M', 'SOFTBALL']
+  const fieldHeatSheetsDay5MRunningLJ = [5, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay5MFoamTurboJav = [5, 'M', 'FOAM TURBOJAV']
+  const fieldHeatSheetsDay5MTurboJav = [5, 'M', 'TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay5Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-4 working on Days 5 & 6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -132,12 +132,12 @@ function runAllMalesFieldHeatSheets() {
   /*************************************************************************
    *                       Day 6 Lists                                     *
   *************************************************************************/
-  const fieldHeatSheetsDay6MBeanbagThrow = [6,'M','BEAN BAG THROW']
-  const fieldHeatSheetsDay6MTennisBallThrow = [6,'M','TENNIS BALL THROW']
-  const fieldHeatSheetsDay6MSoftball = [6,'M','SOFTBALL']
-  const fieldHeatSheetsDay6MRunningLJ = [6,'M','RUNNING LJ']
-  const fieldHeatSheetsDay6MFoamTurboJav = [6,'M','FOAM TURBOJAV']
-  const fieldHeatSheetsDay6MTurboJav = [6,'M','TURBO JAV']
+  const fieldHeatSheetsDay6MBeanbagThrow = [6, 'M', 'BEAN BAG THROW']
+  const fieldHeatSheetsDay6MTennisBallThrow = [6, 'M', 'TENNIS BALL THROW']
+  const fieldHeatSheetsDay6MSoftball = [6, 'M', 'SOFTBALL']
+  const fieldHeatSheetsDay6MRunningLJ = [6, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay6MFoamTurboJav = [6, 'M', 'FOAM TURBOJAV']
+  const fieldHeatSheetsDay6MTurboJav = [6, 'M', 'TURBO JAV']
 
   async function runAllMaleFieldHeatSheetsDay6Functions() {
     SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏽‍♂️ Finished Days 1-5 working on Day 6 now. 🏃🏽‍♂️ Give the script a minute or two to run 🐢");
@@ -182,7 +182,7 @@ function runAllMalesFieldHeatSheets() {
       for (let i = 0; i < filteredData.length; i++) {
         let row = filteredData[i];
         let value = String(row[19]).padStart(2, '0'); // Assuming row[19] contains the value for table separation
-        
+
         /** Check if a table already exists for the value */
         if (!tables[value]) {
           /** Create a new table if it doesn't exist */
@@ -248,14 +248,14 @@ function runAllMalesFieldHeatSheets() {
   function openMaleHeatSheetsGoogleDoc() {
     let doc = DocumentApp.openById(maleFieldHeatSheetsTemplateFile.getId());
     let url = doc.getUrl();
-    
+
     let htmlContent = '<p>Thanks for being patient! 😅<br><br>The Male Field Heat Sheets - Scorecards have been updated.</p>';
     htmlContent += '<p>Click <a href="' + url + '" target="_blank">here</a> to open it up.</p>';
 
     let htmlOutput = HtmlService.createHtmlOutput(htmlContent)
       .setWidth(400)
       .setHeight(200);
-    
+
     /** Displays the custom dialog box */
     SpreadsheetApp.getUi().showModalDialog(htmlOutput, 'Google Doc Updated');
   }

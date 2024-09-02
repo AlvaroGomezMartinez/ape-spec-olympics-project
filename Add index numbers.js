@@ -8,17 +8,15 @@
 *****************************************************************************************/
 
 function addIndexNumbers() {
-    SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Adding the Index numbers");
-    
-    var addNumbers = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Student Database');
-    var data = addNumbers.getDataRange().getValues();
-    var lastColumnIndex = data[0].length;
-    
-    // Add index numbers to each row
-    var numberOfRows = data.length;
-    var indexNumbers = [];
-    for (var i = 1; i < numberOfRows; i++) {
-        indexNumbers.push([i]);
-    }
-    addNumbers.getRange(2, lastColumnIndex, indexNumbers.length, 1).setValues(indexNumbers);
+  SpreadsheetApp.getActiveSpreadsheet().toast("🏃🏻‍♀️ Adding the Index numbers");
+
+  var addNumbers = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Student Database');
+  var data = addNumbers.getDataRange().getValues();
+  var lastColumnIndex = data[0].length;
+
+  var indexNumbers = data.slice(1).map(function (row, index) {
+    return [index + 1];
+  });
+
+  addNumbers.getRange(2, lastColumnIndex, indexNumbers.length, 1).setValues(indexNumbers);
 }

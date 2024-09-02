@@ -16,9 +16,9 @@ function createSheetsInWorkbooks() {
     var workbook = SpreadsheetApp.openById(workbookIds[i]);
 
     // Create six new sheets in the workbook
-    var sheetNames = ['Turbo Jav','Tennis Ball Throw','Softball Throw','Running Long Jump','Foam Turbo Jav','Bean Bag Throw'];
+    var sheetNames = ['Turbo Jav', 'Tennis Ball Throw', 'Softball Throw', 'Running Long Jump', 'Foam Turbo Jav', 'Bean Bag Throw'];
     for (var j = 0; j < sheetNames.length; j++) {
-      var sheet = workbook.insertSheet(sheetNames[j], j+1);
+      var sheet = workbook.insertSheet(sheetNames[j], j + 1);
       sheet.setTabColor("008000"); // Set tab color to green
     }
   }

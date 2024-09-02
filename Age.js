@@ -9,12 +9,19 @@
 
 function insertFormula() {
   let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Student Database");
+  let targetCell = 'F2';
   let formula = '=arrayformula(DATEDIF(E2:E,TODAY(),"Y"))';
-  let cell = sheet.getRange('F2');
-  let value = cell.getValue();
-  if(value === "" || value === null){
+
+  let cell = sheet.getRange(targetCell);
+  let currentValue = cell.getValue();
+
+  if (isEmptyValue(currentValue)) {
     cell.setFormula(formula);
   } else {
     Logger.log("Good");
   }
+}
+
+function isEmptyValue(value) {
+  return value === "" || value === null;
 }

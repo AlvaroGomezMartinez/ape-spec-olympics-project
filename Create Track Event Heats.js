@@ -1,17 +1,20 @@
-/*******************************************************************************
- * The createAllTrackEventHeatsAndLanes() function below updates a Google Doc  *
- * with the track event heats and lane information from the data in 'Student   *
- * Database'.                                                                  *
-*******************************************************************************/
+/*****************************************************************************************
+ * The createAllTrackEventHeatsAndLanes() function below automatically creates track     *
+ * event heats and lane assignments based on the number of athletes in each event.       *
+ *                                                                                       *
+ * This function is currently not called by any function or user interface. The APE      *
+ * coach in charge of this project's database prefers to create the heats and lanes      *
+ * manually. This function was left here for reference or for future functionality.      *
+*****************************************************************************************/
 
 function createAllTrackEventHeatsAndLanes() {
   showProgressDialog();
 
   sheet.getRange(1, 1, sheet.getMaxRows(), sheet.getMaxColumns()).activate();
-  sheet.getActiveRange().offset(1, 0, sheet.getActiveRange().getNumRows() - 1).sort([{column: 1, ascending: true}, {column: 4, ascending: true}, {column: 12, ascending: true}, {column: 13, ascending: false}, {column: 14, ascending: false}]);
-  
+  sheet.getActiveRange().offset(1, 0, sheet.getActiveRange().getNumRows() - 1).sort([{ column: 1, ascending: true }, { column: 4, ascending: true }, { column: 12, ascending: true }, { column: 13, ascending: false }, { column: 14, ascending: false }]);
+
   // Add heat and lane assignments
-  var sortedData = sheet.getRange(2, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues(); 
+  var sortedData = sheet.getRange(2, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues();
   var heatNumber = 1;
   var laneNumber = 1;
   var counter = 0;
@@ -61,11 +64,11 @@ function createAllTrackEventHeatsAndLanes() {
   }
 
   var html = HtmlService.createHtmlOutput('<p>🎉 Script has finished running!</p>');
-  SpreadsheetApp.getUi().showModelessDialog(html,'Running');
+  SpreadsheetApp.getUi().showModelessDialog(html, 'Running');
 
 }
 
 function showProgressDialog() {
   var html = HtmlService.createHtmlOutput('<p>🏃🏻‍♀️ The script is creating the track event heats and positions.<br> 🏃🏽‍♂️ This is a good time to take a break because, unfortunately, this will take several minutes to run. 🐢</p>')
-  SpreadsheetApp.getUi().showModelessDialog(html,'Running');
+  SpreadsheetApp.getUi().showModelessDialog(html, 'Running');
 }

@@ -11,10 +11,10 @@ function createAllFieldEventHeatsAndLanes() {
   showProgressDialog();
 
   sheet.getRange(1, 1, sheet.getMaxRows(), sheet.getMaxColumns()).activate();
-  sheet.getActiveRange().offset(1, 0, sheet.getActiveRange().getNumRows() - 1).sort([{column: 1, ascending: true}, {column: 4, ascending: true}, {column: 17, ascending: true}, {column: 18, ascending: true}, {column: 19, ascending: true}]);
-  
+  sheet.getActiveRange().offset(1, 0, sheet.getActiveRange().getNumRows() - 1).sort([{ column: 1, ascending: true }, { column: 4, ascending: true }, { column: 17, ascending: true }, { column: 18, ascending: true }, { column: 19, ascending: true }]);
+
   // Add heat and lane assignments
-  var sortedData = sheet.getRange(2, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues(); 
+  var sortedData = sheet.getRange(2, 1, sheet.getLastRow() - 1, sheet.getLastColumn()).getValues();
   var heatNumber = 1;
   var laneNumber = 1;
   var counter = 0;
@@ -64,11 +64,11 @@ function createAllFieldEventHeatsAndLanes() {
   }
 
   var html = HtmlService.createHtmlOutput('<p>🎉 Script has finished running!</p>');
-  SpreadsheetApp.getUi().showModelessDialog(html,'Running');
+  SpreadsheetApp.getUi().showModelessDialog(html, 'Running');
 
 }
 
 function showProgressDialog() {
   var html = HtmlService.createHtmlOutput('<p>🏃🏻‍♀️ The script is creating the field event heats and positions.<br> 🏃🏽‍♂️ This is a good time to take a break because, unfortunately, this will take several minutes to run. 🐢</p>')
-  SpreadsheetApp.getUi().showModelessDialog(html,'Running');
+  SpreadsheetApp.getUi().showModelessDialog(html, 'Running');
 }

@@ -1,0 +1,11 @@
+# Ignore .claspignore file
+.claspignore
+
+# Ignore .clasp.json file
+.clasp.json
+
+# Ignore .vscode folder
+.vscode
+
+# Ignore appsscript.json file
+appsscript.json

@@ -7,8 +7,8 @@
  * with the data, then the user clicks on the 'Run Labels' button *
  * and the labels will get created. The user then needs to go     *
  * to the Google Doc to print them out. The labels need to be     *
- * fed into a printer.                                            * 
-******************************************************************/
+ * fed into a printer.                                            *
+ ******************************************************************/
 
 // Path to the Google Doc template
 const unifiedTemplate = {
@@ -106,9 +106,23 @@ function unifiedMailMerge() {
   }
 
   const BATCH_SIZE = 30; // Adjust this number to control the number of labels created in each batch. This number can't be too large or the script will give an error.
-  for (let batchStart = 0; batchStart < unifiedTemplate.recipientsData.length; batchStart += BATCH_SIZE) {
-    const batch = unifiedTemplate.recipientsData.slice(batchStart, batchStart + BATCH_SIZE);
-    processBatch(batch, templateTable, templateTexts, templateAttributes, numRows, numCols);
+  for (
+    let batchStart = 0;
+    batchStart < unifiedTemplate.recipientsData.length;
+    batchStart += BATCH_SIZE
+  ) {
+    const batch = unifiedTemplate.recipientsData.slice(
+      batchStart,
+      batchStart + BATCH_SIZE,
+    );
+    processBatch(
+      batch,
+      templateTable,
+      templateTexts,
+      templateAttributes,
+      numRows,
+      numCols,
+    );
     unifiedTemplate.doc.saveAndClose();
     Utilities.sleep(1000); // Adds a short delay to ensure the document is closed properly
     unifiedTemplate.doc = DocumentApp.openById(unifiedTemplate.docId);
@@ -116,7 +130,14 @@ function unifiedMailMerge() {
   }
 }
 
-function processBatch(batch, templateTable, templateTexts, templateAttributes, numRows, numCols) {
+function processBatch(
+  batch,
+  templateTable,
+  templateTexts,
+  templateAttributes,
+  numRows,
+  numCols,
+) {
   let iCol = Infinity;
   let iRow = Infinity;
   let table;
@@ -144,7 +165,6 @@ function processBatch(batch, templateTable, templateTexts, templateAttributes, n
       par.setIndentFirstLine(marginInPoints);
       par.setIndentStart(marginInPoints);
       par.setIndentEnd(marginInPoints);
-
     });
     iCol++;
   });

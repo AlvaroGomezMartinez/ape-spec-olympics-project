@@ -3,7 +3,7 @@
  * of the 'Special Olympics Student Database' spreadsheet. This function is called        *
  * when the user clicks on the 'Get Data' button that's found in the 'Consolidated        *
  * Labels' sheet.                                                                         *
-******************************************************************************************/
+ ******************************************************************************************/
 
 function createConsolidatedLabelsList() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -18,9 +18,7 @@ function createConsolidatedLabelsList() {
   const rows = data.slice(1);
 
   // Filter rows where column A matches the filterDay
-  const filteredRows = rows.filter(
-    (row) => row[0] == filterDay,
-  );
+  const filteredRows = rows.filter((row) => row[0] == filterDay);
 
   // Sort the filtered rows by columns A, J, B, C
   filteredRows.sort((a, b) => {

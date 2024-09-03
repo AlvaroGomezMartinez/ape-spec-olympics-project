@@ -1,7 +1,6 @@
 /****************************************************************************************
- * The onOpen() function below creates three menus called '⚑ Reports',                  *
- * '⚑ Assign Heats & Lanes', and '⚑ Create Labels' in the 'Special Olympics Student     *
- * Database' spreadsheet.                                                               *
+ * The onOpen() function below creates two menus called '⚑ Reports', and                *
+ * '⚑ Assign Heats & Lanes' in the 'Special Olympics Student Database' spreadsheet.     *
  *                                                                                      *
  * A trigger is set to run the function when the spreadsheet is opened.                 *
  ****************************************************************************************/

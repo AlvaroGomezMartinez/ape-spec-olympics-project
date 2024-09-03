@@ -1,5 +1,5 @@
 /******************************************************************
- * unifiedMailMerge creates lables from a Google Doc template.    *
+ * unifiedMailMerge creates labels from a Google Doc template.    *
  * The user will select the Day that they want to print           *
  * labels for on the 'Consolidated Labels' sheet in the Special   *
  * Olympics Student Database. Once they select the day, they      *

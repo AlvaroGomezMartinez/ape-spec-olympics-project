@@ -33,14 +33,10 @@ function onOpen() {
     .addItem('Push data to the six day sheets. This will overwrite what is in those sheets.', 'runCreateDaySheets')
     .addToUi();
 
-  var menu3 = ui.createMenu('⚑ Create Labels')
-    .addItem('Females', 'runFemaleLabels')
-    .addItem('Males', 'runMaleLabels')
-    .addToUi();
 }
 
 /******************************************************************************************
- * Since the eleven functions above (in the menu items) are found in modules within this  *
+ * Since the nine functions above (in the menu items) are found in modules within this    *
  * project, the eleven functions below are needed in order to be able to call the         *
  * functions from those modules.                                                          *
 ******************************************************************************************/
@@ -113,24 +109,6 @@ function runCreateDaySheets() {
   var functionArgs = [];
   // Execute the function from the 'Create Day Sheets.gs' file
   var script = eval('createDaySheets');
-  script.apply(null, functionArgs);
-
-}
-
-function runFemaleLabels() {
-  var functionName = 'femaleMailMerge';
-  var functionArgs = [];
-  // Execute the function from the separate .gs file
-  var script = eval('femaleMailMerge');
-  script.apply(null, functionArgs);
-
-}
-
-function runMaleLabels() {
-  var functionName = 'maleMailMerge';
-  var functionArgs = [];
-  // Execute the function from the separate .gs file
-  var script = eval('maleMailMerge');
   script.apply(null, functionArgs);
 
 }

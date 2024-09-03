@@ -1,5 +1,10 @@
-/**
- */
+/******************************************************************************************
+ * createConsolidatedLabelsList will fill in the data in the 'Consolidated Labels' sheet  *
+ * of the 'Special Olympics Student Database' spreadsheet. This function is called        *
+ * when the user clicks on the 'Get Data' button that's found in the 'Consolidated        *
+ * Labels' sheet.                                                                         *
+******************************************************************************************/
+
 function createConsolidatedLabelsList() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const consolidatedLabelsSheet = ss.getSheetByName("Consolidated Labels");
@@ -15,8 +20,6 @@ function createConsolidatedLabelsList() {
   // Filter rows where column A matches the filterDay
   const filteredRows = rows.filter(
     (row) => row[0] == filterDay,
-
-    // (row) => row[headers.indexOf("A")] == filterDay,
   );
 
   // Sort the filtered rows by columns A, J, B, C
@@ -30,7 +33,7 @@ function createConsolidatedLabelsList() {
     return 0;
   });
 
-  // Define the columns to select based on the value in column D
+  // Define the columns to select based on the value in 'Gender'
   const selectedColumnsM = [
     "T&F Event Day",
     "Last Name",
@@ -58,7 +61,7 @@ function createConsolidatedLabelsList() {
     "Field Position",
   ];
 
-  // Select and reorder the columns based on the value in column D
+  // Select and reorder the columns based on the value in 'Gender'
   const result = filteredRows.map((row) => {
     const selectedColumns =
       row[headers.indexOf("Gender")] === "M"
@@ -68,7 +71,7 @@ function createConsolidatedLabelsList() {
     return columnIndices.map((index) => row[index]);
   });
 
-  // Add custom labels
+  // Add custom labels to the 'Consolidated Labels' sheet
   const customLabels = [
     "T&F Event Day",
     "Last Name",

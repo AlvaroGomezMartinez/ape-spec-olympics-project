@@ -1,3 +1,16 @@
+/******************************************************************
+ * unifiedMailMerge creates lables from a Google Doc template.    *
+ * The user will select the Day that they want to print           *
+ * labels for on the 'Consolidated Labels' sheet in the Special   *
+ * Olympics Student Database. Once they select the day, they      *
+ * will click on the 'Get data' button. The sheet will populate   *
+ * with the data, then the user clicks on the 'Run Labels' button *
+ * and the labels will get created. The user then needs to go     *
+ * to the Google Doc to print them out. The labels need to be     *
+ * fed into a printer.                                            * 
+******************************************************************/
+
+// Path to the Google Doc template
 const unifiedTemplate = {
   docId: "17c_LfU5GeFWHxeGYwTa7OpHAiXSQ7v1Vj7FqsB5YBz4",
 };
@@ -92,12 +105,12 @@ function unifiedMailMerge() {
     unifiedTemplate.body.removeChild(unifiedTemplate.body.getChild(i));
   }
 
-  const BATCH_SIZE = 30; // Adjust this number based on your needs
+  const BATCH_SIZE = 30; // Adjust this number to control the number of labels created in each batch. This number can't be too large or the script will give an error.
   for (let batchStart = 0; batchStart < unifiedTemplate.recipientsData.length; batchStart += BATCH_SIZE) {
     const batch = unifiedTemplate.recipientsData.slice(batchStart, batchStart + BATCH_SIZE);
     processBatch(batch, templateTable, templateTexts, templateAttributes, numRows, numCols);
     unifiedTemplate.doc.saveAndClose();
-    Utilities.sleep(1000); // Add a short delay to ensure the document is closed properly
+    Utilities.sleep(1000); // Adds a short delay to ensure the document is closed properly
     unifiedTemplate.doc = DocumentApp.openById(unifiedTemplate.docId);
     unifiedTemplate.body = unifiedTemplate.doc.getBody();
   }
@@ -128,7 +141,6 @@ function processBatch(batch, templateTable, templateTexts, templateAttributes, n
       par.setFontSize(templateAttributes[i].FONT_SIZE);
       par.setFontFamily(templateAttributes[i].FONT_FAMILY);
       par.setForegroundColor(templateAttributes[i].FOREGROUND_COLOR);
-      // Set padding to simulate margin
       par.setIndentFirstLine(marginInPoints);
       par.setIndentStart(marginInPoints);
       par.setIndentEnd(marginInPoints);

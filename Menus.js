@@ -48,7 +48,7 @@ function onOpen() {
 
 /******************************************************************************************
  * Since the nine functions above (in the menu items) are found in modules within this    *
- * project, the eleven functions below are needed in order to be able to call the         *
+ * project, the nin functions below are needed in order to be able to call the            *
  * functions from those modules.                                                          *
  ******************************************************************************************/
 function runFemalesFieldCondensedList() {

@@ -52,7 +52,7 @@ const femaleRunningEvents = [
   { name: 'day5F100MRun', event: [5, 'F', '100 MD'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
 
   { name: 'day6F25MAstWalk', event: [6, 'F', '25 M Walk'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
-  { name: 'day6F25MAstDevice', event: [6, 'F', '25 M Device'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6F25MAstDevice', event: [6, 'F', '25 M DEVICE'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6F25MAstWC', event: [6, 'F', '25 M WC-ASSISTED'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6F25MManWC', event: [6, 'F', '25 M MANUAL WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6F30MSlalom', event: [6, 'F', '30 M SLALOM'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
@@ -109,7 +109,7 @@ const maleRunningEvents = [
   { name: 'day5M100MRun', event: [5, 'M', '100 MD'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
 
   { name: 'day6M25MAstWalk', event: [6, 'M', '25 M WALK'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
-  { name: 'day6M25MAstDevice', event: [6, 'M', '25 M Device'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6M25MAstDevice', event: [6, 'M', '25 M DEVICE'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6M25MAstWC', event: [6, 'M', '25 M WC-ASSISTED'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6M25MManWC', event: [6, 'M', '25 M MANUAL WC'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6M30MSlalom', event: [6, 'M', '30 M SLALOM'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
@@ -118,10 +118,10 @@ const maleRunningEvents = [
   { name: 'day6M100MRun', event: [6, 'M', '100 MD'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' }
 ];
 
-// Array that contains the names of the female sheets found within each Day worksheet.
+// Array that contains the names of the female running event sheets found within each Day worksheet.
 const femaleRunningEventSheetNames = [
   'Females-25 M WALK',
-  'Females-25 M Device',
+  'Females-25 M DEVICE',
   'Females-25 M WC-ASSISTED',
   'Females-25 M MANUAL WC',
   'Females-30 M SLALOM',
@@ -130,7 +130,7 @@ const femaleRunningEventSheetNames = [
   'Females-100 MD'
 ];
 
-// Array that contains the names of the male sheets found within each Day worksheet.
+// Array that contains the names of the male running events sheets found within each Day worksheet.
 const maleRunningEventSheetNames = [
   'Males-25 M WALK',
   'Males-25 M DEVICE',
@@ -250,90 +250,104 @@ function pushRunningEventDataToSheets() {
   pushFieldEventDataToSheets();
 }
 
+// Array that is used to filter the female's field events data by day & event along with the spreadsheetId.
 const femaleFieldEvents = [
   { name: 'day1FTurboJav', event: [1, 'F', 'TURBO JAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
-  { name: 'day1FFmTrbJv', event: [1, 'F', 'FOAM TURBO JAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
-  { name: 'day1FRnngLngJmp', event: [1, 'F', 'RUNNING LONG JUMP'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
-  { name: 'day1FSftbllThrw', event: [1, 'F', 'SOFTBALL THROW'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1FFmTrbJv', event: [1, 'F', 'FOAM TURBOJAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1FRnngLngJmp', event: [1, 'F', 'RUNNING LJ'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1FStnngLngJmp', event: [1, 'F', 'STANDING LJ'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1FSftbllThrw', event: [1, 'F', 'SOFTBALL'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
   { name: 'day1FTnnsBllThrw', event: [1, 'F', 'TENNIS BALL THROW'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
   { name: 'day1FBnBgThw', event: [1, 'F', 'BEAN BAG THROW'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
 
   { name: 'day2FTurboJav', event: [2, 'F', 'TURBO JAV'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
-  { name: 'day2FFmTrbJv', event: [2, 'F', 'FOAM TURBO JAV'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
-  { name: 'day2FRnngLngJmp', event: [2, 'F', 'RUNNING LONG JUMP'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
-  { name: 'day2FSftbllThrw', event: [2, 'F', 'SOFTBALL THROW'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2FFmTrbJv', event: [2, 'F', 'FOAM TURBOJAV'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2FRnngLngJmp', event: [2, 'F', 'RUNNING LJ'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2FStnngLngJmp', event: [2, 'F', 'STANDING LJ'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2FSftbllThrw', event: [2, 'F', 'SOFTBALL'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
   { name: 'day2FTnnsBllThrw', event: [2, 'F', 'TENNIS BALL THROW'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
   { name: 'day2FBnBgThw', event: [2, 'F', 'BEAN BAG THROW'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
 
   { name: 'day3FTurboJav', event: [3, 'F', 'TURBO JAV'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
-  { name: 'day3FFmTrbJv', event: [3, 'F', 'FOAM TURBO JAV'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
-  { name: 'day3FRnngLngJmp', event: [3, 'F', 'RUNNING LONG JUMP'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
-  { name: 'day3FSftbllThrw', event: [3, 'F', 'SOFTBALL THROW'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3FFmTrbJv', event: [3, 'F', 'FOAM TURBOJAV'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3FRnngLngJmp', event: [3, 'F', 'RUNNING LJ'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3FStnngLngJmp', event: [3, 'F', 'STANDING LJ'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3FSftbllThrw', event: [3, 'F', 'SOFTBALL'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
   { name: 'day3FTnnsBllThrw', event: [3, 'F', 'TENNIS BALL THROW'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
   { name: 'day3FBnBgThw', event: [3, 'F', 'BEAN BAG THROW'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
 
   { name: 'day4FTurboJav', event: [4, 'F', 'TURBO JAV'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
-  { name: 'day4FFmTrbJv', event: [4, 'F', 'FOAM TURBO JAV'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
-  { name: 'day4FRnngLngJmp', event: [4, 'F', 'RUNNING LONG JUMP'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
-  { name: 'day4FSftbllThrw', event: [4, 'F', 'SOFTBALL THROW'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4FFmTrbJv', event: [4, 'F', 'FOAM TURBOJAV'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4FRnngLngJmp', event: [4, 'F', 'RUNNING LJ'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4FStnngLngJmp', event: [4, 'F', 'STANDING LJ'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4FSftbllThrw', event: [4, 'F', 'SOFTBALL'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
   { name: 'day4FTnnsBllThrw', event: [4, 'F', 'TENNIS BALL THROW'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
   { name: 'day4FBnBgThw', event: [4, 'F', 'BEAN BAG THROW'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
 
   { name: 'day5FTurboJav', event: [5, 'F', 'TURBO JAV'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
-  { name: 'day5FFmTrbJv', event: [5, 'F', 'FOAM TURBO JAV'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
-  { name: 'day5FRnngLngJmp', event: [5, 'F', 'RUNNING LONG JUMP'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
-  { name: 'day5FSftbllThrw', event: [5, 'F', 'SOFTBALL THROW'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5FFmTrbJv', event: [5, 'F', 'FOAM TURBOJAV'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5FRnngLngJmp', event: [5, 'F', 'RUNNING LJ'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5FStnngLngJmp', event: [5, 'F', 'STANDING LJ'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5FSftbllThrw', event: [5, 'F', 'SOFTBALL'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
   { name: 'day5FTnnsBllThrw', event: [5, 'F', 'TENNIS BALL THROW'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
   { name: 'day5FBnBgThw', event: [5, 'F', 'BEAN BAG THROW'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
 
   { name: 'day6FTurboJav', event: [6, 'F', 'TURBO JAV'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
-  { name: 'day6FFmTrbJv', event: [6, 'F', 'FOAM TURBO JAV'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
-  { name: 'day6FRnngLngJmp', event: [6, 'F', 'RUNNING LONG JUMP'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
-  { name: 'day6FSftbllThrw', event: [6, 'F', 'SOFTBALL THROW'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6FFmTrbJv', event: [6, 'F', 'FOAM TURBOJAV'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6FRnngLngJmp', event: [6, 'F', 'RUNNING LJ'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6FStnngLngJmp', event: [6, 'F', 'STANDING LJ'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6FSftbllThrw', event: [6, 'F', 'SOFTBALL'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6FTnnsBllThrw', event: [6, 'F', 'TENNIS BALL THROW'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6FBnBgThw', event: [6, 'F', 'BEAN BAG THROW'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' }
 ];
 
+// Array that is used to filter the male's field events data by day & event along with the spreadsheetId.
 const maleFieldEvents = [
   { name: 'day1MTurboJav', event: [1, 'M', 'TURBO JAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
-  { name: 'day1MFmTrbJv', event: [1, 'M', 'FOAM TURBO JAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
-  { name: 'day1MRnngLngJmp', event: [1, 'M', 'RUNNING LONG JUMP'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
-  { name: 'day1MSftbllThrw', event: [1, 'M', 'SOFTBALL THROW'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1MFmTrbJv', event: [1, 'M', 'FOAM TURBOJAV'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1MRnngLngJmp', event: [1, 'M', 'RUNNING LJ'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1MStnngLngJmp', event: [1, 'M', 'STANDING LJ'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
+  { name: 'day1MSftbllThrw', event: [1, 'M', 'SOFTBALL'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
   { name: 'day1MTnnsBllThrw', event: [1, 'M', 'TENNIS BALL THROW'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
   { name: 'day1MBnBgThw', event: [1, 'M', 'BEAN BAG THROW'], spreadsheetId: '1zfk7plACYxlfcO-3tgDXiYgk4FkObANmBCZpWSHPAiA' },
 
   { name: 'day2MTurboJav', event: [2, 'M', 'TURBO JAV'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
-  { name: 'day2MFmTrbJv', event: [2, 'M', 'FOAM TURBO JAV'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
-  { name: 'day2MRnngLngJmp', event: [2, 'M', 'RUNNING LONG JUMP'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
-  { name: 'day2MSftbllThrw', event: [2, 'M', 'SOFTBALL THROW'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2MFmTrbJv', event: [2, 'M', 'FOAM TURBOJAV'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2MRnngLngJmp', event: [2, 'M', 'RUNNING LJ'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2MStnngLngJmp', event: [2, 'M', 'STANDING LJ'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
+  { name: 'day2MSftbllThrw', event: [2, 'M', 'SOFTBALL'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
   { name: 'day2MTnnsBllThrw', event: [2, 'M', 'TENNIS BALL THROW'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
   { name: 'day2MBnBgThw', event: [2, 'M', 'BEAN BAG THROW'], spreadsheetId: '1vXF5H9zBCJN66_DapU_L8bIOR2Wn3nv5YwOCMa258Ls' },
 
   { name: 'day3MTurboJav', event: [3, 'M', 'TURBO JAV'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
-  { name: 'day3MFmTrbJv', event: [3, 'M', 'FOAM TURBO JAV'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
-  { name: 'day3MRnngLngJmp', event: [3, 'M', 'RUNNING LONG JUMP'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
-  { name: 'day3MSftbllThrw', event: [3, 'M', 'SOFTBALL THROW'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3MFmTrbJv', event: [3, 'M', 'FOAM TURBOJAV'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3MRnngLngJmp', event: [3, 'M', 'RUNNING LJ'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3MStnngLngJmp', event: [3, 'M', 'STANDING LJ'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
+  { name: 'day3MSftbllThrw', event: [3, 'M', 'SOFTBALL'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
   { name: 'day3MTnnsBllThrw', event: [3, 'M', 'TENNIS BALL THROW'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
   { name: 'day3MBnBgThw', event: [3, 'M', 'BEAN BAG THROW'], spreadsheetId: '1BYsxEHFS7_bn0mubAgyKrXBvAjdslLTSn2Nl97ESItg' },
 
   { name: 'day4MTurboJav', event: [4, 'M', 'TURBO JAV'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
-  { name: 'day4MFmTrbJv', event: [4, 'M', 'FOAM TURBO JAV'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
-  { name: 'day4MRnngLngJmp', event: [4, 'M', 'RUNNING LONG JUMP'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
-  { name: 'day4MSftbllThrw', event: [4, 'M', 'SOFTBALL THROW'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4MFmTrbJv', event: [4, 'M', 'FOAM TURBOJAV'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4MRnngLngJmp', event: [4, 'M', 'RUNNING LJ'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4MStnngLngJmp', event: [4, 'M', 'STANDING LJ'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
+  { name: 'day4MSftbllThrw', event: [4, 'M', 'SOFTBALL'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
   { name: 'day4MTnnsBllThrw', event: [4, 'M', 'TENNIS BALL THROW'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
   { name: 'day4MBnBgThw', event: [4, 'M', 'BEAN BAG THROW'], spreadsheetId: '1PDzsPenE-NpCXT9SPVgVMcnxjekkSwhdZX6qpFasogQ' },
 
-  { name: 'day5MTurboJav', event: [5, 'M', 'TURBO JAV'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5MTurboJav', event: [5, 'M', 'TURBOJAV'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
   { name: 'day5MFmTrbJv', event: [5, 'M', 'FOAM TURBO JAV'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
-  { name: 'day5MRnngLngJmp', event: [5, 'M', 'RUNNING LONG JUMP'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
-  { name: 'day5MSftbllThrw', event: [5, 'M', 'SOFTBALL THROW'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5MRnngLngJmp', event: [5, 'M', 'RUNNING LJ'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5MStnngLngJmp', event: [5, 'M', 'STANDING LJ'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
+  { name: 'day5MSftbllThrw', event: [5, 'M', 'SOFTBALL'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
   { name: 'day5MTnnsBllThrw', event: [5, 'M', 'TENNIS BALL THROW'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
   { name: 'day5MBnBgThw', event: [5, 'M', 'BEAN BAG THROW'], spreadsheetId: '10nh58NFaz4OuBUVkacjG5OX6y5zhxQ7q194B0udIBFg' },
 
-  { name: 'day6MTurboJav', event: [6, 'M', 'TURBO JAV'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6MTurboJav', event: [6, 'M', 'TURBOJAV'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6MFmTrbJv', event: [6, 'M', 'FOAM TURBO JAV'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
-  { name: 'day6MRnngLngJmp', event: [6, 'M', 'RUNNING LONG JUMP'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
-  { name: 'day6MSftbllThrw', event: [6, 'M', 'SOFTBALL THROW'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6MRnngLngJmp', event: [6, 'M', 'RUNNING LJ'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6MStnngLngJmp', event: [6, 'M', 'STANDING LJ'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
+  { name: 'day6MSftbllThrw', event: [6, 'M', 'SOFTBALL'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6MTnnsBllThrw', event: [6, 'M', 'TENNIS BALL THROW'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' },
   { name: 'day6MBnBgThw', event: [6, 'M', 'BEAN BAG THROW'], spreadsheetId: '13tUMb8XZwN_ZnRnt3IE44dj9QarUc-f-Lx-L8aDWyDk' }
 ];
@@ -343,6 +357,7 @@ const femaleFieldEventSheetNames = [
   'Females-TURBO JAV',
   'Females-FOAM TURBOJAV',
   'Females-RUNNING LJ',
+  'Females-STANDING LJ',
   'Females-SOFTBALL',
   'Females-TENNIS BALL THROW',
   'Females-BEAN BAG THROW'
@@ -354,6 +369,7 @@ const maleFieldEventSheetNames = [
   'Males-TENNIS BALL THROW',
   'Males-SOFTBALL',
   'Males-RUNNING LJ',
+  'Males-STANDING LJ',
   'Males-FOAM TURBOJAV',
   'Males-BEAN BAG THROW'
 ];

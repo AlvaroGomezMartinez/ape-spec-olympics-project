@@ -8,7 +8,7 @@
 function createConsolidatedLabelsList() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const consolidatedLabelsSheet = ss.getSheetByName("Consolidated Labels");
-  const filterDay = consolidatedLabelsSheet.getRange("L2").getValue(); // Get the day to filter from cell L2
+  const filterDay = consolidatedLabelsSheet.getRange("M2").getValue(); // Get the day to filter from cell M2
 
   // Clear only the values in the range A1:K
   consolidatedLabelsSheet.getRange("A1:K").clearContent();
@@ -22,7 +22,7 @@ function createConsolidatedLabelsList() {
 
   // Sort the filtered rows by columns A, J, B, C
   filteredRows.sort((a, b) => {
-    const sortOrder = ["A", "J", "B", "C"];
+    const sortOrder = ["T&F Event Day", "Campus", "Last Name", "First Name"];
     for (let col of sortOrder) {
       const colIndex = headers.indexOf(col);
       if (a[colIndex] < b[colIndex]) return -1;
@@ -32,7 +32,7 @@ function createConsolidatedLabelsList() {
   });
 
   // Define the columns to select based on the value in 'Gender'
-  const selectedColumnsM = [
+  const selectedColumnsM = [ // Males
     "T&F Event Day",
     "Last Name",
     "First Name",
@@ -45,7 +45,7 @@ function createConsolidatedLabelsList() {
     "Running Heat",
     "Running Position",
   ];
-  const selectedColumnsF = [
+  const selectedColumnsF = [ // Females
     "T&F Event Day",
     "Last Name",
     "First Name",

@@ -10,16 +10,40 @@ A Collaboration between the departments of Special Education and Academic Techno
 
 **Implementation Tasks:**
 - [ ] 1. Create a Google Drive folder to organize the database and reports. Currently, a Google Drive Folder called APE Special Olympics Project was created to organize the needed template files (https://drive.google.com/drive/folders/1amRAgl9agb3I2zrDXuISJFOSuvw6iGFa?usp=drive_link).
-- [ ] 2. Create a nested folder inside the one created in step 1. Currently the APE Special Olympics Project folder has a subfolder called Reports (https://drive.google.com/drive/folders/1bXDXyWz8lwcFygs1TbXONoGmfS9Z1yW9?usp=drive_link).
-- [ ] 3. Create eight GoogleDocs inside the nested folder from step 2. Currently, inside Reports are eight GoogleDocs that serve as templates for the reports that are generated when their associated functions are run:
-    (1) Field Condensed List - Females
-    (2) Field Condensed List - Males
-    (3) Field Heat Sheets - Females
-    (4) Field Heat Sheets - Males
-    (5) Track Condensed List - Females
-    (6) Track Condensed List - Males
-    (7) Track Heat Sheets - Females
-    (8) Track Heat Sheets - Males
-- [ ] 4. After the eight GoogleDoc templates are created, get the document IDs from each one and copy them over to their corresponding variable in the Global Variables file in this project.
-- [ ] 5. Set a trigger to run the function onOpen(), found inside the Menus.gs file of this project, when the spreadsheet is opened.
-- [ ] 6. Set a trigger to run the function insertFormula(), found inside the Age.gs file of this project, when the spreadsheet is edited.
+- [ ] 2. Create nested folders to keep the files organized:
+    (1) Day Spreadsheets:
+        (a) Day 1 Database
+        (b) Day 2 Database
+        (c) Day 3 Database
+        (d) Day 4 Database
+        (e) Day 5 Database
+        (f) Day 6 Database
+    (2) Labels
+        (a) Consolidated Labels - Day 1
+        (b) Consolidated Labels - Day 2
+        (c) Consolidated Labels - Day 3
+        (d) Consolidated Labels - Day 4
+        (e) Consolidated Labels - Day 5
+        (f) Consolidated Labels - Day 6
+        (g) Prelim Labels Day 1
+        (h) Prelim Labels Day 2
+        (i) Prelim Labels Day 3
+        (j) Prelim Labels Day 4
+        (k) Prelim Labels Day 5
+        (l) Prelim Labels Day 6
+    (3) Reports - (https://drive.google.com/drive/folders/1bXDXyWz8lwcFygs1TbXONoGmfS9Z1yW9?usp=drive_link). The following GoogleDocs serve as templates for the reports that are generated when their associated functions are run:
+        (a) Field Condensed List - Females
+        (b) Field Condensed List - Males
+        (c) Field Heat Sheets - Scorecards - Females
+        (d) Field Heat Sheets - Scorecards - Males
+        (e) Medical Release Alphabetical List by Campus Report
+        (f) T&F Alphabetical List by Campus
+        (g) Track Condensed List - Females
+        (h) Track Condensed List - Males
+        (i) Track Heat Sheets - Females
+        (j) Track Heat Sheets - Males
+    (4) Testing Files
+    
+- [ ] 3. After the eight GoogleDoc templates are created, get the document IDs from each one and copy them over to their corresponding variable in the Global Variables file in this project.
+- [ ] 4. Set a trigger to run the function onOpen(), found inside the Menus.gs file of this project, when the spreadsheet is opened.
+- [ ] 5. Set a trigger to run the function insertFormula(), found inside the Age.gs file of this project, when the spreadsheet is edited.

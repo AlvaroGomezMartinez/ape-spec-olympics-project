@@ -1,5 +1,5 @@
 /** 
- * Last update: April 4, 2024
+ * Last update: October 24, 2024
 */
 
 function runAllMalesFieldHeatSheets() {
@@ -31,6 +31,7 @@ function runAllMalesFieldHeatSheets() {
   const fieldHeatSheetsDay1MTennisBallThrow = [1, 'M', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay1MSoftball = [1, 'M', 'SOFTBALL']
   const fieldHeatSheetsDay1MRunningLJ = [1, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay1MStandingLJ = [1, 'M', 'STANDING LJ']
   const fieldHeatSheetsDay1MFoamTurboJav = [1, 'M', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay1MTurboJav = [1, 'M', 'TURBO JAV']
 
@@ -39,6 +40,7 @@ function runAllMalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay1MTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay1MFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay1MRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay1MStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay1MSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay1MTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay1MBeanbagThrow);
@@ -52,6 +54,7 @@ function runAllMalesFieldHeatSheets() {
   const fieldHeatSheetsDay2MTennisBallThrow = [2, 'M', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay2MSoftball = [2, 'M', 'SOFTBALL']
   const fieldHeatSheetsDay2MRunningLJ = [2, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay2MStandingLJ = [2, 'M', 'STANDING LJ']
   const fieldHeatSheetsDay2MFoamTurboJav = [2, 'M', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay2MTurboJav = [2, 'M', 'TURBO JAV']
 
@@ -60,6 +63,7 @@ function runAllMalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay2MTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay2MFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay2MRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay2MStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay2MSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay2MTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay2MBeanbagThrow);
@@ -73,6 +77,7 @@ function runAllMalesFieldHeatSheets() {
   const fieldHeatSheetsDay3MTennisBallThrow = [3, 'M', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay3MSoftball = [3, 'M', 'SOFTBALL']
   const fieldHeatSheetsDay3MRunningLJ = [3, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay3MStandingLJ = [3, 'M', 'STANDING LJ']
   const fieldHeatSheetsDay3MFoamTurboJav = [3, 'M', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay3MTurboJav = [3, 'M', 'TURBO JAV']
 
@@ -81,6 +86,7 @@ function runAllMalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay3MTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay3MFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay3MRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay3MStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay3MSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay3MTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay3MBeanbagThrow);
@@ -94,6 +100,7 @@ function runAllMalesFieldHeatSheets() {
   const fieldHeatSheetsDay4MTennisBallThrow = [4, 'M', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay4MSoftball = [4, 'M', 'SOFTBALL']
   const fieldHeatSheetsDay4MRunningLJ = [4, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay4MStandingLJ = [4, 'M', 'STANDING LJ']
   const fieldHeatSheetsDay4MFoamTurboJav = [4, 'M', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay4MTurboJav = [4, 'M', 'TURBO JAV']
 
@@ -102,6 +109,7 @@ function runAllMalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay4MTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay4MFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay4MRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay4MStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay4MSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay4MTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay4MBeanbagThrow);
@@ -115,6 +123,7 @@ function runAllMalesFieldHeatSheets() {
   const fieldHeatSheetsDay5MTennisBallThrow = [5, 'M', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay5MSoftball = [5, 'M', 'SOFTBALL']
   const fieldHeatSheetsDay5MRunningLJ = [5, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay5MStandingLJ = [5, 'M', 'STANDING LJ']
   const fieldHeatSheetsDay5MFoamTurboJav = [5, 'M', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay5MTurboJav = [5, 'M', 'TURBO JAV']
 
@@ -123,6 +132,7 @@ function runAllMalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay5MTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay5MFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay5MRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay5MStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay5MSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay5MTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay5MBeanbagThrow);
@@ -136,6 +146,7 @@ function runAllMalesFieldHeatSheets() {
   const fieldHeatSheetsDay6MTennisBallThrow = [6, 'M', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay6MSoftball = [6, 'M', 'SOFTBALL']
   const fieldHeatSheetsDay6MRunningLJ = [6, 'M', 'RUNNING LJ']
+  const fieldHeatSheetsDay6MStandingLJ = [6, 'M', 'STANDING LJ']
   const fieldHeatSheetsDay6MFoamTurboJav = [6, 'M', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay6MTurboJav = [6, 'M', 'TURBO JAV']
 
@@ -144,6 +155,7 @@ function runAllMalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay6MTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay6MFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay6MRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay6MStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay6MSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay6MTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay6MBeanbagThrow);
@@ -211,9 +223,9 @@ function runAllMalesFieldHeatSheets() {
         tableRow.appendTableCell(row[2]);
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
-        tableRow.appendTableCell(row[10]);
-        tableRow.appendTableCell(typeof row[17] === 'number' ? row[17].toFixed(0) : '');
-        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0) : '');
+        tableRow.appendTableCell(row[9]);
+        tableRow.appendTableCell(typeof row[17] === 'number' ? row[17].toFixed(0) : '0');
+        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0).padStart(2, '0') : '');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');

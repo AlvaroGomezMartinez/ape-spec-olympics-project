@@ -33,6 +33,7 @@ function runAllFemalesFieldCondensedLists() {
   const day1FTennisBallThrow = [1, 'F', 'TENNIS BALL THROW']
   const day1FSoftball = [1, 'F', 'SOFTBALL']
   const day1FRunningLJ = [1, 'F', 'RUNNING LJ']
+  const day1FStandingLJ = [1, 'F', 'STANDING LJ']
   const day1FFoamTurboJav = [1, 'F', 'FOAM TURBOJAV']
   const day1FTurboJav = [1, 'F', 'TURBO JAV']
 
@@ -41,6 +42,7 @@ function runAllFemalesFieldCondensedLists() {
     await createTables(...day1FTurboJav);
     await createTables(...day1FFoamTurboJav);
     await createTables(...day1FRunningLJ);
+    await createTables(...day1FStandingLJ);
     await createTables(...day1FSoftball);
     await createTables(...day1FTennisBallThrow);
     await createTables(...day1FBeanbagThrow);
@@ -54,6 +56,7 @@ function runAllFemalesFieldCondensedLists() {
   const day2FTennisBallThrow = [2, 'F', 'TENNIS BALL THROW']
   const day2FSoftball = [2, 'F', 'SOFTBALL']
   const day2FRunningLJ = [2, 'F', 'RUNNING LJ']
+  const day2FStandingLJ = [2, 'F', 'STANDING LJ']
   const day2FFoamTurboJav = [2, 'F', 'FOAM TURBOJAV']
   const day2FTurboJav = [2, 'F', 'TURBO JAV']
 
@@ -62,6 +65,7 @@ function runAllFemalesFieldCondensedLists() {
     await createTables(...day2FTurboJav);
     await createTables(...day2FFoamTurboJav);
     await createTables(...day2FRunningLJ);
+    await createTables(...day2FStandingLJ);
     await createTables(...day2FSoftball);
     await createTables(...day2FTennisBallThrow);
     await createTables(...day2FBeanbagThrow);
@@ -75,6 +79,7 @@ function runAllFemalesFieldCondensedLists() {
   const day3FTennisBallThrow = [3, 'F', 'TENNIS BALL THROW']
   const day3FSoftball = [3, 'F', 'SOFTBALL']
   const day3FRunningLJ = [3, 'F', 'RUNNING LJ']
+  const day3FStandingLJ = [3, 'F', 'STANDING LJ']
   const day3FFoamTurboJav = [3, 'F', 'FOAM TURBOJAV']
   const day3FTurboJav = [3, 'F', 'TURBO JAV']
 
@@ -83,6 +88,7 @@ function runAllFemalesFieldCondensedLists() {
     await createTables(...day3FTurboJav);
     await createTables(...day3FFoamTurboJav);
     await createTables(...day3FRunningLJ);
+    await createTables(...day3FStandingLJ);
     await createTables(...day3FSoftball);
     await createTables(...day3FTennisBallThrow);
     await createTables(...day3FBeanbagThrow);
@@ -96,6 +102,7 @@ function runAllFemalesFieldCondensedLists() {
   const day4FTennisBallThrow = [4, 'F', 'TENNIS BALL THROW']
   const day4FSoftball = [4, 'F', 'SOFTBALL']
   const day4FRunningLJ = [4, 'F', 'RUNNING LJ']
+  const day4FStandingLJ = [4, 'F', 'STANDING LJ']
   const day4FFoamTurboJav = [4, 'F', 'FOAM TURBOJAV']
   const day4FTurboJav = [4, 'F', 'TURBO JAV']
 
@@ -104,6 +111,7 @@ function runAllFemalesFieldCondensedLists() {
     await createTables(...day4FTurboJav);
     await createTables(...day4FFoamTurboJav);
     await createTables(...day4FRunningLJ);
+    await createTables(...day4FStandingLJ);
     await createTables(...day4FSoftball);
     await createTables(...day4FTennisBallThrow);
     await createTables(...day4FBeanbagThrow);
@@ -117,6 +125,7 @@ function runAllFemalesFieldCondensedLists() {
   const day5FTennisBallThrow = [5, 'F', 'TENNIS BALL THROW']
   const day5FSoftball = [5, 'F', 'SOFTBALL']
   const day5FRunningLJ = [5, 'F', 'RUNNING LJ']
+  const day5FStandingLJ = [5, 'F', 'STANDING LJ']
   const day5FFoamTurboJav = [5, 'F', 'FOAM TURBOJAV']
   const day5FTurboJav = [5, 'F', 'TURBO JAV']
 
@@ -125,6 +134,7 @@ function runAllFemalesFieldCondensedLists() {
     await createTables(...day5FTurboJav);
     await createTables(...day5FFoamTurboJav);
     await createTables(...day5FRunningLJ);
+    await createTables(...day5FStandingLJ);
     await createTables(...day5FSoftball);
     await createTables(...day5FTennisBallThrow);
     await createTables(...day5FBeanbagThrow);
@@ -138,6 +148,7 @@ function runAllFemalesFieldCondensedLists() {
   const day6FTennisBallThrow = [6, 'F', 'TENNIS BALL THROW']
   const day6FSoftball = [6, 'F', 'SOFTBALL']
   const day6FRunningLJ = [6, 'F', 'RUNNING LJ']
+  const day6FStandingLJ = [6, 'F', 'STANDING LJ']
   const day6FFoamTurboJav = [6, 'F', 'FOAM TURBOJAV']
   const day6FTurboJav = [6, 'F', 'TURBO JAV']
 
@@ -146,6 +157,7 @@ function runAllFemalesFieldCondensedLists() {
     await createTables(...day6FTurboJav);
     await createTables(...day6FFoamTurboJav);
     await createTables(...day6FRunningLJ);
+    await createTables(...day6FStandingLJ);
     await createTables(...day6FSoftball);
     await createTables(...day6FTennisBallThrow);
     await createTables(...day6FBeanbagThrow);
@@ -222,9 +234,9 @@ function runAllFemalesFieldCondensedLists() {
         tableRow.appendTableCell(row[2]);
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
-        tableRow.appendTableCell(row[10]);
-        tableRow.appendTableCell(typeof row[17] === 'number' ? row[17].toFixed(0) : '');
-        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0) : '');
+        tableRow.appendTableCell(row[9]);
+        tableRow.appendTableCell(typeof row[17] === 'number' ? row[17].toFixed(0) : '0');
+        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0).padStart(2, '0') : '');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');

@@ -33,6 +33,7 @@ function runAllFemalesFieldHeatSheets() {
   const fieldHeatSheetsDay1FTennisBallThrow = [1, 'F', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay1FSoftball = [1, 'F', 'SOFTBALL']
   const fieldHeatSheetsDay1FRunningLJ = [1, 'F', 'RUNNING LJ']
+  const fieldHeatSheetsDay1FStandingLJ = [1, 'F', 'STANDING LJ']
   const fieldHeatSheetsDay1FFoamTurboJav = [1, 'F', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay1FTurboJav = [1, 'F', 'TURBO JAV']
 
@@ -41,6 +42,7 @@ function runAllFemalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay1FTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay1FFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay1FRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay1FStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay1FSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay1FTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay1FBeanbagThrow);
@@ -54,6 +56,7 @@ function runAllFemalesFieldHeatSheets() {
   const fieldHeatSheetsDay2FTennisBallThrow = [2, 'F', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay2FSoftball = [2, 'F', 'SOFTBALL']
   const fieldHeatSheetsDay2FRunningLJ = [2, 'F', 'RUNNING LJ']
+  const fieldHeatSheetsDay2FStandingLJ = [2, 'F', 'STANDING LJ']
   const fieldHeatSheetsDay2FFoamTurboJav = [2, 'F', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay2FTurboJav = [2, 'F', 'TURBO JAV']
 
@@ -62,6 +65,7 @@ function runAllFemalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay2FTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay2FFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay2FRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay2FStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay2FSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay2FTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay2FBeanbagThrow);
@@ -75,6 +79,7 @@ function runAllFemalesFieldHeatSheets() {
   const fieldHeatSheetsDay3FTennisBallThrow = [3, 'F', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay3FSoftball = [3, 'F', 'SOFTBALL']
   const fieldHeatSheetsDay3FRunningLJ = [3, 'F', 'RUNNING LJ']
+  const fieldHeatSheetsDay3FStandingLJ = [3, 'F', 'STANDING LJ']
   const fieldHeatSheetsDay3FFoamTurboJav = [3, 'F', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay3FTurboJav = [3, 'F', 'TURBO JAV']
 
@@ -83,6 +88,7 @@ function runAllFemalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay3FTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay3FFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay3FRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay3FStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay3FSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay3FTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay3FBeanbagThrow);
@@ -96,6 +102,7 @@ function runAllFemalesFieldHeatSheets() {
   const fieldHeatSheetsDay4FTennisBallThrow = [4, 'F', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay4FSoftball = [4, 'F', 'SOFTBALL']
   const fieldHeatSheetsDay4FRunningLJ = [4, 'F', 'RUNNING LJ']
+  const fieldHeatSheetsDay4FStandingLJ = [4, 'F', 'STANDING LJ']
   const fieldHeatSheetsDay4FFoamTurboJav = [4, 'F', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay4FTurboJav = [4, 'F', 'TURBO JAV']
 
@@ -104,6 +111,7 @@ function runAllFemalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay4FTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay4FFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay4FRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay4FStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay4FSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay4FTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay4FBeanbagThrow);
@@ -117,6 +125,7 @@ function runAllFemalesFieldHeatSheets() {
   const fieldHeatSheetsDay5FTennisBallThrow = [5, 'F', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay5FSoftball = [5, 'F', 'SOFTBALL']
   const fieldHeatSheetsDay5FRunningLJ = [5, 'F', 'RUNNING LJ']
+  const fieldHeatSheetsDay5FStandingLJ = [5, 'F', 'STANDING LJ']
   const fieldHeatSheetsDay5FFoamTurboJav = [5, 'F', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay5FTurboJav = [5, 'F', 'TURBO JAV']
 
@@ -125,6 +134,7 @@ function runAllFemalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay5FTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay5FFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay5FRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay5FStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay5FSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay5FTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay5FBeanbagThrow);
@@ -138,6 +148,7 @@ function runAllFemalesFieldHeatSheets() {
   const fieldHeatSheetsDay6FTennisBallThrow = [6, 'F', 'TENNIS BALL THROW']
   const fieldHeatSheetsDay6FSoftball = [6, 'F', 'SOFTBALL']
   const fieldHeatSheetsDay6FRunningLJ = [6, 'F', 'RUNNING LJ']
+  const fieldHeatSheetsDay6FStandingLJ = [6, 'F', 'STANDING LJ']
   const fieldHeatSheetsDay6FFoamTurboJav = [6, 'F', 'FOAM TURBOJAV']
   const fieldHeatSheetsDay6FTurboJav = [6, 'F', 'TURBO JAV']
 
@@ -146,6 +157,7 @@ function runAllFemalesFieldHeatSheets() {
     await createHeatSheetTables(...fieldHeatSheetsDay6FTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay6FFoamTurboJav);
     await createHeatSheetTables(...fieldHeatSheetsDay6FRunningLJ);
+    await createHeatSheetTables(...fieldHeatSheetsDay6FStandingLJ);
     await createHeatSheetTables(...fieldHeatSheetsDay6FSoftball);
     await createHeatSheetTables(...fieldHeatSheetsDay6FTennisBallThrow);
     await createHeatSheetTables(...fieldHeatSheetsDay6FBeanbagThrow);
@@ -213,9 +225,9 @@ function runAllFemalesFieldHeatSheets() {
         tableRow.appendTableCell(row[2]);
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
-        tableRow.appendTableCell(row[10]);
-        tableRow.appendTableCell(typeof row[17] === 'number' ? row[17].toFixed(0) : '');
-        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0) : '');
+        tableRow.appendTableCell(row[9]);
+        tableRow.appendTableCell(typeof row[17] === 'number' ? row[17].toFixed(0) : '0');
+        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0).padStart(2, '0') : '');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');

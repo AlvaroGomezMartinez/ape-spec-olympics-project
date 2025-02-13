@@ -253,9 +253,9 @@ function runAllFemalesTrackCondensedLists() {
         tableRow.appendTableCell(row[2]);
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
-        tableRow.appendTableCell(row[10]);
-        tableRow.appendTableCell(typeof row[12] === 'number' ? row[12].toFixed(0) : '');
-        tableRow.appendTableCell(typeof row[13] === 'number' ? row[13].toFixed(0) : '');
+        tableRow.appendTableCell(row[9]);
+        tableRow.appendTableCell(typeof row[12] === 'number' ? row[12].toFixed(0) : '0');
+        tableRow.appendTableCell(typeof row[13] === 'number' ? row[13].toFixed(0).padStart(2, '0') : '');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');

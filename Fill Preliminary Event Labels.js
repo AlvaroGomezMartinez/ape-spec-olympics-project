@@ -13,20 +13,43 @@ function createPrelimLabelsList() {
   // Clear only the values in the range A1:K
   prelimLabelsSheet.getRange("A1:E").clearContent();
 
-  // Extract headers and data
-  const headers = data[0];
+  // Extract headers and data. Normalize header names to avoid mismatch due to
+  // stray spaces or inconsistent casing (this fixes "Campus" not being found).
+  const headersRaw = data[0] || [];
+  const headers = headersRaw.map((h) => (h === undefined || h === null ? "" : String(h).trim()));
   const rows = data.slice(1);
+
+  // Helper to find header index with case-insensitive, trimmed matching.
+  function findHeaderIndex(name) {
+    const lower = name.toLowerCase();
+    return headers.findIndex((h) => String(h).toLowerCase() === lower);
+  }
 
   // Filter rows where column A matches the filterDay
   const filteredRows = rows.filter((row) => row[0] == filterDay);
 
-  // Sort the filtered rows by columns A, J, B, C
+  // Sort the filtered rows by T&F Event Day, then Campus, then Last Name, First Name.
   filteredRows.sort((a, b) => {
     const sortOrder = ["T&F Event Day", "Campus", "Last Name", "First Name"];
     for (let col of sortOrder) {
-      const colIndex = headers.indexOf(col);
-      if (a[colIndex] < b[colIndex]) return -1;
-      if (a[colIndex] > b[colIndex]) return 1;
+      const colIndex = findHeaderIndex(col);
+      if (colIndex === -1) continue;
+
+      const va = a[colIndex] === undefined || a[colIndex] === null ? "" : a[colIndex];
+      const vb = b[colIndex] === undefined || b[colIndex] === null ? "" : b[colIndex];
+
+      const na = Number(va);
+      const nb = Number(vb);
+      if (!isNaN(na) && !isNaN(nb)) {
+        if (na < nb) return -1;
+        if (na > nb) return 1;
+        continue;
+      }
+
+      const sA = String(va).trim();
+      const sB = String(vb).trim();
+      const cmp = sA.localeCompare(sB, undefined, { sensitivity: "base" });
+      if (cmp !== 0) return cmp;
     }
     return 0;
   });
@@ -49,12 +72,12 @@ function createPrelimLabelsList() {
 
   // Select and reorder the columns based on the value in 'Gender'
   const result = filteredRows.map((row) => {
-    const selectedColumns =
-      row[headers.indexOf("Gender")] === "M"
-        ? selectedColumnsM
-        : selectedColumnsF;
-    const columnIndices = selectedColumns.map((col) => headers.indexOf(col));
-    return columnIndices.map((index) => row[index]);
+    const genderIndex = findHeaderIndex("Gender");
+    const gender = genderIndex === -1 ? "" : row[genderIndex];
+    const selectedColumns = gender === "M" ? selectedColumnsM : selectedColumnsF;
+
+    const columnIndices = selectedColumns.map((col) => findHeaderIndex(col));
+    return columnIndices.map((index) => (index === -1 ? "" : row[index]));
   });
 
   // Add custom labels to the 'Prelim Labels' sheet

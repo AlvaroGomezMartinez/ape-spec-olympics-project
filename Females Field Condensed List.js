@@ -221,8 +221,7 @@ function runAllFemalesFieldCondensedLists() {
           headersRow.appendTableCell('Last Name').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Gender').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Campus').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('M').setWidth(30).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('cm').setWidth(30).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Distance').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Place').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
@@ -235,8 +234,7 @@ function runAllFemalesFieldCondensedLists() {
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
         tableRow.appendTableCell(row[9]);
-        tableRow.appendTableCell(typeof row[16] === 'number' ? row[16].toFixed(0) : '0');
-        tableRow.appendTableCell(typeof row[16] === 'number' ? row[16].toFixed(0).padStart(2, '0') : '');
+          tableRow.appendTableCell(typeof row[16] === 'number' ? row[16].toFixed(2) : '');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');

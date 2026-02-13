@@ -170,7 +170,7 @@ function runAllFemalesFieldHeatSheets() {
 
     for (let i = 1; i < data.length; i++) {
       let row = data[i];
-      if (row[0] === tAndFEventDay && row[3] === athGender && row[8] === true && row[16] === fieldEvent) {
+      if (row[0] === tAndFEventDay && row[3] === athGender && row[8] === true && row[15] === fieldEvent) {
         filteredData.push(row);
       }
     }
@@ -179,23 +179,31 @@ function runAllFemalesFieldHeatSheets() {
     if (filteredData.length === 0) {
       femaleTemplateDoc.saveAndClose();
     } else {
-      /** Sort filteredData array by row[19] and then by row[20] in ascending order */
+      /** Check if there's already content in the document to add a page break before new event */
+      const previousText = femaleBody.getText();
+      const shouldAddPageBreak = previousText.trim() !== '';
+
+      if (shouldAddPageBreak) {
+        femaleBody.appendPageBreak();
+      }
+
+      /** Sort filteredData array by row[17] and then by row[18] in ascending order */
       filteredData.sort((a, b) => {
-        if (a[19] === b[19]) {
-          return a[20] - b[20];
+        if (a[17] === b[17]) {
+          return a[18] - b[18];
         }
-        return a[19] - b[19];
+        return a[17] - b[17];
       });
 
       let headerText5 = `Field Heat Sheets - Scorecards                      Day: ${tAndFEventDay}`;
 
-      /** Create an object to store tables for each value in row[19] */
+      /** Create an object to store tables for each value in row[17] */
       const tables = {};
 
       /** Adds the filtered data to the respective tables */
       for (let i = 0; i < filteredData.length; i++) {
         let row = filteredData[i];
-        let value = String(row[19]).padStart(2, '0'); // Assuming row[19] contains the value for table separation
+        let value = String(row[17]).padStart(2, '0'); // Assuming row[17] contains the value for table separation
 
         /** Check if a table already exists for the value */
         if (!tables[value]) {
@@ -221,7 +229,7 @@ function runAllFemalesFieldHeatSheets() {
 
         /** Create a new row in the respective table */
         let tableRow = tables[value].table.appendTableRow();
-        tableRow.appendTableCell(typeof row[20] === 'number' ? row[20].toFixed(0) : '');
+        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0) : '');
         tableRow.appendTableCell(row[2]);
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
@@ -234,9 +242,9 @@ function runAllFemalesFieldHeatSheets() {
 
         // Insert a page break after each table except the last one
         if (i < filteredData.length - 1) {
-          // Check if the current table and the next table have different values in row[19]
-          let currentValue = String(row[19]).padStart(2, '0');
-          let nextValue = String(filteredData[i + 1][19]).padStart(2, '0');
+          // Check if the current table and the next table have different values in row[17]
+          let currentValue = String(row[17]).padStart(2, '0');
+          let nextValue = String(filteredData[i + 1][17]).padStart(2, '0');
           if (currentValue !== nextValue) {
             femaleBody.appendPageBreak();
           }
@@ -249,7 +257,6 @@ function runAllFemalesFieldHeatSheets() {
         femaleBody.insertParagraph(femaleBody.getChildIndex(tables[value].table), headerText).setAttributes(style);
       });
 
-      femaleBody.appendPageBreak();
       femaleTemplateDoc.saveAndClose();
     }
   };

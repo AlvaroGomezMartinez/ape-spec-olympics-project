@@ -172,7 +172,7 @@ function runAllFemalesFieldCondensedLists() {
 
     for (let i = 1; i < data.length; i++) {
       let row = data[i];
-      if (row[0] === tAndFEventDay && row[3] === athGender && row[8] === true && row[16] === fieldEvent) {
+      if (row[0] === tAndFEventDay && row[3] === athGender && row[8] === true && row[15] === fieldEvent) {
         filteredData.push(row);
       }
     }
@@ -181,12 +181,12 @@ function runAllFemalesFieldCondensedLists() {
     if (filteredData.length === 0) {
       templateDoc.saveAndClose();
     } else {
-      /** Sort filteredData array by row[19] and then by row[20] in ascending order */
+      /** Sort filteredData array by row[17] and then by row[18] in ascending order */
       filteredData.sort((a, b) => {
-        if (a[19] === b[19]) {
-          return a[20] - b[20];
+        if (a[17] === b[17]) {
+          return a[18] - b[18];
         }
-        return a[19] - b[19];
+        return a[17] - b[17];
       });
 
       const previousText = body.getText();
@@ -198,13 +198,13 @@ function runAllFemalesFieldCondensedLists() {
 
       let headerText5 = `FIELD EVENTS CONDENSED LIST               DAY: ${tAndFEventDay}`;
       body.insertParagraph(body.getNumChildren(), headerText5).setAttributes(style);
-      /** Create an object to store tables for each value in row[19] */
+      /** Create an object to store tables for each value in row[17] */
       const tables = {};
 
       /** Adds the filtered data to the respective tables */
       for (let i = 0; i < filteredData.length; i++) {
         let row = filteredData[i];
-        let value = String(row[19]).padStart(2, '0'); // Assuming row[19] contains the value for table separation
+        let value = String(row[17]).padStart(2, '0'); // Assuming row[17] contains the value for table separation
 
         /** Check if a table already exists for the value */
         if (!tables[value]) {
@@ -230,13 +230,13 @@ function runAllFemalesFieldCondensedLists() {
 
         /** Create a new row in the respective table */
         let tableRow = tables[value].table.appendTableRow();
-        tableRow.appendTableCell(typeof row[20] === 'number' ? row[20].toFixed(0) : '');
+        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0) : '');
         tableRow.appendTableCell(row[2]);
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
         tableRow.appendTableCell(row[9]);
-        tableRow.appendTableCell(typeof row[17] === 'number' ? row[17].toFixed(0) : '0');
-        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0).padStart(2, '0') : '');
+        tableRow.appendTableCell(typeof row[16] === 'number' ? row[16].toFixed(0) : '0');
+        tableRow.appendTableCell(typeof row[16] === 'number' ? row[16].toFixed(0).padStart(2, '0') : '');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');

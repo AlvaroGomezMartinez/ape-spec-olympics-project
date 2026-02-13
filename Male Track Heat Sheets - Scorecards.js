@@ -159,7 +159,7 @@ function runAllMalesTrackHeatSheets() {
     await createTrackHeatSheetTables(...day6M25MAstWC);
     await createTrackHeatSheetTables(...day6M25MAstDevice);
     await createTrackHeatSheetTables(...day6M25MAstWalk);
-    await openTrackHeatSheetsGoogleDoc()();
+    await openTrackHeatSheetsGoogleDoc();
   }
 
   /** @function that creates the tables for the lists */
@@ -194,21 +194,21 @@ function runAllMalesTrackHeatSheets() {
            *                     a positive value if a should be sorted after b,
            *                     and 0 if a and b are equal.
            */
-        if (a[14] === b[14]) {
-          return a[15] - b[15];
+        if (a[13] === b[13]) {
+          return a[14] - b[14];
         }
-        return a[14] - b[14];
+        return a[13] - b[13];
       });
 
       let headerText5 = `Track Heat Sheets - Scorecards                      Day: ${tAndFEventDay}`;
 
-      /** Create an object to store tables for each value in row[14] */
+      /** Create an object to store tables for each value in row[13] */
       const tables = {};
 
       /** Adds the filtered data to the respective tables */
       for (let i = 0; i < filteredData.length; i++) {
         let row = filteredData[i];
-        let value = String(row[14]).padStart(2, '0'); // Assuming row[14] contains the value for table separation
+        let value = String(row[13]).padStart(2, '0'); // Assuming row[13] contains the value for table separation
 
         /** Check if a table already exists for the value */
         if (!tables[value]) {
@@ -225,8 +225,7 @@ function runAllMalesTrackHeatSheets() {
           headersRow.appendTableCell('Last Name').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Gender').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Campus').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('M').setWidth(30).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('cm').setWidth(30).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+          headersRow.appendTableCell('Time').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Place').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
@@ -234,22 +233,21 @@ function runAllMalesTrackHeatSheets() {
 
         /** Create a new row in the respective table */
         let tableRow = tables[value].table.appendTableRow();
-        tableRow.appendTableCell(typeof row[15] === 'number' ? row[15].toFixed(0) : '');
+        tableRow.appendTableCell(typeof row[14] === 'number' ? row[14].toFixed(0) : '');
         tableRow.appendTableCell(row[2]);
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
         tableRow.appendTableCell(row[9]);
-        tableRow.appendTableCell(typeof row[12] === 'number' ? row[12].toFixed(0) : '0');
-        tableRow.appendTableCell(typeof row[13] === 'number' ? row[13].toFixed(0).padStart(2, '0') : '');
+        tableRow.appendTableCell(typeof row[12] === 'number' ? row[12].toFixed(2) : '0');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
 
         // Insert a page break after each table except the last one
         if (i < filteredData.length - 1) {
-          // Check if the current table and the next table have different values in row[14]
-          let currentValue = String(row[14]).padStart(2, '0');
-          let nextValue = String(filteredData[i + 1][14]).padStart(2, '0');
+          // Check if the current table and the next table have different values in row[13]
+          let currentValue = String(row[13]).padStart(2, '0');
+          let nextValue = String(filteredData[i + 1][13]).padStart(2, '0');
           if (currentValue !== nextValue) {
             body.appendPageBreak();
           }

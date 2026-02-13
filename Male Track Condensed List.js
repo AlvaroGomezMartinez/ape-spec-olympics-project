@@ -220,7 +220,7 @@ function runAllMalesTrackCondensedLists() {
       /** Adds the filtered data to the respective tables */
       for (let i = 0; i < filteredData.length; i++) {
         let row = filteredData[i];
-        let value = String(row[14]).padStart(2, '0'); // Assuming row[14] contains the value for table separation
+        let value = String(row[13]).padStart(2, '0'); // Assuming row[13] contains the value for table separation
 
         /** Check if a table already exists for the value */
         if (!tables[value]) {
@@ -245,7 +245,7 @@ function runAllMalesTrackCondensedLists() {
 
         /** Create a new row in the respective table */
         let tableRow = tables[value].table.appendTableRow();
-        tableRow.appendTableCell(typeof row[15] === 'number' ? row[15].toFixed(0) : '');
+        tableRow.appendTableCell(typeof row[14] === 'number' ? row[14].toFixed(0) : '');
         tableRow.appendTableCell(row[2]);
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);

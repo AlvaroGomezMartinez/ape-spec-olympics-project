@@ -237,7 +237,7 @@ function runAllMalesTrackCondensedLists() {
           headersRow.appendTableCell('Last Name').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Gender').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Campus').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('Distance').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+          headersRow.appendTableCell('Time').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
           headersRow.appendTableCell('Place').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
@@ -250,8 +250,8 @@ function runAllMalesTrackCondensedLists() {
         tableRow.appendTableCell(row[1]);
         tableRow.appendTableCell(row[3]);
         tableRow.appendTableCell(row[9]);
-        // Distance column from column Q (row[16]), formatted to two decimal places
-        tableRow.appendTableCell(typeof row[16] === 'number' ? row[16].toFixed(2) : '');
+        // Time column from column M (row[12]), formatted to hundredths
+        tableRow.appendTableCell(typeof row[12] === 'number' ? row[12].toFixed(2) : '');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');
         tableRow.appendTableCell('');

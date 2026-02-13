@@ -215,30 +215,28 @@ function runAllFemalesFieldHeatSheets() {
 
           /** Adds table headers for each table */
           let headersRow = tables[value].table.appendTableRow();
-          headersRow.appendTableCell('Pos.').setWidth(39).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('First Name').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('Last Name').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('Gender').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('Campus').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('M').setWidth(30).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('cm').setWidth(30).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
-          headersRow.appendTableCell('Place').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Pos.').setWidth(39).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('First Name').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Last Name').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Gender').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Campus').getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Distance').setWidth(60).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Score').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
+            headersRow.appendTableCell('Place').setWidth(50).getChild(0).asParagraph().setAlignment(DocumentApp.HorizontalAlignment.CENTER).setAttributes(style2);
         }
 
         /** Create a new row in the respective table */
         let tableRow = tables[value].table.appendTableRow();
-        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0) : '');
-        tableRow.appendTableCell(row[2]);
-        tableRow.appendTableCell(row[1]);
-        tableRow.appendTableCell(row[3]);
-        tableRow.appendTableCell(row[9]);
-        tableRow.appendTableCell(typeof row[17] === 'number' ? row[17].toFixed(0) : '0');
-        tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0).padStart(2, '0') : '');
-        tableRow.appendTableCell('');
-        tableRow.appendTableCell('');
-        tableRow.appendTableCell('');
+          tableRow.appendTableCell(typeof row[18] === 'number' ? row[18].toFixed(0) : '');
+          tableRow.appendTableCell(row[2]);
+          tableRow.appendTableCell(row[1]);
+          tableRow.appendTableCell(row[3]);
+          tableRow.appendTableCell(row[9]);
+          tableRow.appendTableCell(typeof row[16] === 'number' ? row[16].toFixed(2) : '');
+          tableRow.appendTableCell('');
+          tableRow.appendTableCell('');
+          tableRow.appendTableCell('');
 
         // Insert a page break after each table except the last one
         if (i < filteredData.length - 1) {
